@@ -1,0 +1,1580 @@
+[
+ {
+  "path": "/catalog/fundamenti/",
+  "slug": "fundamenti",
+  "title": "Фундаменты",
+  "image": "/core/storage/49e3f6fff9f76081d6442fe00962a720/512.webp",
+  "groups": [
+   {
+    "path": "/catalog/fundamenti/svai-s/",
+    "slug": "svai-s",
+    "title": "Сваи (С)",
+    "image": "/core/storage/80640b0b2336974176c091f2121482db/512.webp",
+    "items": [
+     {
+      "path": "/catalog/fundamenti/svai-s/svai-zabivnie-secheniem-300300/",
+      "slug": "svai-zabivnie-secheniem-300300",
+      "title": "Сваи забивные сечением 300*300",
+      "image": "/core/storage/80640b0b2336974176c091f2121482db/512.webp",
+      "purpose": "Сваи цельного сплошного квадратного сечения с ненапрягаемой арматурой предназначены для свайных фундаментов зданий и сооружений.",
+      "code": [
+       "С80.30-2"
+      ],
+      "notation": [
+       "С — свая",
+       "80 — длиной 8000 мм (в дм)",
+       "30 — шириной и высотой 300 мм (в см)",
+       "2 — тип армирования",
+       "В конце маркировки может стоять цифра «1» — сваи с приставным каркасом острия; буква «у» — ударостойкая"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м3</th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>С30.30-</td><td>3000</td><td>300</td><td>300</td><td>0,70</td><td>0,70</td></tr><tr><td>С40.30-</td><td>4000</td><td>300</td><td>300</td><td>0,93</td><td>0,93</td></tr><tr><td>С50.30-</td><td>5000</td><td>300</td><td>300</td><td>1,15</td><td>1,15</td></tr><tr><td>С60.30-</td><td>6000</td><td>300</td><td>300</td><td>1,38</td><td>1,38</td></tr><tr><td>С70.30-</td><td>7000</td><td>300</td><td>300</td><td>1,60</td><td>1,60</td></tr><tr><td>С80.30-</td><td>8000</td><td>300</td><td>300</td><td>1,83</td><td>1,83</td></tr><tr><td>С90.30-</td><td>9000</td><td>300</td><td>300</td><td>2,05</td><td>2,05</td></tr><tr><td>С100.30-</td><td>10000</td><td>300</td><td>300</td><td>2,28</td><td>2,28</td></tr><tr><td>С110.30-</td><td>11000</td><td>300</td><td>300</td><td>2,50</td><td>2,50</td></tr><tr><td>С120.30-</td><td>12000</td><td>300</td><td>300</td><td>2,73</td><td>2,73</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/fundamenti/pliti-lentochnih-fundamentov/",
+    "slug": "pliti-lentochnih-fundamentov",
+    "title": "Плиты ленточных фундаментов (ФЛ)",
+    "image": "/core/storage/0fc20930e4d357beaf83d7413f8a3d8f/512.webp",
+    "items": [
+     {
+      "path": "/catalog/fundamenti/pliti-lentochnih-fundamentov/pliti-lentochnih-fundamentov-1/",
+      "slug": "pliti-lentochnih-fundamentov-1",
+      "title": "Плиты ленточных фундаментов",
+      "image": "/core/storage/0fc20930e4d357beaf83d7413f8a3d8f/512.webp",
+      "purpose": "Плиты предназначены для применения:",
+      "code": [
+       "ФЛ16.24-2"
+      ],
+      "notation": [
+       "ФЛ – фундамент ленточный",
+       "16 - шириной 1600 мм (в дм)",
+       "24 - длиной 2380 мм (в дм с округлением до целого числа)",
+       "2 – группа по несущей способности",
+       "Плиты подразделяют на четыре группы по несущей способности при загружении их равномерной погонной нагрузкой от стены до оси ленточного фундамента. Плиты каждой группы характеризуют наибольшей допускаемой величиной давления на основание под подошвой фундамента, указанной в таблице, в зависимости от толщины опирающихся на плиты стен",
+       "Плиты изготавливают из тяжелого бетона (средней плотности более 2200 до 2500 кг/м3 включительно) класса по прочности на сжатие, указанного в таблице"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"4\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th><th>а</th></tr></thead><tbody><tr><td>ФЛ 8.12-1,2,3,4</td><td>1180</td><td>800</td><td>300</td><td>150</td><td>0,22</td><td>0,55</td></tr><tr><td>ФЛ 10.24-1,2,3,4</td><td>2380</td><td>1000</td><td>300</td><td>250</td><td>0,55</td><td>1,38</td></tr><tr><td>ФЛ 10.12-1,2,3,4</td><td>1180</td><td>1000</td><td>300</td><td>250</td><td>0,26</td><td>0,65</td></tr><tr><td>ФЛ 12.24-1,2,3,4</td><td>2380</td><td>1200</td><td>300</td><td>350</td><td>0,65</td><td>1,63</td></tr><tr><td>ФЛ 12.12-1,2,3,4</td><td>1180</td><td>1200</td><td>300</td><td>350</td><td>0,31</td><td>0,78</td></tr><tr><td>ФЛ 14.12-1,2,3,4</td><td>1180</td><td>1400</td><td>300</td><td>400</td><td>0,36</td><td>0,91</td></tr><tr><td>ФЛ 16.12-1,2,3,4</td><td>1180</td><td>1600</td><td>300</td><td>500</td><td>0,41</td><td>1,03</td></tr><tr><td>ФЛ 20.12-1,2,3,4</td><td>1180</td><td>2000</td><td>500</td><td>700</td><td>0,78</td><td>1,95</td></tr><tr><td>ФЛ 24.12-1,2,3,4</td><td>1180</td><td>2400</td><td>500</td><td>900</td><td>0,91</td><td>2,30</td></tr><tr><td>ФЛ 28.12-1,2,3,4</td><td>1180</td><td>2800</td><td>500</td><td>1000</td><td>1,13</td><td>2,82</td></tr><tr><td>ФЛ 32.12-1,2,3,4 </td><td>1180</td><td>3200</td><td>500</td><td>1200</td><td>1,29</td><td>3,23</td></tr><tr><td>ФЛ 20.8-1,2,3,4</td><td>780</td><td>2000</td><td>500</td><td>700</td><td>0,50</td><td>1,25</td></tr><tr><td>ФЛ 24.8-1,2,3,4</td><td>780</td><td>2400</td><td>500</td><td>900</td><td>0,58</td><td>1,45</td></tr><tr><td>ФЛ 28.8-1,2,3,4</td><td>780</td><td>2800</td><td>500</td><td>1000</td><td>0,72</td><td>1,80</td></tr></tbody></table>",
+       "<table><thead><tr><th rowspan=\"2\">Ширина плиты, мм</th><th rowspan=\"2\">Толщина стены не менее, мм</th><th colspan=\"4\">Наибольшее допускаемое давление на основание, МПа(кгс/см2), для групп по несущей способности</th></tr><tr><th>1</th><th>2</th><th>3</th><th>4</th></tr></thead><tbody><tr><td rowspan=\"2\">600</td><td>160</td><td colspan=\"4\">0,45(4,5)</td></tr><tr><td>300</td><td colspan=\"4\">0,60(6,0)</td></tr><tr><td rowspan=\"3\">800</td><td>160</td><td>0,15(1,5)</td><td colspan=\"2\">0,35(3,5)</td><td>0,45(4,5)</td></tr><tr><td>300</td><td>0,25(2,5)</td><td colspan=\"2\">0,57(5,7)</td><td>0,60(6,0)</td></tr><tr><td>500</td><td colspan=\"4\">0,60(6,0)</td></tr><tr><td rowspan=\"2\">1000</td><td>160</td><td>0,15(1,5)</td><td>0,25(2,5)</td><td>0,35(3,5)</td><td>0,45(4,5)</td></tr><tr><td>300</td><td>0,22(2,2)</td><td>0,36(3,6)</td><td>0,45(4,5)</td><td>0,50(5,0)</td></tr><tr><td>1200-3200</td><td>160</td><td>0,15(1,5)</td><td>0,25(2,5)</td><td>0,35(3,5)</td><td>0,45(4,5)</td></tr></tbody></table>",
+       "<table><thead><tr><th rowspan=\"2\">Ширина плиты, мм</th><th colspan=\"4\">Класс бетона по прочности на сжатие плиты для групп по несущей способности</th></tr><tr><th>1</th><th>2</th><th>3</th><th>4</th></tr></thead><tbody><tr><td>600</td><td colspan=\"3\">По группе 4</td><td>В10</td></tr><tr><td>800</td><td rowspan=\"6\">В10</td><td>По группе 3</td><td rowspan=\"2\">В12,5</td><td rowspan=\"2\">В12,5</td></tr><tr><td>1000; 1200</td><td>В10</td></tr><tr><td>1400</td><td rowspan=\"4\">B12,5</td><td rowspan=\"4\">В15</td><td>В15</td></tr><tr><td>1600</td><td>В25</td></tr><tr><td>2000</td><td>В15</td></tr><tr><td>2400</td><td>В20</td></tr><tr><td>2800</td><td rowspan=\"2\">B12,5</td><td>В15</td><td>В20</td><td>В25</td></tr><tr><td>3200</td><td>В20</td><td>В25</td><td>-</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/fundamenti/bloki-sten-podvalov-fbs/",
+    "slug": "bloki-sten-podvalov-fbs",
+    "title": "Блоки стен подвалов (ФБС)",
+    "image": "/core/storage/5f9da617be1c56b664d999fca546b00b/512.webp",
+    "items": [
+     {
+      "path": "/catalog/fundamenti/bloki-sten-podvalov-fbs/bloki-sten-podvalov-fbs/",
+      "slug": "bloki-sten-podvalov-fbs",
+      "title": "Блоки стен подвалов (ФБС)",
+      "image": "/core/storage/5f9da617be1c56b664d999fca546b00b/512.webp",
+      "purpose": "Блоки предназначены для фундаментов, стен подвалов и технических подпольев зданий.",
+      "code": [
+       "ФБС24.4.6-Т"
+      ],
+      "notation": [
+       "ФБС – фундаментный блок сплошной",
+       "24 - длиной 2380 мм (в дм с округлением до целого числа)",
+       "4 - шириной 400 мм (в дм)",
+       "6 - высотой 580 мм (в дм с округлением до целого числа)",
+       "Т – из тяжелого бетона"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ФБС 24.3.6-Т</td><td>2380</td><td>300</td><td>580</td><td>0.406</td><td>0.97</td><td></td></tr><tr><td>ФБС 24.4.6-Т</td><td>2380</td><td>400</td><td>580</td><td>0.543</td><td>1.30</td><td>В7,5</td></tr><tr><td>ФБС 24.5.6-Т</td><td>2380</td><td>500</td><td>580</td><td>0.679</td><td>1.63</td><td></td></tr><tr><td>ФБС 24.6.6-Т</td><td>2380</td><td>600</td><td>580</td><td>0.815</td><td>1.96</td><td></td></tr><tr><td>ФБС 12.4.6-Т</td><td>1180</td><td>400</td><td>580</td><td>0.265</td><td>0.64</td><td></td></tr><tr><td>ФБС 12.5.6-Т</td><td>1180</td><td>500</td><td>580</td><td>0.331</td><td>0.79</td><td>В7,5</td></tr><tr><td>ФБС 12.6.6-Т</td><td>1180</td><td>600</td><td>580</td><td>0.398</td><td>0.96</td><td></td></tr><tr><td>ФБС 12.4.3-Т</td><td>1180</td><td>400</td><td>280</td><td>0.127</td><td>0.31</td><td></td></tr><tr><td>ФБС 12.5.3-Т</td><td>1180</td><td>500</td><td>280</td><td>0.159</td><td>0.38</td><td>В7,5</td></tr><tr><td>ФБС 12.6.3-Т</td><td>1180</td><td>600</td><td>280</td><td>0.191</td><td>0.46</td><td></td></tr><tr><td>ФБС 9.3.6-Т</td><td>880</td><td>300</td><td>580</td><td>0.146</td><td>0.35</td><td></td></tr><tr><td>ФБС 9.4.6-Т</td><td>880</td><td>400</td><td>580</td><td>0.195</td><td>0.47</td><td>В7,5</td></tr><tr><td>ФБС 9.5.6-Т</td><td>880</td><td>500</td><td>580</td><td>0.244</td><td>0.59</td><td></td></tr><tr><td>ФБС 9.6.6-Т</td><td>880</td><td>600</td><td>580</td><td>0.293</td><td>0.70</td><td></td></tr></tbody></table>"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/",
+  "slug": "izdeliya-dlya-stroitelstva-grazhdanskih",
+  "title": "Изделия для строительства гражданских зданий",
+  "image": "/core/storage/3129eb7913cc21eee45bb1732c5eb430/512.webp",
+  "groups": [
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/balkonnie-pliti-pbk-bp-pb-pl/",
+    "slug": "balkonnie-pliti-pbk-bp-pb-pl",
+    "title": "Балконные плиты (ПБК, БП, ПБ, ПЛ)",
+    "image": "/core/storage/a18b735c26656dd28ffc59cd166327c6/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/balkonnie-pliti-pbk-bp-pb-pl/balkonnie-pliti-pl1-pl2/",
+      "slug": "balkonnie-pliti-pl1-pl2",
+      "title": "Балконные плиты ПЛ-1, ПЛ-2",
+      "image": "/core/storage/564664b9b5a00b20ca6132a8d3da1234/original.jpg",
+      "purpose": "",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Масса, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ПЛ-1, ПЛ-2</td><td>ВГСПИ 1263-1-КЖИ</td><td>2650</td><td>2930</td><td>300/100</td><td>1,26</td><td>3,150</td><td>М300</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/balkonnie-pliti-pbk-bp-pb-pl/balkonnie-pliti-bp1-bp11/",
+      "slug": "balkonnie-pliti-bp1-bp11",
+      "title": "Балконные плиты БП-1, БП1-1",
+      "image": "/core/storage/fe5d65446d13c88575d08ef917cab822/512.webp",
+      "purpose": "",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>БП-1, БП1-1</td><td>АООТ ВПИ ВОРОНЕЖПРОЕКТ 15254-1СИ</td><td>4595</td><td>1750</td><td>220</td><td>0,95</td><td>2,375</td><td>В25F200W4</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/balkonnie-pliti-pbk-bp-pb-pl/balkonnie-pliti-p15-p151-bp2-bp21/",
+      "slug": "balkonnie-pliti-p15-p151-bp2-bp21",
+      "title": "Балконные плиты П15, П15-1, БП2, БП2-1",
+      "image": "/core/storage/51c14d9993cb4d6547d29d5b59425ce8/512.webp",
+      "purpose": "",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\"> Нормативный документ</th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс/марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>П15, П15-1 (зеркально)</td><td>АООТ ВПИ ВОРОНЕЖПРОЕКТ 15254-1СИ</td><td>4050</td><td>1680</td><td>220/120</td><td>0,86</td><td>2,150</td><td rowspan=\"2\">В25F200W4</td></tr><tr><td>БП-2(без скоса), БП2-1 (без скоса зеркально)</td><td>АООТ ВПИ ВОРОНЕЖПРОЕКТ 15254-1СИ</td><td>2825</td><td>1420</td><td>220/120</td><td>0,45</td><td>1,125</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/balkonnie-pliti-pbk-bp-pb-pl/balkonnie-pliti-pb1-pb2/",
+      "slug": "balkonnie-pliti-pb1-pb2",
+      "title": "Балконные плиты ПБ-1, ПБ-2",
+      "image": "/core/storage/c9da1abfe3d9549cb27f7c80c8272665/512.webp",
+      "purpose": "",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ПБ-2<br>ПБ-1 (зеркально)</td><td>ГУП 8 ПИ МО РФ Воронеж 71-97-2</td><td>4150</td><td>1960</td><td>150</td><td>0,97</td><td>2,425</td><td>В15F100</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/balkonnie-pliti-pbk-bp-pb-pl/balkonnie-pliti-pbk/",
+      "slug": "balkonnie-pliti-pbk",
+      "title": "Балконные плиты ПБК",
+      "image": "/core/storage/a18b735c26656dd28ffc59cd166327c6/512.webp",
+      "purpose": "Балконные плиты предназначены для применении в жилых зданиях с кирпичными и крупноблочными стенами, строящихся в обычных физикогеологических условиях.",
+      "code": [
+       "ПБК 27.12-5"
+      ],
+      "notation": [
+       "ПБК – плита балконная плоская сплошная консольная",
+       "27 – длиной 2690 мм (в дм с округлением до целого числа)",
+       "12 – шириной 1240 мм (в дм с округлением до целого числа)",
+       "5 – для крупноблочных стен толщиной 500 мм и кирпичных стен толщиной 510 мм",
+       "Индекс «6» – для крупноблочных стен толщиной 600 мм и кирпичных стен толщиной 640 мм",
+       "Буквенный индекс «а» свидетельствует о том, что плита предназначена для кирпичных стен (балконные плиты для кирпичных стен отличаются отсутствием парных закладных изделий на крайних участках опорного ребра",
+       "Плиты изготавливаются из тяжелого бетона марки М200, проектная марка бетона по морозостойкости не ниже F150, по водонепроницаемости – W2"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\"> Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м3</th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>А</th></tr></thead><tbody><tr><td>ПБК24.12-5</td><td rowspan=\"16\">Серия 1.137.1-9 выпуск 1 </td><td>2390</td><td>1240</td><td>340</td><td>0,35</td><td>0,875</td></tr><tr><td>ПБК24.12-5а</td><td>2390</td><td>1240</td><td>340</td><td>0,35</td><td>0,875</td></tr><tr><td>ПБК27.12-5 </td><td>2690</td><td>1240</td><td>340</td><td>0,39</td><td>0,975</td></tr><tr><td>ПБК27.12-5а</td><td>2690</td><td>1240</td><td>340</td><td>0,39</td><td>0,975</td></tr><tr><td>ПБК33.12-5</td><td>3290</td><td>1240</td><td>340</td><td>0,48</td><td>1,200</td></tr><tr><td>ПБК33.12-5а</td><td>3290</td><td>1240</td><td>340</td><td>0,48</td><td>1,200</td></tr><tr><td>ПБК36.12-5 </td><td>2590</td><td>1240</td><td>340</td><td>0,52</td><td>1,300</td></tr><tr><td>ПБК36.12-5а</td><td>3590</td><td>1240</td><td>340</td><td>0,52</td><td>1,300</td></tr><tr><td>ПБК24.13-6</td><td>2390</td><td>1340</td><td>440</td><td>0,31</td><td>0,950</td></tr><tr><td>ПБК24.13-6а</td><td>2390</td><td>1340</td><td>440</td><td>0,31</td><td>0,950</td></tr><tr><td>ПБК27.13-6 </td><td>2690</td><td>1340</td><td>440</td><td>0,43</td><td>1,075</td></tr><tr><td>ПБК27.13-6а</td><td>2690</td><td>1340</td><td>440</td><td>0,43</td><td>1,075</td></tr><tr><td>ПБК33.13-6</td><td>3290</td><td>1340</td><td>440</td><td>0,53</td><td>1,325</td></tr><tr><td>ПБК33.13-6а</td><td>3290</td><td>1340</td><td>440</td><td>0,53</td><td>1,325</td></tr><tr><td>ПБК36.13-6 </td><td>3590</td><td>1340</td><td>440</td><td>0,57</td><td>1,425</td></tr><tr><td>ПБК36.13-6а</td><td>3590</td><td>1340</td><td>440</td><td>0,57</td><td>1,425</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/balkonnie-pliti-pbk-bp-pb-pl/balkonnie-pliti-pb3/",
+      "slug": "balkonnie-pliti-pb3",
+      "title": "Балконные плиты ПБ-3",
+      "image": "/core/storage/cf9a0d68d92ffbdb421d4ddbbeff54f3/original.jpg",
+      "purpose": "",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ПБ-3</td><td>ГУП 8 ПИ МО РФ Воронеж 71-97-2</td><td>5260</td><td>2010</td><td>220</td><td>1,5</td><td>3,750</td><td>В15F100</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/balkonnie-pliti-pbk-bp-pb-pl/balkonnie-pliti-pl3-pl4/",
+      "slug": "balkonnie-pliti-pl3-pl4",
+      "title": "Балконные плиты ПЛ-3, ПЛ-4",
+      "image": "/core/storage/e9be1750c83743acc9bb9846422f774a/original.jpg",
+      "purpose": "",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Масса, т</th><th rowspan=\"2\"> Марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ПЛ-3лев., пр.</td><td rowspan=\"2\">Воронежпроект</td><td>2930</td><td>1570</td><td>300/100</td><td>0,83</td><td>2,075</td><td rowspan=\"2\">М300</td></tr><tr><td>ПЛ-4лев., пр.</td><td>2930</td><td>1570</td><td>300/100</td><td>0,83</td><td>2,075</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/kozirki-vhoda-kv/",
+    "slug": "kozirki-vhoda-kv",
+    "title": "Козырьки входа (КВ)",
+    "image": "/core/storage/7b57a4c087255b839aea39521ba48fda/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/kozirki-vhoda-kv/kozirki-vhoda/",
+      "slug": "kozirki-vhoda",
+      "title": "Козырьки входа",
+      "image": "/core/storage/7b57a4c087255b839aea39521ba48fda/512.webp",
+      "purpose": "Козырьки входов предназначены для применения в общественных зданиях и зданиях административнобытового назначения со стенами из кирпича и крупных блоков, возводимых в обычных условиях строительства.",
+      "code": [
+       "КВ 18.16-Т"
+      ],
+      "notation": [
+       "КВ – козырек входа",
+       "18 – длиной 1840 мм (в дм с округлением до целого числа)",
+       "16 – шириной 1550 мм (в дм с округлением до целого числа)",
+       "Т – из тяжелого бетона"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м3</th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>КВ 18.16-Т</td><td>1840</td><td>1550</td><td>140</td><td>0,3</td><td>0,75</td><td>М200</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/ventilyatsionnie-bloki-vbp/",
+    "slug": "ventilyatsionnie-bloki-vbp",
+    "title": "Вентиляционные блоки (ВБП)",
+    "image": "/core/storage/65fd76d727fcf71c44e2ec601a6e16e3/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/ventilyatsionnie-bloki-vbp/ventilyatsionnie-bloki/",
+      "slug": "ventilyatsionnie-bloki",
+      "title": "Вентиляционные блоки",
+      "image": "/core/storage/65fd76d727fcf71c44e2ec601a6e16e3/512.webp",
+      "purpose": "Вентиляционные блоки предназначены для всех видов строительства для жилых зданий до 9 этажей с высотой этажа 2,8 и 3,0 метра, строящихся в районах с обычными инженерногеологическими условиями.",
+      "code": [
+       "ВБП 9.28-3т"
+      ],
+      "notation": [
+       "ВБ – вентиляционный блок",
+       "П – поэтажный",
+       "9 – шириной 880 мм (в дм с округлением до целого числа)",
+       "28 – высотой 2790 мм (в дм с округлением до целого числа)",
+       "3 – толщиной 300 м (в дм)",
+       "Т – из тяжелого бетона"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м3</th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Высота, H</th><th>Ширина, В</th><th>Толщина, A</th></tr></thead><tbody><tr><td>ВБП 9.28.3-Т</td><td>2790</td><td>880</td><td>300</td><td>0,736</td><td>0,80</td><td rowspan=\"2\">М150</td></tr><tr><td>ВБП 9.30.3-Т</td><td>2990</td><td>880</td><td>300</td><td>0,79</td><td>0,85</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/ventilyatsionnie-bloki-vbp/ventilyatsionnie-bloki-4bv1/",
+      "slug": "ventilyatsionnie-bloki-4bv1",
+      "title": "Вентиляционные блоки 4БВ-1",
+      "image": "/core/storage/38c9533b5c859654c1c0d0f61b6bc62e/original.jpg",
+      "purpose": "Вентиляционные блоки предназначены для панельнокирпичного и монолитного домостроения до 17 этажей с высотой этажа 2,8 метра.",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м3</th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Высота, H</th><th>Ширина, В</th><th>Толщина, A</th></tr></thead><tbody><tr><td>4БВ-1</td><td>2780</td><td>890</td><td>410</td><td>0,44</td><td>1,26</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/ventilyatsionnie-bloki-vbp/ventilyatsionnie-bloki-2bv1/",
+      "slug": "ventilyatsionnie-bloki-2bv1",
+      "title": "Вентиляционные блоки 2БВ-1",
+      "image": "/core/storage/d56317d18b6d4b07ad233475929fb685/original.png",
+      "purpose": "Вентиляционные блоки серии МНИИТЭП предназначены для панельнокирпичного и монолитного домостроения до 17 этажей с высотой этажа 2,8 и 3,0 метра.",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table></table>",
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем изделия, м<sup>3</sup></th><th rowspan=\"2\">Масса, т</th></tr><tr><th>Высота, H</th><th>Ширина, В</th><th>Толщина, A</th></tr></thead><tbody><tr><td>БВ-1</td><td>2780</td><td>890</td><td>410</td><td>1,015</td><td>1,110</td></tr><tr><td>БВ-2</td><td>2780</td><td>890</td><td>410</td><td>1,015</td><td>0,980</td></tr><tr><td>БВ-3</td><td>2980</td><td>890</td><td>410</td><td>1,087</td><td>1,236</td></tr><tr><td>БВ-4</td><td>2980</td><td>890</td><td>410</td><td>1,087</td><td>1,121</td></tr><tr><td>2БВ-1</td><td>2780</td><td>700</td><td>350</td><td>0,682</td><td>0,900</td></tr><tr><td>4БВ-1</td><td>2780</td><td>890</td><td>410</td><td>1,015</td><td>1,260</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/lestnichnie-ploshadki-lp/",
+    "slug": "lestnichnie-ploshadki-lp",
+    "title": "Лестничные площадки (ЛП)",
+    "image": "/core/storage/06b52e0bd35abbfc6a057dc9fa9c41a2/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/lestnichnie-ploshadki-lp/lestnichnaya-ploshadka-lp-1514/",
+      "slug": "lestnichnaya-ploshadka-lp-1514",
+      "title": "Лестничная площадка ЛП 15-14",
+      "image": "/core/storage/976945a85e4693b64f60d8618bccc79a/original.jpg",
+      "purpose": "Лестничная площадка ЛП 15-14 предназначена для установки в верхнем этаже.",
+      "code": [
+       "ЛП 15-14"
+      ],
+      "notation": [
+       "ЛП – лестничная площадка ребристая",
+       "15 – ширина лестничной клетки (в дм)",
+       "14 – ширина площадки (в дм)"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Ширина, В</th><th>Длина, L</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ЛП15-14</td><td>Серия ИИ04-7</td><td>1490</td><td>1385</td><td>300</td><td>0,234</td><td>0,585</td><td>М200</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/lestnichnie-ploshadki-lp/lestnichnie-ploshadki-2216-2813/",
+      "slug": "lestnichnie-ploshadki-2216-2813",
+      "title": "Лестничные площадки 22-16, 28-13, 28-15",
+      "image": "/core/storage/06b52e0bd35abbfc6a057dc9fa9c41a2/512.webp",
+      "purpose": "",
+      "code": [
+       "ЛП 28-13"
+      ],
+      "notation": [
+       "ЛП – лестничная площадка ребристая",
+       "28 – ширина лестничной клетки (в дм)",
+       "13 – ширина площадки, включая ширину фризовой ступени марша (в дм)"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Ширина, B(b)</th><th>Длина, L</th><th>Высота, Н(h)</th></tr></thead><tbody><tr><td>ЛП 22-16</td><td>Серия ИИ03-02 альбом 30-64</td><td>2440(2180)</td><td>1440</td><td>300(150)</td><td>0,235</td><td>0,635</td><td>М300</td></tr><tr><td>ЛП 28-13</td><td rowspan=\"2\">Серия 1.250-1 выпуск 1</td><td>3040(2780)</td><td>1140</td><td>350(200)</td><td>0,290</td><td>0,855</td><td rowspan=\"2\">М200</td></tr><tr><td>ЛП 28-15</td><td>3040(2780)</td><td>1340</td><td>350(200)</td><td>0,323</td><td>0,959</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/lestnichnie-ploshadki-lp/lestnichnie-ploshadki-2lp/",
+      "slug": "lestnichnie-ploshadki-2lp",
+      "title": "Лестничные площадки 2ЛП",
+      "image": "/core/storage/b4f71afda7d81547fd76075d3199ced7/512.webp",
+      "purpose": "Лестничные ребристые площадки в сочетании с плоскими лестничными маршами без фризовых ступеней предназначены для устройства двухмаршевых лестниц в жилых зданиях со стенами из кирпича, с высотой этажа 2,8 м для обычных условий строительства.",
+      "code": [
+       "2ЛП25.15в-4к"
+      ],
+      "notation": [
+       "2ЛП – лестничная площадка ребристая",
+       "25 – длиной 2500 мм (в дм)",
+       "15 – шириной 1520 мм (в дм с округлением до целого числа)",
+       "в – верхняя (конечная)",
+       "4 – с расчетной временной нагрузкой 3,5 кПа (360 кгс/м2)",
+       "к – с опорными консолями"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Ширина, B(b)</th><th>Длина, L</th><th>Высота, Н(h)</th></tr></thead><tbody><tr><td>2ЛП 22.12-4-к </td><td rowspan=\"4\">Серия 1.152.1-8</td><td>2480(2200)</td><td>1300</td><td>320(220)</td><td>0,365</td><td>1,035</td><td rowspan=\"4\">М200</td></tr><tr><td>2ЛП 25.12-4-к </td><td>2780(2500)</td><td>1300</td><td>320(220)</td><td>0,464</td><td>1,160</td></tr><tr><td>2ЛП 25.15-4-к </td><td>2780(2500)</td><td>1600</td><td>320(220)</td><td>0,538</td><td>1,345</td></tr><tr><td>2ЛП 25.15в-4-к </td><td>2780(2500)</td><td>1600</td><td>320(220)</td><td>0,549</td><td>1,370</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/lestnichnie-ploshadki-lp/lestnichnie-ploshadki-2414-i-2817/",
+      "slug": "lestnichnie-ploshadki-2414-i-2817",
+      "title": "Лестничные площадки 24-14 и 28-17",
+      "image": "/core/storage/2675bb471d4e885a7e79df88ecd78871/original.jpg",
+      "purpose": "Лестничные площадки предназначены для промышленных зданий, рассчитаны на полезную нормативную нагрузку 400 кгс/м2.",
+      "code": [
+       "ЛП 24-14"
+      ],
+      "notation": [
+       "ЛП – лестничная площадка ребристая",
+       "24 – ширина лестничной клетки (в дм)",
+       "14 – ширина площадки (в дм)",
+       "Для верхних площадок, отличающихся от основных наличием дополнительных закладных деталей для крепления ограждения, к марке добавляется индекс «а»"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м3</th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Ширина, В</th><th>Длина, L</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ЛП 24-14 </td><td rowspan=\"2\">Серия ИИ-65</td><td>2600</td><td>1150</td><td>250</td><td>0,310</td><td>0,780</td><td rowspan=\"2\">М200</td></tr><tr><td>ЛП 28-17 </td><td>3000</td><td>1450</td><td>250</td><td>0,440</td><td>1,100</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/peremichki-pp-pb/",
+    "slug": "peremichki-pp-pb",
+    "title": "Перемычки (ПП, ПБ)",
+    "image": "/core/storage/ff813092d6d7fb8731ea2de6d2c68062/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/peremichki-pp-pb/peremichki-s-gazosilikatom/",
+      "slug": "peremichki-s-gazosilikatom",
+      "title": "Перемычки с газосиликатом",
+      "image": "/core/storage/5ae16d8a0e6cac33992cf6b3d163bcd8/512.webp",
+      "purpose": "Перемычки предназначены для устройства трехслойных кирпичных стен.",
+      "code": [
+       "ПБ 18.6.2-т"
+      ],
+      "notation": [
+       "ПБ – перемычка",
+       "18 – длиной 1860 мм (в дм с округлением до целого числа)",
+       "6 – шириной 640 мм (в дм с округлением до целого числа)",
+       "2 – высотой 190 мм",
+       "т – из тяжелого бетона",
+       "Индекс «1» обозначает ненесущую перемычку"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ПБ 26.6.2-т</td><td>2610</td><td>640</td><td>290</td><td>0,27</td><td>0,675</td></tr><tr><td>ПБ 23.6.2-т</td><td>2310</td><td>640</td><td>290</td><td>0,24</td><td>0,600</td></tr><tr><td>ПБ 18.6.2-т</td><td>1860</td><td>640</td><td>290</td><td>0,18</td><td>0,450</td></tr><tr><td>ПБ 17.6.2-т</td><td>1710</td><td>640</td><td>290</td><td>0,17</td><td>0,425</td></tr><tr><td>ПБ 14.6.2-т</td><td>1410</td><td>640</td><td>290</td><td>0,14</td><td>0,350</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/peremichki-pp-pb/peremichki-balochnie/",
+      "slug": "peremichki-balochnie",
+      "title": "Перемычки балочные",
+      "image": "/core/storage/d414330f5a1ed98ec833da962e3c274a/512.webp",
+      "purpose": "Перемычки изготавливаются из тяжелого бетона марки по прочности на сжатие М200.",
+      "code": [
+       "2ПГ 44-31"
+      ],
+      "notation": [
+       "2 – перемычка сечением 250×440 мм",
+       "ПГ – перемычка Г-образная",
+       "44 – длиной 4410 мм (в дм с округлением до целого числа)",
+       "31 – под расчетную нагрузку 31,4 кН/м (3100 кгс/м) с учетом собственного веса (с округлением до целого числа)"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"3\">Марка</th><th rowspan=\"3\">Нормативный документ</th><th colspan=\"5\">Размеры, мм</th><th rowspan=\"3\">Минимальная глубина опирания, мм</th><th rowspan=\"3\">Объем, м3</th><th rowspan=\"3\">Масса, т</th></tr><tr><th rowspan=\"2\">Длина, L</th><th rowspan=\"2\">Ширина, В</th><th rowspan=\"2\">Высота, Н</th><th colspan=\"2\">Четверть</th></tr><tr><th>Н1</th><th>В1</th></tr></thead><tbody><tr><td>5ПГ 26-40</td><td rowspan=\"9\">Серия 1.038.1-1 выпуск 3</td><td>2590</td><td>380</td><td>290</td><td>140</td><td>130</td><td>230</td><td>0,238</td><td>0,596</td></tr><tr><td>2ПГ 39-31</td><td>3890</td><td>250</td><td>440</td><td>220</td><td>130</td><td>230</td><td>0,317</td><td>0,792</td></tr><tr><td>2ПГ 42-31</td><td>4150</td><td>250</td><td>440</td><td>220</td><td>130</td><td>250</td><td>0,338</td><td>0,845</td></tr><tr><td>1ПГ 44-8</td><td>4410</td><td>250</td><td>290</td><td>220</td><td>130</td><td>230</td><td>0,194</td><td>0,484</td></tr><tr><td>2ПГ 44-31</td><td>4410</td><td>250</td><td>440</td><td>220</td><td>130</td><td>250</td><td>0,359</td><td>0,897</td></tr><tr><td>6ПГ 44-40</td><td>4410</td><td>380</td><td>440</td><td>220</td><td>130</td><td>250</td><td>0,611</td><td>1,528</td></tr><tr><td>1ПГ 48-8</td><td>4800</td><td>250</td><td>290</td><td>220</td><td>130</td><td>300</td><td>0,211</td><td>0,527</td></tr><tr><td>2ПГ 48-31</td><td>4800</td><td>250</td><td>440</td><td>220</td><td>130</td><td>300</td><td>0,391</td><td>0,977</td></tr><tr><td>6ПГ 60-31</td><td>5960</td><td>380</td><td>440</td><td>220</td><td>130</td><td>300</td><td>0,826</td><td>2,065</td></tr><tr><td>5ПГ 35-17</td><td rowspan=\"2\">Серия 1.038.1-1 выпуск 12</td><td>3500</td><td>380</td><td>290</td><td>140</td><td>130</td><td>250</td><td>0,322</td><td>0,805</td></tr><tr><td>5ПГ 35-37</td><td>3500</td><td>380</td><td>290</td><td>140</td><td>130</td><td>250</td><td>0,322</td><td>0,805</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/peremichki-pp-pb/peremichki-plitnie/",
+      "slug": "peremichki-plitnie",
+      "title": "Перемычки плитные",
+      "image": "/core/storage/52c52723d132f3bbc019e0c19c30d432/512.webp",
+      "purpose": "Перемычки изготавливаются из тяжелого бетона марки по прочности на сжатие М200.",
+      "code": [
+       "8ПП 27-71"
+      ],
+      "notation": [
+       "8 – перемычка сечением 380×190 мм",
+       "ПП – перемычка плитная",
+       "27 – длиной 2720 мм (в дм с округлением до целого числа)",
+       "71 – под расчетную нагрузку 70,6 кН/м (7200 кгс/м) с учетом собственного веса (с округлением до целого числа)"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Минимальная глубина опирания, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>8ПП 18-71</td><td>1810</td><td>380</td><td>190</td><td>170</td><td>0,131</td><td>0,327</td></tr><tr><td>8ПП 21-71</td><td>2070</td><td>380</td><td>190</td><td>170</td><td>0,149</td><td>0,374</td></tr><tr><td>8ПП 27-71</td><td>2720</td><td>380</td><td>190</td><td>230</td><td>0,196</td><td>0,491</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/peremichki-pp-pb/peremichki-bruskovie/",
+      "slug": "peremichki-bruskovie",
+      "title": "Перемычки брусковые",
+      "image": "/core/storage/ff813092d6d7fb8731ea2de6d2c68062/512.webp",
+      "purpose": "Перемычки предназначены для перекрытия проемов в кирпичных стенах жилых зданий, возводимых в обычных условиях строительства.",
+      "code": [
+       "5ПБ 27-37"
+      ],
+      "notation": [
+       "5 – перемычка сечением 250×220 мм",
+       "ПБ – перемычка брусковая",
+       "27 – длиной 2720 мм (в дм с округлением до целого числа)",
+       "37 – под расчетную нагрузку 37,3 кН/м (3800 кгс/м) с учетом собственного веса (с округлением до целого числа)",
+       "В перемычках, имеющих строповочные петли, добавлена строчная буква «п» (5ПБ 27-37п), а в перемычках с анкерными выпусками для крепления балконных плит добавлена строчная буква «а» (10ПБ 27-27а)"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Мин. глубина опирания, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>2ПБ 16-2п</td><td rowspan=\"11\">Серия 1.038.1-1 выпуск 1</td><td>1550</td><td>120</td><td>140</td><td>100</td><td>0,026</td><td>0,065</td></tr><tr><td>2ПБ 17-2п</td><td>1680</td><td>120</td><td>140</td><td>100</td><td>0,028</td><td>0,071</td></tr><tr><td>5ПБ 18-27п</td><td>1810</td><td>250</td><td>220</td><td>170</td><td>0,100</td><td>0,250</td></tr><tr><td>5ПБ 21-27п</td><td>2070</td><td>250</td><td>220</td><td>170</td><td>0,114</td><td>0,285</td></tr><tr><td>5ПБ 25-37п</td><td>2460</td><td>250</td><td>220</td><td>230</td><td>0,135</td><td>0,338</td></tr><tr><td>5ПБ 27-37п</td><td>2720</td><td>250</td><td>220</td><td>230</td><td>0,150</td><td>0,375</td></tr><tr><td>5ПБ 30-27п</td><td>2980</td><td>250</td><td>220</td><td>230</td><td>0,164</td><td>0,410</td></tr><tr><td>5ПБ 30-37п</td><td>2980</td><td>250</td><td>220</td><td>230</td><td>0,164</td><td>0,410</td></tr><tr><td>5ПБ 31-27п</td><td>3110</td><td>250</td><td>220</td><td>230</td><td>0,171</td><td>0,428</td></tr><tr><td>5ПБ 34-20п</td><td>3370</td><td>250</td><td>220</td><td>230</td><td>0,185</td><td>0,463</td></tr><tr><td>5ПБ 36-20п</td><td>3630</td><td>250</td><td>220</td><td>230</td><td>0,200</td><td>0,500</td></tr><tr><td>8ПБ 10-1</td><td rowspan=\"26\">Серия 1.038.1-1 выпуск 4</td><td>1030</td><td>120</td><td>90</td><td>100</td><td>0,011</td><td>0,028</td></tr><tr><td>8ПБ 13-1</td><td>1290</td><td>120</td><td>90</td><td>100</td><td>0,014</td><td>0,035</td></tr><tr><td>8ПБ 16-1</td><td>1550</td><td>120</td><td>90</td><td>100</td><td>0,017</td><td>0,042</td></tr><tr><td>8ПБ 17-2</td><td>1680</td><td>120</td><td>90</td><td>100</td><td>0,018</td><td>0,045</td></tr><tr><td>8ПБ 19-3</td><td>1940</td><td>120</td><td>90</td><td>100</td><td>0,021</td><td>0,052</td></tr><tr><td>9ПБ 13-37п</td><td>1290</td><td>120</td><td>190</td><td>170</td><td>0,029</td><td>0,074</td></tr><tr><td>9ПБ 16-37п</td><td>1550</td><td>120</td><td>190</td><td>170</td><td>0,035</td><td>0,088</td></tr><tr><td>9ПБ 18-8п</td><td>1810</td><td>120</td><td>190</td><td>170</td><td>0,041</td><td>0,103</td></tr><tr><td>9ПБ 18-37п</td><td>1810</td><td>120</td><td>190</td><td>200</td><td>0,041</td><td>0,103</td></tr><tr><td>9ПБ 21-8п</td><td>2070</td><td>120</td><td>190</td><td>170</td><td>0,047</td><td>0,118</td></tr><tr><td>9ПБ 22-3п</td><td>2200</td><td>120</td><td>190</td><td>100</td><td>0,005</td><td>0,125</td></tr><tr><td>9ПБ 25-3п</td><td>2460</td><td>120</td><td>190</td><td>100</td><td>0,056</td><td>0,140</td></tr><tr><td>9ПБ 25-8п</td><td>2460</td><td>120</td><td>190</td><td>170</td><td>0,056</td><td>0,140</td></tr><tr><td>9ПБ 26-4п</td><td>2590</td><td>120</td><td>190</td><td>100</td><td>0,059</td><td>0,148</td></tr><tr><td>9ПБ 27-8п</td><td>2720</td><td>120</td><td>190</td><td>170</td><td>0,062</td><td>0,155</td></tr><tr><td>9ПБ 29-4п</td><td>2850</td><td>120</td><td>190</td><td>100</td><td>0,065</td><td>0,162</td></tr><tr><td>9ПБ 30-4п</td><td>2980</td><td>120</td><td>190</td><td>150</td><td>0,068</td><td>0,170</td></tr><tr><td>10ПБ 18-27п</td><td>1810</td><td>250</td><td>190</td><td>170</td><td>0,086</td><td>0,215</td></tr><tr><td>10ПБ 21-27п</td><td>2070</td><td>250</td><td>190</td><td>170</td><td>0,068</td><td>0,246</td></tr><tr><td>10ПБ 21-27ап</td><td>2070</td><td>250</td><td>190</td><td>170</td><td>0,068</td><td>0,246</td></tr><tr><td>10ПБ 25-27п</td><td>2460</td><td>250</td><td>190</td><td>230</td><td>0,117</td><td>0,292</td></tr><tr><td>10ПБ 25-27ап</td><td>2460</td><td>250</td><td>190</td><td>230</td><td>0,117</td><td>0,292</td></tr><tr><td>10ПБ 25-37п</td><td>2460</td><td>250</td><td>190</td><td>230</td><td>0,117</td><td>0,292</td></tr><tr><td>10ПБ 27-27п</td><td>2720</td><td>250</td><td>190</td><td>230</td><td>0,129</td><td>0,323</td></tr><tr><td>10ПБ 27-27ап</td><td>2720</td><td>250</td><td>190</td><td>230</td><td>0,129</td><td>0,323</td></tr><tr><td>10ПБ 27-37п</td><td>2720</td><td>250</td><td>190</td><td>230</td><td>0,129</td><td>0,323</td></tr><tr><td>6ПБ 35-37</td><td>Серия 1.038.1-1 выпуск 12</td><td>3500</td><td>250</td><td>290</td><td>250</td><td>0,254</td><td>0,634</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/lestnichnie-stupeni-ls/",
+    "slug": "lestnichnie-stupeni-ls",
+    "title": "Лестничные ступени (ЛС)",
+    "image": "/core/storage/c56106a60055a02fca4768e03fe9c7a3/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/lestnichnie-stupeni-ls/lestnichnie-stupeni/",
+      "slug": "lestnichnie-stupeni",
+      "title": "Лестничные ступени",
+      "image": "/core/storage/c56106a60055a02fca4768e03fe9c7a3/512.webp",
+      "purpose": "Лестничные ступени предназначены для устройства внутренних и наружных лестниц жилых, общественных и производственных зданий и сооружений, возводимых в обычных условиях строительства.",
+      "code": [
+       "ЛС11.17"
+      ],
+      "notation": [
+       "ЛС – лестничная ступень основная",
+       "11 – длиной 1050 мм (в дм округлением до целого числа)",
+       "17 – высотой 171 мм (в см с округлением до целого числа)",
+       "Наличие в основных ступенях закладных деталей отражается в марке арабскими цифрами через дефис (цифрой 1 – наличие закладных деталей, воспринимающих горизонтальную нагрузку 100 кгс/м). В марке ступеней для лестниц с подъемом по часовой стрелке дополнительно приводится обозначение «лев»"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"2\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Масса, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, L</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ЛС11.17</td><td>1050</td><td>171</td><td>0,046</td><td>0,115</td><td rowspan=\"5\">М200</td></tr><tr><td>ЛС11</td><td>1050</td><td>148</td><td>0,046</td><td>0,115</td></tr><tr><td>ЛС12</td><td>1200</td><td>148</td><td>0,053</td><td>0,135</td></tr><tr><td>ЛС14</td><td>1350</td><td>148</td><td>0,060</td><td>0,150</td></tr><tr><td>ЛС15</td><td>1500</td><td>148</td><td>0,067</td><td>0,165</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/pliti-pustotnie-pk/",
+    "slug": "pliti-pustotnie-pk",
+    "title": "Плиты пустотные (ПК)",
+    "image": "/core/storage/8a45f0317891ad4b74f8e238895f39ac/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/pliti-pustotnie-pk/pliti-pustotnie/",
+      "slug": "pliti-pustotnie",
+      "title": "Плиты пустотные",
+      "image": "/core/storage/8a45f0317891ad4b74f8e238895f39ac/512.webp",
+      "purpose": "Плиты с круглыми пустотами предназначены для перекрытия жилых и общественных зданий с центральным отоплением, нормально работающей вентиляцией и качественно выполненной гидроизоляцией в санузлах, душевых и ванных комнатах.",
+      "code": [
+       "ПК 63.12-8АтVта"
+      ],
+      "notation": [
+       "ПК – панель перекрытия круглопустотная",
+       "63 – длиной 628 см (в дм с округлением до целого числа)",
+       "12 – шириной 119 см (в дм с округлением до целого числа)",
+       "8 – под расчетную нагрузку 800 кгс/м2 без учета собственного веса",
+       "а – с усилением торцов бетонными вкладышами"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс/марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>П 90.12-8АтVта</td><td>Серия 1.241-1 выпуск 39</td><td>8980</td><td>1190</td><td>220</td><td>2,35</td><td>3,17</td><td>В30</td></tr><tr><td>ПК 72.15-8АтVта</td><td rowspan=\"3\">Серия 1.090.1-1/88 выпуск 5-1</td><td>7180</td><td>1490</td><td>220</td><td>2.35</td><td>3,40</td><td rowspan=\"3\">В25</td></tr><tr><td>ПК 72.12-8АтVта</td><td>7180</td><td>1190</td><td>220</td><td>1.88</td><td>2,58</td></tr><tr><td>ПК 72.10-8АтVта</td><td>7180</td><td>990</td><td>220</td><td>1.56</td><td>2,15</td></tr><tr><td>ПК 66.15-8АтVта</td><td rowspan=\"3\">Серия 1.241-1 выпуск 36</td><td>6580</td><td>1490</td><td>220</td><td>2.16</td><td>3,10</td><td rowspan=\"3\">В20</td></tr><tr><td>ПК 66.12-8АтVта</td><td>6580</td><td>1190</td><td>220</td><td>1.72</td><td>2,40</td></tr><tr><td>ПК 66.10-8АтVта</td><td>6580</td><td>990</td><td>220</td><td>1.43</td><td>1,98</td></tr><tr><td>ПК 63.15-8АтVта</td><td rowspan=\"3\">Серия 1.141-1 выпуск 63</td><td>6280</td><td>1490</td><td>220</td><td>2.06</td><td>2,98</td><td rowspan=\"3\">М200</td></tr><tr><td>ПК 63.12-8АтVта</td><td>6280</td><td>1190</td><td>220</td><td>1.64</td><td>2,25</td></tr><tr><td>ПК 63.10-8АтVта</td><td>6280</td><td>990</td><td>220</td><td>1.37</td><td>1,85</td></tr><tr><td>ПК 60.15-8АтVта</td><td rowspan=\"3\">Серия 1.141-1 выпуск 63</td><td>5980</td><td>1490</td><td>220</td><td>1.96</td><td>2,85</td><td rowspan=\"3\">М200</td></tr><tr><td>ПК 60.12-8АтVта</td><td>5980</td><td>1190</td><td>220</td><td>1.57</td><td>2,15</td></tr><tr><td>ПК 60.10-8АтVта</td><td>5980</td><td>990</td><td>220</td><td>1.30</td><td>1,78</td></tr><tr><td>ПК 57.15-8АтVта</td><td rowspan=\"3\">Серия 1.141-1 выпуск 63</td><td>5680</td><td>1490</td><td>220</td><td>1.86</td><td>2,70</td><td rowspan=\"3\">М200</td></tr><tr><td>ПК 57.12-8АтVта</td><td>5680</td><td>1190</td><td>220</td><td>1.49</td><td>2,05</td></tr><tr><td>ПК 57.10-8АтVта</td><td>5680</td><td>990</td><td>220</td><td>1.24</td><td>1,70</td></tr><tr><td>ПК 54.15-8АтVта</td><td rowspan=\"3\">Серия 1.141-1 выпуск 63</td><td>5380</td><td>1490</td><td>220</td><td>1.76</td><td>2,58</td><td rowspan=\"3\">М200</td></tr><tr><td>ПК 54.12-8АтVта</td><td>5380</td><td>1190</td><td>220</td><td>1.41</td><td>1,95</td></tr><tr><td>ПК 54.10-8АтVта</td><td>5380</td><td>990</td><td>220</td><td>1,17</td><td>1,60</td></tr><tr><td>ПК 51.15-8АтVта</td><td rowspan=\"3\">Серия 1.141-1 выпуск 63</td><td>5080</td><td>1490</td><td>220</td><td>1.67</td><td>2,43</td><td rowspan=\"3\">М200</td></tr><tr><td>ПК 51.12-8АтVта</td><td>5080</td><td>1190</td><td>220</td><td>1.33</td><td>1,83</td></tr><tr><td>ПК 51.10-8АтVта</td><td>5080</td><td>990</td><td>220</td><td>1,11</td><td>1,53</td></tr><tr><td>ПК 48.15-8АтVта</td><td rowspan=\"3\">Серия 1.141-1 выпуск 63</td><td>4780</td><td>1490</td><td>220</td><td>1.57</td><td>2,30</td><td rowspan=\"3\">М200</td></tr><tr><td>ПК 48.12-8АтVта</td><td>4780</td><td>1190</td><td>220</td><td>1.25</td><td>1,73</td></tr><tr><td>ПК 48.10-8АтVта</td><td>4780</td><td>990</td><td>220</td><td>1.04</td><td>1,43</td></tr><tr><td>ПК 42.15-8та</td><td rowspan=\"3\">Серия 1.141-1 выпуск 60</td><td>4180</td><td>1490</td><td>220</td><td>1,37</td><td>2,02</td><td rowspan=\"3\">М200</td></tr><tr><td>ПК 42.12-8та</td><td>4180</td><td>1190</td><td>220</td><td>1,09</td><td>1,53</td></tr><tr><td>ПК 42.10-8та</td><td>4180</td><td>990</td><td>220</td><td>0,91</td><td>1,26</td></tr><tr><td>ПК 36.15-8та</td><td rowspan=\"3\">Серия 1.141-1 выпуск 60</td><td>3580</td><td>1490</td><td>220</td><td>1,17</td><td>1,75</td><td rowspan=\"3\">М200</td></tr><tr><td>ПК 36.12-8та</td><td>3580</td><td>1190</td><td>220</td><td>0,94</td><td>1,32</td></tr><tr><td>ПК 36.10-8та</td><td>3580</td><td>990</td><td>220</td><td>0.78</td><td>1,09</td></tr><tr><td>ПК 30.15-8та</td><td rowspan=\"3\">Серия 1.141-1 выпуск 60</td><td>2980</td><td>1490</td><td>220</td><td>0.98</td><td>1,47</td><td rowspan=\"3\">М200</td></tr><tr><td>ПК 30.12-8та</td><td>2980</td><td>1190</td><td>220</td><td>0,78</td><td>1,11</td></tr><tr><td>ПК 30.10-8та</td><td>2980</td><td>990</td><td>220</td><td>0,64</td><td>0,92</td></tr><tr><td>ПК 27.15-8та</td><td rowspan=\"3\">Серия 1.141-1 выпуск 60</td><td>2680</td><td>1490</td><td>220</td><td>0.88</td><td>1,34</td><td rowspan=\"3\">М200</td></tr><tr><td>ПК 27.12-8та</td><td>2680</td><td>1190</td><td>220</td><td>0.70</td><td>1,01</td></tr><tr><td>ПК 27.10-8та</td><td>2680</td><td>990</td><td>220</td><td>0,58</td><td>0,83</td></tr><tr><td>ПК 24.15-8та</td><td rowspan=\"3\">Серия 1.141-1 выпуск 60</td><td>2380</td><td>1490</td><td>220</td><td>0.78</td><td>1,19</td><td rowspan=\"3\">М200</td></tr><tr><td>ПК 24.12-8та</td><td>2380</td><td>1190</td><td>220</td><td>0.62</td><td>0,91</td></tr><tr><td>ПК 24.10-8та</td><td>2380</td><td>990</td><td>220</td><td>0,52</td><td>0,75</td></tr><tr><td>ПК 72.15-8АтVт-01</td><td rowspan=\"3\">ВГП 4-ИС1</td><td>7180</td><td>1490</td><td>220</td><td>2.35</td><td>4,04</td><td>В22,5</td></tr><tr><td>ПК 60.15-8АтVт-01</td><td>5980</td><td>1490</td><td>220</td><td>1.96</td><td>3,37</td><td>В15</td></tr><tr><td>ПК 30.15-8АтVт-01</td><td>2980</td><td>1490</td><td>220</td><td>0,98</td><td>1,67</td><td>В15</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/pliti-opornie-op/",
+    "slug": "pliti-opornie-op",
+    "title": "Плиты опорные (ОП)",
+    "image": "/core/storage/75d444bddeb16a84b86eb42e810ff492/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/pliti-opornie-op/pliti-opornie/",
+      "slug": "pliti-opornie",
+      "title": "Плиты опорные",
+      "image": "/core/storage/75d444bddeb16a84b86eb42e810ff492/512.webp",
+      "purpose": "Опорные плиты предназначены для применения в строительстве общественных зданий и зданий административнобытового назначения со стенами из кирпича или крупных блоков, возводимых в обычных условиях строительства.",
+      "code": [
+       "ОП 6.4-Т"
+      ],
+      "notation": [
+       "ОП – опорная плита",
+       "6 – длиной 64 см (в дм с округлением до целого числа)",
+       "4 – шириной 38см (в дм с округлением до целого числа)",
+       "Т – из тяжелого бетона"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ОП 4.4-Т</td><td>380</td><td>380</td><td>140</td><td>0,02</td><td>0,050</td></tr><tr><td>ОП 5.2-Т</td><td>510</td><td>250</td><td>140</td><td>0,02</td><td>0,045</td></tr><tr><td>ОП 5.4-Т</td><td>510</td><td>380</td><td>140</td><td>0,03</td><td>0,068</td></tr><tr><td>ОП 6.2-Т</td><td>640</td><td>250</td><td>220</td><td>0,04</td><td>0,090</td></tr><tr><td>ОП 6.4-Т</td><td>640</td><td>380</td><td>220</td><td>0,05</td><td>0,134</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/elementi-stenovie-es/",
+    "slug": "elementi-stenovie-es",
+    "title": "Элементы стеновые (ЭС)",
+    "image": "/core/storage/ea96952a1dde1b953c058f69629ec90a/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/elementi-stenovie-es/elementi-stenovie/",
+      "slug": "elementi-stenovie",
+      "title": "Элементы стеновые",
+      "image": "/core/storage/ea96952a1dde1b953c058f69629ec90a/512.webp",
+      "purpose": "Элементы стеновые предназначены для устройства трехслойных кирпичных стен.",
+      "code": [
+       "ЭС20.6.1"
+      ],
+      "notation": [
+       "ЭС – элемент стеновой",
+       "20 – длиной 1940 мм (в дм с округлением до целого числа)",
+       "6 – шириной 640 мм (в дм с округлением до целого числа)",
+       "1 – высотой 90 мм (в дм с округлением до целого числа)"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ЭС 20.6.1 </td><td>1940</td><td>640</td><td>90</td><td>0,094</td><td>0,235</td></tr><tr><td>ЭС 9.6.1 </td><td>900</td><td>640</td><td>90</td><td>0,044</td><td>0,110</td></tr><tr><td>ЭС 6.6.1 </td><td>640</td><td>640</td><td>90</td><td>0,030</td><td>0,075</td></tr><tr><td>ЭС 4.6.1 </td><td>380</td><td>640</td><td>90</td><td>0,019</td><td>0,048</td></tr><tr><td>ЭС 2.6.1 </td><td>250</td><td>640</td><td>90</td><td>0,013</td><td>0,033</td></tr><tr><td>ЭСУ 6.6.1 </td><td>640</td><td>640</td><td>90</td><td>0,030</td><td>0,075</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/progoni-prg/",
+    "slug": "progoni-prg",
+    "title": "Прогоны (ПРГ)",
+    "image": "/core/storage/328af5949d9b0c831dc3d970239b298c/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/progoni-prg/progoni/",
+      "slug": "progoni",
+      "title": "Прогоны",
+      "image": "/core/storage/328af5949d9b0c831dc3d970239b298c/512.webp",
+      "purpose": "Прогоны предназначены для применения в строительстве общественных зданий и зданий административнобытового назначения со стенами из кирпича или крупных блоков, возводимых в обычных условиях строительства.",
+      "code": [
+       "ПРГ 60.2.5-4Т"
+      ],
+      "notation": [
+       "ПРГ – прогон прямоугольного сечения",
+       "60 – длиной 598 см (в дм с округлением до целого числа)",
+       "2 – шириной 20 см (в дм)",
+       "5 – высотой 50 см (в дм)",
+       "4 – под расчетную нагрузку 39,2 кН/м (4000 кгс/м) без учета собственного веса",
+       "Т – из тяжелого бетона"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Минимальная глубина опирания, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ПРГ28.1.3-4Т</td><td>2780</td><td>120</td><td>300</td><td>180</td><td>0,10</td><td>0,25</td><td>М250</td></tr><tr><td>ПРГ32.1.4-4Т</td><td>3180</td><td>120</td><td>400</td><td>180</td><td>0,15</td><td>0,38</td><td>М250</td></tr><tr><td>ПРГ36.1.4-4Т</td><td>3580</td><td>120</td><td>400</td><td>180</td><td>0,17</td><td>0,43</td><td>М200</td></tr><tr><td>ПРГ60.2.5-4Т</td><td>5980</td><td>200</td><td>500</td><td>200</td><td>0,60</td><td>1,50</td><td>М300</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/lestnichnie-marshi-lm-lmp/",
+    "slug": "lestnichnie-marshi-lm-lmp",
+    "title": "Лестничные марши (ЛМ, ЛМП)",
+    "image": "/core/storage/89c74ed98b7cc02b3008d9f5a5b52d24/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/lestnichnie-marshi-lm-lmp/lestnichnie-marshi-lm/",
+      "slug": "lestnichnie-marshi-lm",
+      "title": "Лестничные марши ЛМ",
+      "image": "/core/storage/46a01dc6dbd706ac28c5d877278ab80d/512.webp",
+      "purpose": "Лестничные марши предназначены для применения в жилых и общественных зданиях с неагрессивной средой.",
+      "code": [
+       "ЛМ 15-12"
+      ],
+      "notation": [
+       "ЛМ – лестничный марш плоский",
+       "15 –высотой подъема 1500 мм (в дм)",
+       "12 – шириной 1150 мм (в дм с округлением до целого числа)",
+       "ЛМ – лестничный марш ребристый",
+       "28 – при этаже высотой 2,8 м (в дм)",
+       "11 – шириной 1050 мм (в дм с округлением до целого числа)",
+       "2ЛМФ – марш ребристый с фризовыми ступенями",
+       "39 – длиной 3913 мм (в дм с округлением до целого числа)",
+       "14 – шириной 1350 мм (в дм с округлением до целого числа)",
+       "17 – с высотой вертикальной проекции 1650 мм (в дм с округлением до целого числа)",
+       "5 – с расчетной временной нагрузкой 4,7 кПа (480 кгс/м2)",
+       "1ЛМ – лестничный марш плоский без фризовых ступеней"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th rowspan=\"2\">Высота этажа, м</th><th colspan=\"4\">Размеры, мм</th><th rowspan=\"2\">Объем, м3</th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, l</th><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ЛМ 12-12</td><td rowspan=\"2\">Серия ИИ-65</td><td rowspan=\"2\">2,4</td><td>3160</td><td>3309</td><td>1150</td><td>1200</td><td>0,64</td><td>1,5</td><td rowspan=\"2\">М 200</td></tr><tr><td>ЛМ 12-14</td><td>3160</td><td>3423</td><td>1350</td><td>1200</td><td>0,75</td><td>1,75</td></tr></tbody></table>",
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th rowspan=\"2\">Высота этажа, м</th><th colspan=\"4\">Размеры, мм</th><th rowspan=\"2\">Объем, м3</th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, l</th><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ЛМ 15-12</td><td rowspan=\"4\">Серия ИИ-65</td><td>3,0</td><td>3160</td><td>3558</td><td>1150</td><td>1500</td><td>0,66</td><td>1,65</td><td rowspan=\"4\">М200</td></tr><tr><td>ЛМ 15-14</td><td>3,0</td><td>3160</td><td>3444</td><td>1350</td><td>1500</td><td>0,78</td><td>1,95</td></tr><tr><td>ЛМ 18-12</td><td>3,6</td><td>3760</td><td>4228</td><td>1150</td><td>1800</td><td>0,79</td><td>1,97</td></tr><tr><td>ЛМ 18-14</td><td>3,6</td><td>3760</td><td>4228</td><td>1350</td><td>1800</td><td>0,93</td><td>2,32</td></tr><tr><td>ЛМ 28-11</td><td>Серия ИИ03-02<br>альбом 30-64</td><td>2,8</td><td>2770</td><td>3261</td><td>1050</td><td>1400</td><td>0,387</td><td>0,97</td><td>М300</td></tr><tr><td>2ЛМФ 39.14.17-5</td><td>Серия 1.251.1-4 выпуск 1</td><td>3,3</td><td>3000</td><td>3913</td><td>1350</td><td>1650</td><td>0,566</td><td>1,42</td><td>М200</td></tr><tr><td>1ЛМ 27.11.14-4</td><td rowspan=\"2\">Серия 1.151.1-6 выпуск 1</td><td>2,8</td><td>2400</td><td>2720</td><td>1050</td><td>1400</td><td>0,531</td><td>1,33</td><td rowspan=\"2\">М300</td></tr><tr><td>1ЛМ 27.12.14-4</td><td>2,8</td><td>2400</td><td>2720</td><td>1200</td><td>1400</td><td>0,607</td><td>1,52</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-grazhdanskih/lestnichnie-marshi-lm-lmp/lestnichnie-marshi-lmp/",
+      "slug": "lestnichnie-marshi-lmp",
+      "title": "Лестничные марши ЛМП",
+      "image": "/core/storage/89c74ed98b7cc02b3008d9f5a5b52d24/512.webp",
+      "purpose": "Лестничные марши ЛМП предназначены для применения в крупнопанельных общественных зданиях и вспомогательных зданиях промышленных предприятий;",
+      "code": [
+       "ЛМП 57.11.17-5"
+      ],
+      "notation": [
+       "ЛМП – лестничный марш ребристый",
+       "57 – длиной 5650 мм (в дм с округлением до целого числа)",
+       "11 – шириной 1150 мм (в дм)",
+       "17 – с высотой вертикальной проекции 1700 мм (в дм)",
+       "5 – с расчетной временной нагрузкой 4,7 кПа (480 кгс/м2)"
+      ],
+      "tables": [
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Высота этажа, м</th><th colspan=\"2\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>a</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ЛМП 57.11.14-5</td><td>2,8</td><td>1475</td><td>1400</td><td>0,9</td><td>2,25</td><td rowspan=\"4\">В25</td></tr><tr><td>ЛМП 57.11.15-5</td><td>3,0</td><td>1475</td><td>1500</td><td>0,92</td><td>2,30</td></tr><tr><td>ЛМП 57.11.17-5</td><td>3,4</td><td>1325</td><td>1700</td><td>0,95</td><td>2,38</td></tr><tr><td>ЛМП 57.11.18-5</td><td>3,6</td><td>1175</td><td>1800</td><td>0,95</td><td>2,38</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/",
+  "slug": "izdeliya-dlya-ustroystva-kommunikatsiy",
+  "title": "Изделия для устройства коммуникаций",
+  "image": "/core/storage/58495a5243586cb8cb3d036e2783a2c3/512.webp",
+  "groups": [
+   {
+    "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/koltsa-kts-krishki-ktsp-i-dnisha-ktsd/",
+    "slug": "koltsa-kts-krishki-ktsp-i-dnisha-ktsd",
+    "title": "Кольца (КЦ), крышки (КЦП) и днища (КЦД) колодцев",
+    "image": "/core/storage/93bbf00f54ffaee578af6b243214b1a7/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/koltsa-kts-krishki-ktsp-i-dnisha-ktsd/koltsa-kolodtsev/",
+      "slug": "koltsa-kolodtsev",
+      "title": "Кольца колодцев",
+      "image": "/core/storage/93bbf00f54ffaee578af6b243214b1a7/512.webp",
+      "purpose": "Изделия предназначены для применения в типовых и индивидуальных проектах сборных железобетонных круглых емкостных сооружений.",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Диаметр, Дн</th><th>Диаметр, Двн</th><th>Высота, Н</th></tr></thead><tbody><tr><td>КЦ10-6</td><td rowspan=\"6\">Серия 3.900-3 вып.7</td><td>1160</td><td>1000</td><td>590</td><td>0,16</td><td>0,40</td></tr><tr><td>КЦ10-9</td><td>1160</td><td>1000</td><td>890</td><td>0,24</td><td>0,60</td></tr><tr><td>КЦ15-6</td><td>1680</td><td>1500</td><td>590</td><td>0,265</td><td>0,66</td></tr><tr><td>КЦ15-9</td><td>1680</td><td>1500</td><td>890</td><td>0,4</td><td>1,00</td></tr><tr><td>КЦ20-6</td><td>2200</td><td>2000</td><td>590</td><td>0,39</td><td>0,98</td></tr><tr><td>КЦ20-9</td><td>2200</td><td>2000</td><td>890</td><td>0,59</td><td>1,47</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/koltsa-kts-krishki-ktsp-i-dnisha-ktsd/dnisha-kolodtsev/",
+      "slug": "dnisha-kolodtsev",
+      "title": "Днища колодцев",
+      "image": "/core/storage/9fc776eb242f3ec1729ab1cbd5ca5459/original.jpg",
+      "purpose": "Изделия предназначены для применения в типовых и индивидуальных проектах сборных железобетонных круглых емкостных сооружений.",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"2\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Диаметр, Дн</th><th>Высота, Н</th></tr></thead><tbody><tr><td>КЦД 10</td><td rowspan=\"3\">Серия 3.900-3 вып.7</td><td>1500</td><td>100</td><td>0,18</td><td>0,44</td></tr><tr><td>КЦД 15</td><td>2000</td><td>120</td><td>0,38</td><td>0,94</td></tr><tr><td>КЦД 20</td><td>2500</td><td>120</td><td>0,59</td><td>1,47</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/koltsa-kts-krishki-ktsp-i-dnisha-ktsd/krishki-kolodtsev/",
+      "slug": "krishki-kolodtsev",
+      "title": "Крышки колодцев",
+      "image": "/core/storage/7bc14b6d403e41648a718045d3fbfeb1/512.webp",
+      "purpose": "Изделия предназначены для применения в типовых и индивидуальных проектах сборных железобетонных круглых емкостных сооружений.",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Диаметр, Дн</th><th>Высота, Н</th><th>Диаметр отверстия</th></tr></thead><tbody><tr><td>КЦП1-10-1</td><td rowspan=\"6\">Серия 3.900-3 вып.7</td><td>1160</td><td>150</td><td>700</td><td>0,1</td><td>0,25</td></tr><tr><td>КЦП1-10-2</td><td>1160</td><td>150</td><td>700</td><td>0,1</td><td>0,25</td></tr><tr><td>КЦП2-15-1</td><td>1680</td><td>150</td><td>700</td><td>0,27</td><td>0,68</td></tr><tr><td>КЦП2-15-2</td><td>1680</td><td>150</td><td>700</td><td>0,27</td><td>0,68</td></tr><tr><td>КЦП2-20-1</td><td>2200</td><td>150</td><td>700</td><td>0,51</td><td>1,28</td></tr><tr><td>КЦП2-20-2</td><td>2200</td><td>150</td><td>700</td><td>0,51</td><td>1,28</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/balki-teplotrass-b/",
+    "slug": "balki-teplotrass-b",
+    "title": "Балки теплотрасс (Б)",
+    "image": "/core/storage/5ab3cbe5d7febbb4430c0b6866d0a191/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/balki-teplotrass-b/balki-teplotrass-seriya-30061282/",
+      "slug": "balki-teplotrass-seriya-30061282",
+      "title": "Балки теплотрасс серия 3.006.1-2/82 выпуск 2-2",
+      "image": "/core/storage/5ab3cbe5d7febbb4430c0b6866d0a191/512.webp",
+      "purpose": "Железобетонные балки предназначены для устройства узлов трасс каналов и тоннелей.",
+      "code": [
+       "Б-8"
+      ],
+      "notation": [
+       "Б – балка",
+       "8 – порядковый номер"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>Б1</td><td>1160</td><td>150</td><td>300</td><td>0,05</td><td>0,13</td></tr><tr><td>Б2</td><td>1480</td><td>200</td><td>300</td><td>0,09</td><td>0,22</td></tr><tr><td>Б3</td><td>1840</td><td>250</td><td>300</td><td>0,14</td><td>0,35</td></tr><tr><td>Б4</td><td>2160</td><td>300</td><td>300</td><td>0,19</td><td>0,49</td></tr><tr><td>Б5</td><td>2650</td><td>300</td><td>300</td><td>0,24</td><td>0,60</td></tr><tr><td>Б6</td><td>2780</td><td>300</td><td>600</td><td>0,50</td><td>1,20</td></tr><tr><td>Б7</td><td>3380</td><td>350</td><td>600</td><td>0,71</td><td>1,77</td></tr><tr><td>Б8</td><td>4250</td><td>450</td><td>600</td><td>1,15</td><td>2,88</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/lotki-l-i-pliti-teplotrass-p-pt/",
+    "slug": "lotki-l-i-pliti-teplotrass-p-pt",
+    "title": "Лотки (Л) и плиты теплотрасс (П, ПТ, ПО)",
+    "image": "/core/storage/fad2fc41d4fd8efb38c2c9d6263ca45c/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/lotki-l-i-pliti-teplotrass-p-pt/lotki-teplotrass-seriya-30061287/",
+      "slug": "lotki-teplotrass-seriya-30061287",
+      "title": "Лотки теплотрасс серия 3.006.1-2/87 выпуск 1",
+      "image": "/core/storage/fad2fc41d4fd8efb38c2c9d6263ca45c/512.webp",
+      "purpose": "Сборные железобетонные лотковые элементы предназначены для устройства каналов и тоннелей, предназначенных для пркладки трубопроводов различного назначения, электрокабелей и электрошин.",
+      "code": [
+       "Л4-8/2"
+      ],
+      "notation": [
+       "Л – лоток",
+       "4 – порядковый номер изделия",
+       "8 – величина вертикальной равномерно-распределенной нагрузки, тс/м2",
+       "/2 – длина лотка 2970 мм",
+       "В марках доборных элементов добавляется буква «д»"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"6\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м3</th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th><th>в1</th><th>в2</th><th>h</th></tr></thead><tbody><tr><td>Л4-8/2</td><td>2970</td><td>780</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,36</td><td>0,90</td><td>В15</td></tr><tr><td>Л4-15/2</td><td>2970</td><td>780</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,36</td><td>0,90</td><td>В25</td></tr><tr><td>Л6-8/2</td><td>2970</td><td>1160</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,45</td><td>1,12</td><td>В25</td></tr><tr><td>Л6-15/2</td><td>2970</td><td>1160</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,45</td><td>1,12</td><td>В35</td></tr><tr><td>Л7-8/2</td><td>2970</td><td>1160</td><td>680</td><td>80</td><td>50</td><td>80</td><td>0,53</td><td>1,35</td><td>В25</td></tr><tr><td>Л7-15/2</td><td>2970</td><td>1160</td><td>680</td><td>80</td><td>50</td><td>80</td><td>0,53</td><td>1,35</td><td>В35</td></tr><tr><td>Л10-8/2</td><td>2970</td><td>1480</td><td>550</td><td>90</td><td>60</td><td>100</td><td>0,66</td><td>1,65</td><td>В25</td></tr><tr><td>Л10-15/2</td><td>2970</td><td>1480</td><td>550</td><td>90</td><td>60</td><td>100</td><td>0,66</td><td>1,65</td><td>В35</td></tr><tr><td>Л11-8/2</td><td>2970</td><td>1480</td><td>700</td><td>100</td><td>60</td><td>100</td><td>0,77</td><td>1,80</td><td>В25</td></tr><tr><td>Л11-15/2</td><td>2970</td><td>1480</td><td>700</td><td>100</td><td>60</td><td>100</td><td>0,77</td><td>1,80</td><td>В35</td></tr><tr><td>Л4д-8</td><td>720</td><td>780</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,09</td><td>0,23</td><td>В15</td></tr><tr><td>Л4д-15</td><td>720</td><td>780</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,09</td><td>0,23</td><td>В25</td></tr><tr><td>Л6д-8</td><td>720</td><td>1160</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,11</td><td>0,28</td><td>В25</td></tr><tr><td>Л6д-15</td><td>720</td><td>1160</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,11</td><td>0,28</td><td>В35</td></tr><tr><td>Л7д-8</td><td>720</td><td>1160</td><td>680</td><td>80</td><td>50</td><td>80</td><td>0,14</td><td>0,35</td><td>В25</td></tr><tr><td>Л7д-15</td><td>720</td><td>1160</td><td>680</td><td>80</td><td>50</td><td>80</td><td>0,14</td><td>0,35</td><td>В35</td></tr><tr><td>Л10д-8</td><td>720</td><td>1480</td><td>550</td><td>90</td><td>60</td><td>100</td><td>0,17</td><td>0,43</td><td>В25</td></tr><tr><td>Л10д-15</td><td>720</td><td>1480</td><td>550</td><td>90</td><td>60</td><td>100</td><td>0,17</td><td>0,43</td><td>В35</td></tr><tr><td>Л11д-8</td><td>720</td><td>1480</td><td>700</td><td>100</td><td>60</td><td>100</td><td>0,18</td><td>0,45</td><td>В25</td></tr><tr><td>Л11д-15</td><td>720</td><td>1480</td><td>700</td><td>100</td><td>60</td><td>100</td><td>0,18</td><td>0,45</td><td>В35</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/lotki-l-i-pliti-teplotrass-p-pt/pliti-teplotrass-seriya-30061287/",
+      "slug": "pliti-teplotrass-seriya-30061287",
+      "title": "Плиты теплотрасс серия 3.006.1-2/87 выпуск 2, 3.006.1-2/82 выпуск 1-2",
+      "image": "/core/storage/73a055c201261d2e00b171e208a5528e/512.webp",
+      "purpose": "Железобетонные плиты предназначены для перекрытия каналов и тоннелей из лотковых элементов.",
+      "code": [
+       "П5-8"
+      ],
+      "notation": [
+       "П – плита межколонная для перекрытия",
+       "5 – типоразмер 5,05*0,75 м",
+       "8 – несущая способность",
+       "Буква означает наименование элемента (П – плита), цифра после буквы – порядковый номер элемента, цифра после тире – величину вертикальной равномерно-распределенной эквивалентной нагрузки в тс/м2",
+       "Марки плит с рабочей арматурой, расположенной в верхней зоне, которые применяются для устройства днища каналов, содержат дополнительную букву «а». Марки плит перекрытий внутрицеховых каналов при заглублении верха перекрытия менее 0,3м содержат дополнительную букву «б». В марках доборных плит добавляется буква «д»"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"6\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м3</th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th><th>в1</th><th>в2</th><th>h</th></tr></thead><tbody><tr><td>Л4-8/2</td><td>2970</td><td>780</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,36</td><td>0,90</td><td>В15</td></tr><tr><td>Л4-15/2</td><td>2970</td><td>780</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,36</td><td>0,90</td><td>В25</td></tr><tr><td>Л6-8/2</td><td>2970</td><td>1160</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,45</td><td>1,12</td><td>В25</td></tr><tr><td>Л6-15/2</td><td>2970</td><td>1160</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,45</td><td>1,12</td><td>В35</td></tr><tr><td>Л7-8/2</td><td>2970</td><td>1160</td><td>680</td><td>80</td><td>50</td><td>80</td><td>0,53</td><td>1,35</td><td>В25</td></tr><tr><td>Л7-15/2</td><td>2970</td><td>1160</td><td>680</td><td>80</td><td>50</td><td>80</td><td>0,53</td><td>1,35</td><td>В35</td></tr><tr><td>Л10-8/2</td><td>2970</td><td>1480</td><td>550</td><td>90</td><td>60</td><td>100</td><td>0,66</td><td>1,65</td><td>В25</td></tr><tr><td>Л10-15/2</td><td>2970</td><td>1480</td><td>550</td><td>90</td><td>60</td><td>100</td><td>0,66</td><td>1,65</td><td>В35</td></tr><tr><td>Л11-8/2</td><td>2970</td><td>1480</td><td>700</td><td>100</td><td>60</td><td>100</td><td>0,77</td><td>1,80</td><td>В25</td></tr><tr><td>Л11-15/2</td><td>2970</td><td>1480</td><td>700</td><td>100</td><td>60</td><td>100</td><td>0,77</td><td>1,80</td><td>В35</td></tr><tr><td>Л4д-8</td><td>720</td><td>780</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,09</td><td>0,23</td><td>В15</td></tr><tr><td>Л4д-15</td><td>720</td><td>780</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,09</td><td>0,23</td><td>В25</td></tr><tr><td>Л6д-8</td><td>720</td><td>1160</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,11</td><td>0,28</td><td>В25</td></tr><tr><td>Л6д-15</td><td>720</td><td>1160</td><td>530</td><td>80</td><td>50</td><td>80</td><td>0,11</td><td>0,28</td><td>В35</td></tr><tr><td>Л7д-8</td><td>720</td><td>1160</td><td>680</td><td>80</td><td>50</td><td>80</td><td>0,14</td><td>0,35</td><td>В25</td></tr><tr><td>Л7д-15</td><td>720</td><td>1160</td><td>680</td><td>80</td><td>50</td><td>80</td><td>0,14</td><td>0,35</td><td>В35</td></tr><tr><td>Л10д-8</td><td>720</td><td>1480</td><td>550</td><td>90</td><td>60</td><td>100</td><td>0,17</td><td>0,43</td><td>В25</td></tr><tr><td>Л10д-15</td><td>720</td><td>1480</td><td>550</td><td>90</td><td>60</td><td>100</td><td>0,17</td><td>0,43</td><td>В35</td></tr><tr><td>Л11д-8</td><td>720</td><td>1480</td><td>700</td><td>100</td><td>60</td><td>100</td><td>0,18</td><td>0,45</td><td>В25</td></tr><tr><td>Л11д-15</td><td>720</td><td>1480</td><td>700</td><td>100</td><td>60</td><td>100</td><td>0,18</td><td>0,45</td><td>В35</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/lotki-l-i-pliti-teplotrass-p-pt/pliti-teplotrass-po/",
+      "slug": "pliti-teplotrass-po",
+      "title": "Плиты теплотрасс ПО",
+      "image": "/core/storage/1b1ae548635decac09ec1a77cc97bf29/512.webp",
+      "purpose": "",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м3</th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ПО-2</td><td rowspan=\"3\">3.006.1-2/82<br>выпуск 2-2</td><td>1450</td><td>1500</td><td>120</td><td>0,22</td><td>0,55</td><td rowspan=\"3\">М300</td></tr><tr><td>ПО-3</td><td>1750</td><td>1500</td><td>160</td><td>0,36</td><td>0,90</td></tr><tr><td>ПО-4</td><td>2300</td><td>1500</td><td>200</td><td>0,61</td><td>1,53</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/opornie-podushki-op/",
+    "slug": "opornie-podushki-op",
+    "title": "Опорные подушки (ОП)",
+    "image": "/core/storage/12e008550f737188efa4ebfb28f9ac0e/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-ustroystva-kommunikatsiy/opornie-podushki-op/opornie-podushki-seriya-30061287/",
+      "slug": "opornie-podushki-seriya-30061287",
+      "title": "Опорные подушки серия 3.006.1-2/87 выпуск 2, 3.006.1-2/82 выпуск 1-2",
+      "image": "/core/storage/12e008550f737188efa4ebfb28f9ac0e/512.webp",
+      "purpose": "Опорные подушки под подвижные опоры трубопроводов и плоских подкладок под стыки сборных железобетонных элементов каналов.",
+      "code": [
+       "ОП1"
+      ],
+      "notation": [
+       "ОП – опорная подушка",
+       "1 – порядковый номер элемента"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ОП1</td><td>200</td><td>200</td><td>90</td><td>0,004</td><td>0,010</td></tr><tr><td>ОП2</td><td>300</td><td>200</td><td>90</td><td>0,005</td><td>0,013</td></tr><tr><td>ОП3</td><td>400</td><td>400</td><td>90</td><td>0,015</td><td>0,040</td></tr><tr><td>ОП4</td><td>500</td><td>500</td><td>140</td><td>0,035</td><td>0,090</td></tr><tr><td>ОП5</td><td>650</td><td>550</td><td>140</td><td>0,050</td><td>0,130</td></tr><tr><td>ОП6</td><td>750</td><td>650</td><td>140</td><td>0,070</td><td>0,180</td></tr><tr><td>ОП7</td><td>850</td><td>750</td><td>140</td><td>0,090</td><td>0,230</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/",
+  "slug": "izdeliya-dlya-stroitelstva-promishlennih",
+  "title": "Изделия для строительства промышленных зданий",
+  "image": "/core/storage/0520ff1b0c5fc7fbed26e3377144d557/512.webp",
+  "groups": [
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/kolonni-k-knd-kno-ksd-kso-kv-kvd/",
+    "slug": "kolonni-k-knd-kno-ksd-kso-kv-kvd",
+    "title": "Колонны (К, КНД, КНО, КСД, КСО, КВ, КВД, КВО, КФ)",
+    "image": "/core/storage/55fc0413f886d1e9cd07ba5b69af6852/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/kolonni-k-knd-kno-ksd-kso-kv-kvd/kolonni-serii-142713-vipusk-187/",
+      "slug": "kolonni-serii-142713-vipusk-187",
+      "title": "Колонны серии 1.427.1-3 выпуск 1/87",
+      "image": "/core/storage/17a683354b6498789883ac0ef5ef2af8/512.webp",
+      "purpose": "Железобетонные колонны торцевого и продольного фахверка предназначены для строительства одноэтажных производственных зданий с высотой этажа 3,0-14,4 м.",
+      "code": [
+       "9КФ141-2-Н1"
+      ],
+      "notation": [
+       "9 – типоразмер",
+       "КФ – колонна фахверка",
+       "141 – длина колонны в дм",
+       "2 – индекс несущей способности",
+       "Н1 – дополнительные характеристики"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Габаритные размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>А/В</th><th>Н</th><th>h</th></tr></thead><tbody><tr><td>1КФ37-1</td><td>300/300</td><td>3700</td><td></td><td>0.33</td><td>0.8</td><td rowspan=\"8\">В15</td></tr><tr><td>1КФ43-1</td><td>300/300</td><td>4300</td><td></td><td>0,39</td><td>1,0</td></tr><tr><td>1КФ49-2</td><td>300/300</td><td>4900</td><td></td><td>0,44</td><td>1,1</td></tr><tr><td>1КФ61-1</td><td>300/300</td><td>6100</td><td></td><td>0,55</td><td>1,1</td></tr><tr><td>1КФ67-3</td><td>300/300</td><td>6700</td><td></td><td>0,60</td><td>1,5</td></tr><tr><td>1КФ93-2</td><td>300/300</td><td>9300</td><td></td><td>0,84</td><td>2,1</td></tr><tr><td>2КФ69-1</td><td>400/300</td><td>6900</td><td></td><td>0,83</td><td>2,1</td></tr><tr><td>2КФ81-2</td><td>400/300</td><td>8100</td><td></td><td>0,97</td><td>2,1</td></tr><tr><td>6КФ73-3</td><td>400/300</td><td>7300</td><td>4800</td><td>0,80</td><td>2,0</td><td>В15</td></tr><tr><td>6КФ76-1</td><td>400/300</td><td>7600</td><td>4800</td><td>0,83</td><td>2,1</td><td>В15</td></tr><tr><td>6КФ82-1</td><td>400/300</td><td>8200</td><td>6000</td><td>0,92</td><td>2,3</td><td>В15</td></tr><tr><td>6КФ85-4</td><td>400/300</td><td>8500</td><td>6000</td><td>0,95</td><td>2,4</td><td>В15</td></tr><tr><td>9КФ145-2-Н1</td><td>600/400</td><td>14500</td><td>12000</td><td>3,20</td><td>8,0</td><td>В22,5</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/kolonni-k-knd-kno-ksd-kso-kv-kvd/kolonni-serii-1020187/",
+      "slug": "kolonni-serii-1020187",
+      "title": "Колонны серии 1.020-1/87",
+      "image": "/core/storage/55fc0413f886d1e9cd07ba5b69af6852/512.webp",
+      "purpose": "Колонны предназначены для строительства многоэтажных общественных зданий, производственных и вспомогательных зданий промышленных предприятий.",
+      "code": [
+       "2КНД 33(30)-2.3"
+      ],
+      "notation": [
+       "2 – двухэтажная",
+       "К – колонна",
+       "Н – для нижних этажей зданий",
+       "Д – двухконсольная",
+       "2 – несущая способность консоли 33 тс",
+       "3 – условная несущая способность колонны"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"5\">Габаритные размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>А/В</th><th>Н</th><th>h</th><th>h1</th><th>h2</th></tr></thead><tbody><tr><td>1КВД 33-2.23</td><td rowspan=\"11\">Серия 1.020-1/87 выпуск 2-1</td><td rowspan=\"11\">400</td><td>2550</td><td>2250</td><td>-</td><td>300</td><td>0,43</td><td>1,1</td><td>В25</td></tr><tr><td>1КВО 33-2.23</td><td>2550</td><td>2250</td><td>-</td><td>300</td><td>0,42</td><td>1,1</td><td>В25</td></tr><tr><td>1КВ 33-26</td><td>2550</td><td>-</td><td>-</td><td>-</td><td>0,41</td><td>1,0</td><td>В30</td></tr><tr><td>2КВД 33-2.23</td><td>5850</td><td>2250</td><td>3300</td><td>300</td><td>0,97</td><td>2,4</td><td>В25</td></tr><tr><td>2КВО 33-2.23</td><td>5850</td><td>2250</td><td>3300</td><td>300</td><td>0,95</td><td>2,4</td><td>В25</td></tr><tr><td>2КВ 33-23</td><td>5850</td><td>-</td><td>-</td><td>-</td><td>0,93</td><td>2,3</td><td>В25</td></tr><tr><td>3КВО 33-2.23</td><td>9150</td><td>2250</td><td>3300</td><td>300</td><td>1,49</td><td>3,7</td><td>В25</td></tr><tr><td>3КВ 33-23</td><td>9150</td><td>-</td><td>-</td><td>-</td><td>1,46</td><td>3,7</td><td>В25</td></tr><tr><td>3КСД 33-2.45</td><td>9900</td><td>2250</td><td>3300</td><td>1050</td><td>1,64</td><td>4,1</td><td>В40</td></tr><tr><td>1КНД 33(30)-2.59</td><td>4550</td><td>3500</td><td>-</td><td>1050</td><td>0,75</td><td>1,9</td><td>В40</td></tr><tr><td>2КБД 33(20)-1.23</td><td>5900</td><td>2300</td><td>3300</td><td>300</td><td>0,97</td><td>2,4</td><td>В25</td></tr><tr><td>1КВО 36-3.26</td><td rowspan=\"9\">Серия 1.020-1/87 выпуск 2-3</td><td rowspan=\"9\">400</td><td>2920</td><td>2550</td><td>-</td><td>370</td><td>0,48</td><td>1,2</td><td>В30</td></tr><tr><td>2КВД 36-2.22</td><td>6520</td><td>2550</td><td>3600</td><td>370</td><td>1,08</td><td>2,7</td><td>В25</td></tr><tr><td>3КВО36-1.22</td><td>10120</td><td>2550</td><td>3600</td><td>370</td><td>1,64</td><td>4,1</td><td>В25</td></tr><tr><td>1КСД 36-2.32</td><td>3600</td><td>2550</td><td>-</td><td>1050</td><td>0,6</td><td>1,5</td><td>В40</td></tr><tr><td>1КСО 36-1.22</td><td>3600</td><td>2550</td><td>-</td><td>1050</td><td>0,59</td><td>1,5</td><td>В25</td></tr><tr><td>1КС 36-22</td><td>3600</td><td>-</td><td>-</td><td>-</td><td>0,58</td><td>1,5</td><td>В25</td></tr><tr><td>3КСД 36-2.43</td><td>10800</td><td>2550</td><td>3600</td><td>1050</td><td>1,79</td><td>4,5</td><td>В40</td></tr><tr><td>3КСО 36-2.33</td><td>10800</td><td>2550</td><td>3600</td><td>1050</td><td>1,76</td><td>4,4</td><td>В40</td></tr><tr><td>1КНО 36-2.32</td><td>5350</td><td>4300</td><td>-</td><td>1050</td><td>0,67</td><td>2,2</td><td>В40</td></tr><tr><td>1КВД42-1.22</td><td rowspan=\"9\">Серия 1.020-1/87 выпуск 2-5</td><td rowspan=\"9\">400</td><td>3520</td><td>3150</td><td>-</td><td>370</td><td>0,58</td><td>1,5</td><td>В25</td></tr><tr><td>2КВО42-2.22</td><td>7720</td><td>3150</td><td>4200</td><td>370</td><td>1,25</td><td>3,1</td><td>В25</td></tr><tr><td>1КСД42-2.32</td><td>4200</td><td>2550</td><td>-</td><td>1050</td><td>0,69</td><td>1,7</td><td>В40</td></tr><tr><td>1КС42-32</td><td>4200</td><td>-</td><td>-</td><td>-</td><td>0,67</td><td>1,7</td><td>В40</td></tr><tr><td>2КСД42-2.32</td><td>8400</td><td>3150</td><td>4200</td><td>1050</td><td>1,38</td><td>3,5</td><td>В40</td></tr><tr><td>2КНД42-2.58</td><td>10150</td><td>4900</td><td>4200</td><td>1050</td><td>1,66</td><td>4,2</td><td>В40</td></tr><tr><td>2КНО42-1.25</td><td>10150</td><td>4900</td><td>4200</td><td>1050</td><td>1,64</td><td>4,1</td><td>В30</td></tr><tr><td>1КБД42-3.22</td><td>5270</td><td>4900</td><td>-</td><td>370</td><td>0,86</td><td>2,2</td><td>В25</td></tr><tr><td>2КБД42-2.22</td><td>9470</td><td>4900</td><td>4200</td><td>370</td><td>1,54</td><td>3,9</td><td>В25</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/kolonni-k-knd-kno-ksd-kso-kv-kvd/kolonni-serii-142415-vipusk-187/",
+      "slug": "kolonni-serii-142415-vipusk-187",
+      "title": "Колонны серии 1.424.1-5 выпуск 1/87",
+      "image": "/core/storage/5122440d3ae3a7f15dd4fbd12bcec903/512.webp",
+      "purpose": "Колонны предназначены для строительства одноэтажных производственных зданий, оборудованных мостовыми опорными кранами грузоподъемностью до 32 тонн.",
+      "code": [
+       "2К108-3"
+      ],
+      "notation": [
+       "2 – типоразмер",
+       "К – колонна",
+       "108 – для зданий с высотой этажа 10,8м",
+       "3 – номер по несущей способности"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Высота этажа, м</th><th colspan=\"5\">Габаритные размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>А/В</th><th>а/в</th><th>Н</th><th>h</th><th>с</th></tr></thead><tbody><tr><td>2К84-3</td><td>8,4</td><td>600/400</td><td>380/400</td><td>9300</td><td>3500</td><td>670</td><td>2,0</td><td>5,1</td><td>В15</td></tr><tr><td>3К84-5</td><td>8,4</td><td>700/400</td><td>600/400</td><td>9450</td><td>3300</td><td>700</td><td>2,7</td><td>6,8</td><td>В15</td></tr><tr><td>2К108-3</td><td>10,8</td><td>700/400</td><td>380/400</td><td>11850</td><td>3500</td><td>670</td><td>3,0</td><td>7,4</td><td>В22,5</td></tr><tr><td>7К84-1</td><td>8,4</td><td>700/400</td><td>600/400</td><td>9450</td><td>3300</td><td>750</td><td>3,0</td><td>7,6</td><td>В22,5</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/kolonni-k-knd-kno-ksd-kso-kv-kvd/kolonni-serii-14231388/",
+      "slug": "kolonni-serii-14231388",
+      "title": "Колонны серии 1.423.1-3/88",
+      "image": "/core/storage/0a191dab3b6abd12fef8e4b708e1ac0e/512.webp",
+      "purpose": "Колонны предназначены для строительства одноэтажных производственных зданий высотой до 9,6м без мостовых опорных кранов.",
+      "code": [
+       "1К72-4М2"
+      ],
+      "notation": [
+       "1 – типоразмер",
+       "К – колонна",
+       "72 – для зданий с высотой этажа 7,2м",
+       "4 – номер по несущей способности",
+       "М2 – из бетона класса В15 (марки 200)"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Высота этажа, м</th><th colspan=\"3\">Габаритные размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>а/b</th><th>А/В</th><th>Н</th></tr></thead><tbody><tr><td>1К30-1М2</td><td>3,0</td><td>300/300</td><td>-</td><td>3800</td><td>0,34</td><td>0,86</td></tr><tr><td>1К36-2М2</td><td>3,6</td><td>300/300</td><td>-</td><td>4400</td><td>0,40</td><td>1,0</td></tr><tr><td>1К42-3М2</td><td>4,2</td><td>300/300</td><td>-</td><td>5000</td><td>0,45</td><td>1,1</td></tr><tr><td>1К48-3М2</td><td>4,8</td><td>300/300</td><td>-</td><td>5600</td><td>0,50</td><td>1,3</td></tr><tr><td>1К54-4М2</td><td>5,4</td><td>300/300</td><td>-</td><td>6200</td><td>0,56</td><td>1,4</td></tr><tr><td>1К60-1М3</td><td>6,0</td><td>400/300</td><td>-</td><td>6800</td><td>0,81</td><td>2,0</td></tr><tr><td>1К72-6М2</td><td>7,2</td><td>400/400</td><td>-</td><td>8100</td><td>1,3</td><td>3,2</td></tr><tr><td>1К72-7М4</td><td>7,2</td><td>400/400</td><td>-</td><td>8100</td><td>1,3</td><td>3,2</td></tr><tr><td>1К96-2М2</td><td>9,6</td><td>400/400</td><td>-</td><td>10500</td><td>1,7</td><td>4,2</td></tr><tr><td>2К60-5М3</td><td>6,0</td><td>400/400</td><td>-</td><td>6900</td><td>1,1</td><td>2,8</td></tr><tr><td>2К96-1М2</td><td>9,6</td><td>500/400</td><td>-</td><td>10500</td><td>2,1</td><td>5,3</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/kolonni-k-knd-kno-ksd-kso-kv-kvd/kolonni-serii-14231388-1/",
+      "slug": "kolonni-serii-14231388-1",
+      "title": "Колонны серии 1.423.1-3/88",
+      "image": "/core/storage/40bd31ed4f36b79fdb26e46ee39ec315/512.webp",
+      "purpose": "Колонны предназначены для строительства одноэтажных производственных зданий высотой до 9,6м без мостовых опорных кранов.",
+      "code": [
+       "1К72-4М2"
+      ],
+      "notation": [
+       "1 – типоразмер",
+       "К – колонна",
+       "72 – для зданий с высотой этажа 7,2м",
+       "4 – номер по несущей способности",
+       "М2 – из бетона класса В15 (марки 200)"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Высота этажа, м</th><th colspan=\"3\">Габаритные размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th></tr><tr><th>а/b</th><th>А/В</th><th>Н</th></tr></thead><tbody><tr><td>2К36-4М2</td><td>3,6</td><td>300/300</td><td>400/300</td><td>4400</td><td>0,43</td><td>1,1</td></tr><tr><td>2К42-3М2</td><td>4,2</td><td>300/300</td><td>400/300</td><td>5000</td><td>0,48</td><td>1,2</td></tr><tr><td>2К42-4М2</td><td>4,2</td><td>300/300</td><td>400/300</td><td>5000</td><td>0,48</td><td>1,2</td></tr><tr><td>2К54-3М3</td><td>5,4</td><td>300/300</td><td>400/300</td><td>6200</td><td>0,59</td><td>1,5</td></tr><tr><td>4К48-3М2</td><td>4,8</td><td>300/300</td><td>400/300</td><td>5600</td><td>0,53</td><td>1,3</td></tr><tr><td>4К60-2М2</td><td>6,0</td><td>400/300</td><td>600/300</td><td>6800</td><td>0,81</td><td>2,1</td></tr><tr><td>4К66-3М2</td><td>6,6</td><td>400/300</td><td>600/300</td><td>7400</td><td>0,88</td><td>2,2</td></tr><tr><td>4К72-5М3</td><td>7,2</td><td>400/400</td><td>600/400</td><td>8100</td><td>1,3</td><td>3,3</td></tr><tr><td>5К60-6М2</td><td>6,0</td><td>400/400</td><td>600/400</td><td>6900</td><td>1,1</td><td>2,8</td></tr><tr><td>5К66-5М2</td><td>6,6</td><td>400/400</td><td>600/400</td><td>7500</td><td>1,2</td><td>3,0</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/fundamenti-pod-kolonni-f/",
+    "slug": "fundamenti-pod-kolonni-f",
+    "title": "Фундаменты под колонны (Ф)",
+    "image": "/core/storage/8d12720ba1881f0a3d740ca80895c9d0/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/fundamenti-pod-kolonni-f/fundamenti-pod-kolonni/",
+      "slug": "fundamenti-pod-kolonni",
+      "title": "Фундаменты под колонны",
+      "image": "/core/storage/8d12720ba1881f0a3d740ca80895c9d0/512.webp",
+      "purpose": "Фундаменты стаканного типа предназначены под колонны многоэтажных общественных зданий, производственных и вспомогательных зданий промышленных предприятий, возводимых в обычных условиях строительства на грунтах с неагрессивными, а также слабо и среднеагрессивными грунтовыми водами.",
+      "code": [
+       "Ф 18.9-2"
+      ],
+      "notation": [
+       "Ф – фундамент",
+       "18 – с размером стороны подошвы 1800 мм (в дм)",
+       "9 – высотой 900 мм (в дм)",
+       "2 – второй индекс несущей способности"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры наружные, мм</th><th colspan=\"3\">Размеры внутренние, мм</th><th rowspan=\"2\"> Объем, м3</th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ФК-17</td><td rowspan=\"2\">Серия ИИ-041-1 выпуск 1</td><td>1700</td><td>1700</td><td>700</td><td>450</td><td>450</td><td>450</td><td>1,23</td><td>3,08</td><td></td></tr><tr><td>ФК-20</td><td>2000</td><td>2000</td><td>700</td><td>450</td><td>450</td><td>450</td><td>1,74</td><td>4,35</td><td>В12,5</td></tr><tr><td>Ф13 </td><td>Серия ИИ04-1 выпуск 3</td><td>1300</td><td>1300</td><td>900</td><td>550</td><td>550</td><td>660</td><td>1,02</td><td>2,60</td><td>В12,5</td></tr><tr><td>ФА 1-1-1 </td><td rowspan=\"12\">Шифр 342-90 <br>альбом 1</td><td>1500</td><td>1500</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>1,71</td><td>4,28</td><td rowspan=\"12\">В15</td></tr><tr><td>ФА 1-1-2 </td><td>1500</td><td>1500</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>1,71</td><td>4,28</td></tr><tr><td>ФА 1-1-3 </td><td>1500</td><td>1500</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>1,71</td><td>4,28</td></tr><tr><td>ФА 2-1-1 </td><td>1800</td><td>1800</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>2,00</td><td>5,00</td></tr><tr><td>ФА 2-1-2 </td><td>1800</td><td>1800</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>2,00</td><td>5,00</td></tr><tr><td>ФА 2-1-3 </td><td>1800</td><td>1800</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>2,00</td><td>5,00</td></tr><tr><td>ФА 4-1-1 </td><td>2100</td><td>1000</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>2,37</td><td>5,93</td></tr><tr><td>ФА 4-1-2 </td><td>2100</td><td>1000</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>2,37</td><td>5,93</td></tr><tr><td>ФА 4-1-3 </td><td>2100</td><td>1000</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>2,37</td><td>5,93</td></tr><tr><td>ФА 5-1-1 </td><td>2400</td><td>1800</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>2,47</td><td>6,18</td></tr><tr><td>ФА 5-1-2 </td><td>2400</td><td>1800</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>2,47</td><td>6,18</td></tr><tr><td>ФА 5-1-3 </td><td>2400</td><td>1800</td><td>1500</td><td>500</td><td>500</td><td>900</td><td>2,47</td><td>6,18</td></tr><tr><td>1Ф12.12-1 </td><td>ГОСТ 24022-80</td><td>1200</td><td>1200</td><td>650</td><td>450</td><td>450</td><td>450</td><td>0,55</td><td>1,40</td><td>В15</td></tr><tr><td>Ф12.9-1</td><td rowspan=\"10\">Серия 1.020-1/87<br>выпуск 1-1 </td><td>1200</td><td>1200</td><td>900</td><td>500</td><td>500</td><td>650</td><td>0,83</td><td>2,10</td><td>В15</td></tr><tr><td>Ф12.9-2</td><td>1200</td><td>1200</td><td>900</td><td>500</td><td>500</td><td>650</td><td>0,83</td><td>2,10</td><td>В25</td></tr><tr><td>Ф15.9-1</td><td>1500</td><td>1500</td><td>900</td><td>500</td><td>500</td><td>650</td><td>1,20</td><td>3,00</td><td>В15</td></tr><tr><td>Ф15.9-2</td><td>1500</td><td>1500</td><td>900</td><td>500</td><td>500</td><td>650</td><td>1,20</td><td>3,00</td><td>В25</td></tr><tr><td>Ф18.9-1</td><td>1800</td><td>1800</td><td>900</td><td>500</td><td>500</td><td>650</td><td>1,60</td><td>4,00</td><td>В15</td></tr><tr><td>Ф18.9-2</td><td>1800</td><td>1800</td><td>900</td><td>500</td><td>500</td><td>650</td><td>1,60</td><td>4,00</td><td>В15</td></tr><tr><td>Ф18.9-3</td><td>1800</td><td>1800</td><td>900</td><td>500</td><td>500</td><td>650</td><td>1,60</td><td>4,00</td><td>В25</td></tr><tr><td>Ф21.9-1 </td><td>2100</td><td>2100</td><td>900</td><td>500</td><td>500</td><td>650</td><td>2,10</td><td>5,30</td><td>В15</td></tr><tr><td>Ф21.9-2</td><td>2100</td><td>2100</td><td>900</td><td>500</td><td>500</td><td>650</td><td>2,10</td><td>5,30</td><td>В15</td></tr><tr><td>Ф21.9-3</td><td>2100</td><td>2100</td><td>900</td><td>500</td><td>500</td><td>650</td><td>2,10</td><td>5,30</td><td>В25</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/rigeli-rdp-rop-r-b-ib-i-drugie/",
+    "slug": "rigeli-rdp-rop-r-b-ib-i-drugie",
+    "title": "Ригели (РДП, РОП, Р, Б, ИБ и другие)",
+    "image": "/core/storage/fdf11921638663370b43cc81188a1906/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/rigeli-rdp-rop-r-b-ib-i-drugie/rigeli-seriya-1020187/",
+      "slug": "rigeli-seriya-1020187",
+      "title": "Ригели серия 1.020-1/87",
+      "image": "/core/storage/fdf11921638663370b43cc81188a1906/512.webp",
+      "purpose": "Ригели предназначены для строительства многоэтажных общественных зданий, производственных и вспомогательных зданий промышленных предприятий с неагрессивной средой.",
+      "code": [
+       "РДП4.26-60"
+      ],
+      "notation": [
+       "РДП – ригель с двумя симметричными полками для опирания многопустотных плит с двух сторон",
+       "4 – высотой 450 мм (в дм)",
+       "26 – длиной 2560 мм (в дм с округлением до целого числа)",
+       "60 – с нагрузкой 6,0 тс/пм"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс/марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>РДП 6.56-50</td><td rowspan=\"9\">Серия 1.020-1/83 вып.3-7</td><td>5560</td><td>595</td><td>600</td><td>1,51</td><td>3,78</td><td>М300</td></tr><tr><td>РДП 6.56-70</td><td>5560</td><td>595</td><td>600</td><td>1,51</td><td>3,78</td><td>М300</td></tr><tr><td>РДП 6.56-90</td><td>5560</td><td>595</td><td>600</td><td>1,51</td><td>3,78</td><td>М400</td></tr><tr><td>РДП 6.56-110</td><td>5560</td><td>595</td><td>600</td><td>1,51</td><td>3,78</td><td>М400</td></tr><tr><td>РОП 6.56-30</td><td>5560</td><td>497</td><td>600</td><td>1,30</td><td>3,25</td><td>М400</td></tr><tr><td>РОП 6.56-40</td><td>5560</td><td>497</td><td>600</td><td>1,30</td><td>3,25</td><td>М400</td></tr><tr><td>РОП 6.56-60</td><td>5560</td><td>497</td><td>600</td><td>1,30</td><td>3,25</td><td>М400</td></tr><tr><td>РЛП 6.56-45</td><td>5560</td><td>397</td><td>600</td><td>1,08</td><td>2,69</td><td>М400</td></tr><tr><td>РЛП 6.56-60</td><td>5560</td><td>397</td><td>600</td><td>1,08</td><td>2,69</td><td>М400</td></tr><tr><td>РДП 6.26-50</td><td rowspan=\"5\">Серия 1.020-1/87 вып.3-3</td><td>2560</td><td>595</td><td>600</td><td>0,66</td><td>1,65</td><td rowspan=\"5\">В22,5</td></tr><tr><td>РДП 6.26-70</td><td>2560</td><td>595</td><td>600</td><td>0,66</td><td>1,65</td></tr><tr><td>РДП 6.26-110</td><td>2560</td><td>595</td><td>600</td><td>0,66</td><td>1,65</td></tr><tr><td>РОП 6.26-60</td><td>2560</td><td>497</td><td>600</td><td>0,58</td><td>1,45</td></tr><tr><td>РЛП 6.26-60</td><td>2560</td><td>397</td><td>600</td><td>0,48</td><td>1,2</td></tr><tr><td>РДП 4.56-50</td><td rowspan=\"5\">Серия 1.020-1/87 вып.3-7</td><td>5560</td><td>565</td><td>450</td><td>1,02</td><td>2,55</td><td>В30</td></tr><tr><td>РДП 4.56-60</td><td>5560</td><td>565</td><td>450</td><td>1,02</td><td>2,55</td><td>В30</td></tr><tr><td>РДП 4.56-70</td><td>5560</td><td>565</td><td>450</td><td>1,02</td><td>2,55</td><td>В30</td></tr><tr><td>РДП 4.56-90</td><td>5560</td><td>565</td><td>450</td><td>1,02</td><td>2,55</td><td>В30</td></tr><tr><td>РДП 4.56-110</td><td>5560</td><td>565</td><td>450</td><td>1,02</td><td>2,55</td><td>В35</td></tr><tr><td>РОП 4.68-40</td><td rowspan=\"16\">Серия 1.020-1/87 вып.3-1</td><td>6760</td><td>482</td><td>450</td><td>1,15</td><td>2,87</td><td>В35</td></tr><tr><td>РОП 4.56-30</td><td>5560</td><td>482</td><td>450</td><td>0,94</td><td>2,35</td><td>В30</td></tr><tr><td>РОП 4.56-40</td><td>5560</td><td>482</td><td>450</td><td>0,94</td><td>2,35</td><td>В30</td></tr><tr><td>РОП 4.56-50</td><td>5560</td><td>482</td><td>450</td><td>0,94</td><td>2,35</td><td>В30</td></tr><tr><td>РОП 4.56-60</td><td>5560</td><td>482</td><td>450</td><td>0,94</td><td>2,35</td><td>В30</td></tr><tr><td>РЛП 4.56-45</td><td>5560</td><td>382</td><td>450</td><td>0,76</td><td>1,89</td><td>В30</td></tr><tr><td>РЛП 4.56-60</td><td>5560</td><td>382</td><td>450</td><td>0,76</td><td>1,89</td><td>В35</td></tr><tr><td>РДП 4.26-60</td><td>2560</td><td>565</td><td>450</td><td>0,45</td><td>1,11</td><td>В25</td></tr><tr><td>РДП 4.26-90</td><td>2560</td><td>565</td><td>450</td><td>0,45</td><td>1,11</td><td>В25</td></tr><tr><td>РДП 4.26-110</td><td>2560</td><td>565</td><td>450</td><td>0,45</td><td>1,11</td><td>В25</td></tr><tr><td>РОП 4.26-40</td><td>2560</td><td>482</td><td>450</td><td>0,42</td><td>1,05</td><td>В25</td></tr><tr><td>РОП 4.26-60</td><td>2560</td><td>482</td><td>450</td><td>0,42</td><td>1,05</td><td>В25</td></tr><tr><td>РЛП 4.26-45</td><td>2560</td><td>382</td><td>450</td><td>0,34</td><td>0,84</td><td>В25</td></tr><tr><td>РЛП 4.26-60</td><td>2560</td><td>382</td><td>450</td><td>0,34</td><td>0,84</td><td>В25</td></tr><tr><td>Р 3.56</td><td>5540</td><td>180</td><td>300</td><td>0,30</td><td>0,75</td><td>В25</td></tr><tr><td>Р 3.26</td><td>2540</td><td>180</td><td>300</td><td>0,14</td><td>0,35</td><td>В25</td></tr><tr><td>РДП 6.86-50К7</td><td rowspan=\"4\">ЦНИИПРОМЗДАНИЙ</td><td>8 560</td><td>595</td><td>600</td><td>2,35</td><td>5,88</td><td>В30</td></tr><tr><td>РДП 6.86-70К7</td><td>8 560</td><td>595</td><td>600</td><td>2,35</td><td>5,88</td><td>В30</td></tr><tr><td>РДП 6.86-90К7</td><td>8 560</td><td>595</td><td>600</td><td>2,35</td><td>5,88</td><td>В40</td></tr><tr><td>РОП 6.86-60К7</td><td>8 560</td><td>460</td><td>600</td><td>2,00</td><td>5,00</td><td>В40</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/rigeli-rdp-rop-r-b-ib-i-drugie/rigeli-seriya-142012-ii23170/",
+      "slug": "rigeli-seriya-142012-ii23170",
+      "title": "Ригели серия 1.420-12, ИИ23-1/70, ИИ23-3/70",
+      "image": "/core/storage/a6b43dee8d17bf0a751f167d01c34f49/original.jpg",
+      "purpose": "Ригели пролетом 6,0м предназначены для многоэтажных производственных зданий с перекрытиями из ребристых плит, опирающихся на полки ригелей.",
+      "code": [
+       "ИБ 2-4"
+      ],
+      "notation": [
+       "ИБ – ригель",
+       "2 – типоразмер ригеля",
+       "4 – несущая способность ригеля"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ИБ1-1</td><td rowspan=\"25\">Серия ИИ23-1/70</td><td>4980</td><td>650</td><td>800</td><td>1,60</td><td>4,0</td><td>М200</td></tr><tr><td>ИБ1-2</td><td>4980</td><td>650</td><td>800</td><td>1,60</td><td>4,0</td><td>М200</td></tr><tr><td>ИБ1-4</td><td>4980</td><td>650</td><td>800</td><td>1,60</td><td>4,0</td><td>М300</td></tr><tr><td>ИБ1-5</td><td>4980</td><td>650</td><td>800</td><td>1,60</td><td>4,0</td><td>М300</td></tr><tr><td>ИБ1-12</td><td>4980</td><td>650</td><td>800</td><td>1,60</td><td>4,0</td><td>М300</td></tr><tr><td>ИБ2-1</td><td>5280</td><td>650</td><td>800</td><td>1,70</td><td>4,2</td><td>М200</td></tr><tr><td>ИБ2-2</td><td>5280</td><td>650</td><td>800</td><td>1,70</td><td>4,2</td><td>М200</td></tr><tr><td>ИБ2-4</td><td>5280</td><td>650</td><td>800</td><td>1,70</td><td>4,2</td><td>М300</td></tr><tr><td>ИБ2-6</td><td>5280</td><td>650</td><td>800</td><td>1,70</td><td>4,2</td><td>М200</td></tr><tr><td>ИБ2-8</td><td>5280</td><td>650</td><td>800</td><td>1,70</td><td>4,2</td><td>М300</td></tr><tr><td>ИБ2-9</td><td>5280</td><td>650</td><td>800</td><td>1,70</td><td>4,2</td><td>М300</td></tr><tr><td>ИБ2-20</td><td>5280</td><td>650</td><td>800</td><td>1,70</td><td>4,2</td><td>М200</td></tr><tr><td>ИБ2-21</td><td>5280</td><td>650</td><td>800</td><td>1,70</td><td>4,2</td><td>М200</td></tr><tr><td>ИБ2-22</td><td>5280</td><td>650</td><td>800</td><td>1,70</td><td>4,2</td><td>М200</td></tr><tr><td>ИБ2-23</td><td>5280</td><td>650</td><td>800</td><td>1,70</td><td>4,2</td><td>М300</td></tr><tr><td>ИБ2-24</td><td>5280</td><td>650</td><td>800</td><td>1,70</td><td>4,2</td><td>М200</td></tr><tr><td>ИБ3-2</td><td>5480</td><td>650</td><td>800</td><td>1,76</td><td>4,4</td><td>М200</td></tr><tr><td>ИБ3-3</td><td>5480</td><td>650</td><td>800</td><td>1,76</td><td>4,4</td><td>М300</td></tr><tr><td>ИБ3-4</td><td>5480</td><td>650</td><td>800</td><td>1,76</td><td>4,4</td><td>М300</td></tr><tr><td>ИБ3-5</td><td>5480</td><td>650</td><td>800</td><td>1,76</td><td>4,4</td><td>М300</td></tr><tr><td>ИБ3-13</td><td>5480</td><td>650</td><td>800</td><td>1,76</td><td>4,4</td><td>М200</td></tr><tr><td>ИБ3-14</td><td>5480</td><td>650</td><td>800</td><td>1,76</td><td>4,4</td><td>М200</td></tr><tr><td>ИБ3-15</td><td>5480</td><td>650</td><td>800</td><td>1,76</td><td>4,4</td><td>М300</td></tr><tr><td>ИБ3-16</td><td>5480</td><td>650</td><td>800</td><td>1,76</td><td>4,4</td><td>М300</td></tr><tr><td>ИБ3-17</td><td>5480</td><td>650</td><td>800</td><td>1,76</td><td>4,4</td><td>М200</td></tr><tr><td>Б39-1</td><td rowspan=\"3\">Серия 1.420-12 выпуск 6</td><td>4980</td><td>495</td><td>800</td><td>1,40</td><td>3,5</td><td>М300</td></tr><tr><td>Б40-1</td><td>5280</td><td>495</td><td>800</td><td>1,49</td><td>3,7</td><td>М300</td></tr><tr><td>Б41-1</td><td>5480</td><td>495</td><td>800</td><td>1,53</td><td>3,8</td><td>М300</td></tr><tr><td>ИБ7-1</td><td rowspan=\"23\">Серия ИИ23-3/70</td><td>4980</td><td>300</td><td>800</td><td>1,16</td><td>2,9</td><td>М200</td></tr><tr><td>ИБ7-2</td><td>4980</td><td>300</td><td>800</td><td>1,16</td><td>2,9</td><td>М200</td></tr><tr><td>ИБ7-4</td><td>4980</td><td>300</td><td>800</td><td>1,16</td><td>2,9</td><td>М300</td></tr><tr><td>ИБ7-9</td><td>4980</td><td>300</td><td>800</td><td>1,16</td><td>2,9</td><td>М200</td></tr><tr><td>ИБ7-10</td><td>4980</td><td>300</td><td>800</td><td>1,16</td><td>2,9</td><td>М300</td></tr><tr><td>ИБ8-1</td><td>5280</td><td>300</td><td>800</td><td>1,23</td><td>3,1</td><td>М200</td></tr><tr><td>ИБ8-2</td><td>5280</td><td>300</td><td>800</td><td>1,23</td><td>3,1</td><td>М200</td></tr><tr><td>ИБ8-4</td><td>5280</td><td>300</td><td>800</td><td>1,23</td><td>3,1</td><td>М300</td></tr><tr><td>ИБ8-6</td><td>5280</td><td>300</td><td>800</td><td>1,23</td><td>3,1</td><td>М200</td></tr><tr><td>ИБ8-8</td><td>5280</td><td>300</td><td>800</td><td>1,23</td><td>3,1</td><td>М300</td></tr><tr><td>ИБ8-20</td><td>5280</td><td>300</td><td>800</td><td>1,23</td><td>3,1</td><td>М200</td></tr><tr><td>ИБ8-21</td><td>5280</td><td>300</td><td>800</td><td>1,23</td><td>3,1</td><td>М200</td></tr><tr><td>ИБ8-22</td><td>5280</td><td>300</td><td>800</td><td>1,23</td><td>3,1</td><td>М300</td></tr><tr><td>ИБ8-23</td><td>5280</td><td>300</td><td>800</td><td>1,23</td><td>3,1</td><td>М200</td></tr><tr><td>ИБ8-24</td><td>5280</td><td>300</td><td>800</td><td>1,23</td><td>3,1</td><td>М300</td></tr><tr><td>ИБ9-2</td><td>5480</td><td>300</td><td>800</td><td>1,28</td><td>3,2</td><td>М200</td></tr><tr><td>ИБ9-3</td><td>5480</td><td>300</td><td>800</td><td>1,28</td><td>3,2</td><td>М300</td></tr><tr><td>ИБ9-4</td><td>5480</td><td>300</td><td>800</td><td>1,28</td><td>3,2</td><td>М300</td></tr><tr><td>ИБ9-13</td><td>5480</td><td>300</td><td>800</td><td>1,28</td><td>3,2</td><td>М200</td></tr><tr><td>ИБ9-14</td><td>5480</td><td>300</td><td>800</td><td>1,28</td><td>3,2</td><td>М300</td></tr><tr><td>ИБ9-15</td><td>5480</td><td>300</td><td>800</td><td>1,28</td><td>3,2</td><td>М300</td></tr><tr><td>ИБ29-1</td><td>5480</td><td>300</td><td>800</td><td>1,28</td><td>3,2</td><td>М200</td></tr><tr><td>ИБ29-2</td><td>5480</td><td>300</td><td>800</td><td>1,28</td><td>3,2</td><td>М200</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/balki-fundamentnie-fb-bf/",
+    "slug": "balki-fundamentnie-fb-bf",
+    "title": "Балки фундаментные (ФБ, БФ)",
+    "image": "/core/storage/d56c720f6b2420e4d277f5527f662d5e/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/balki-fundamentnie-fb-bf/balki-fundamentnie-1/",
+      "slug": "balki-fundamentnie-1",
+      "title": "Балки фундаментные",
+      "image": "/core/storage/74081acfad118468c30a9f24d5b63c5a/512.webp",
+      "purpose": "Фундаментные балки предназначены для наружных и внутренних стен производственных зданий с шагом колонн 6 метров.",
+      "code": [
+       "ФБ 6-5"
+      ],
+      "notation": [
+       "ФБ – фундаментная балка",
+       "6 – для зданий шагом колонн 6 м",
+       "5 – порядковый номер балки по номенклатуре",
+       "1БФ – балка фундаментная типа 1",
+       "6 – для зданий шагом колонн 6 м",
+       "14 – четырнадцатой марки по несущей способности",
+       "1БФ – балка фундаментная типа 1",
+       "51 – длиной 5050 мм (в дм с округлением до целого числа)",
+       "1 – первой марки по несущей способности"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс/марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ФБ 6-11</td><td rowspan=\"17\">Серия 1.415-1 выпуск 1</td><td>5950</td><td>400/200</td><td>450</td><td>0,71</td><td>1,80</td><td>М300</td></tr><tr><td>ФБ 6-12</td><td>5050</td><td>400/200</td><td>450</td><td>0,60</td><td>1,50</td><td>М200</td></tr><tr><td>ФБ 6-13</td><td>4750</td><td>400/200</td><td>450</td><td>0,57</td><td>1,40</td><td>М200</td></tr><tr><td>ФБ 6-14</td><td>4450</td><td>400/200</td><td>450</td><td>0,53</td><td>1,30</td><td>М300</td></tr><tr><td>ФБ 6-15</td><td>4300</td><td>400/200</td><td>450</td><td>0,51</td><td>1,30</td><td>М300</td></tr><tr><td>ФБ 6-16</td><td>5950</td><td>400/200</td><td>450</td><td>0,71</td><td>1,80</td><td>М200</td></tr><tr><td>ФБ 6-17</td><td>5050</td><td>400/200</td><td>450</td><td>0,60</td><td>1,50</td><td>М300</td></tr><tr><td>ФБ 6-18</td><td>5950</td><td>400/200</td><td>450</td><td>0,71</td><td>1,80</td><td>М300</td></tr><tr><td>ФБ 6-19</td><td>5050</td><td>400/200</td><td>450</td><td>0,60</td><td>1,50</td><td>М300</td></tr><tr><td>ФБ 6-20</td><td>4750</td><td>400/200</td><td>450</td><td>0,57</td><td>1,40</td><td>М300</td></tr><tr><td>ФБ 6-21</td><td>4450</td><td>400/200</td><td>450</td><td>0,53</td><td>1,30</td><td>М300</td></tr><tr><td>ФБ 6-22</td><td>4300</td><td>400/200</td><td>450</td><td>0,51</td><td>1,30</td><td>М300</td></tr><tr><td>ФБ 6-23</td><td>5950</td><td>400/200</td><td>450</td><td>0,71</td><td>1,80</td><td>М200</td></tr><tr><td>ФБ 6-24</td><td>5050</td><td>400/200</td><td>450</td><td>0,60</td><td>1,50</td><td>М200</td></tr><tr><td>ФБ 6-25</td><td>4750</td><td>400/200</td><td>450</td><td>0,57</td><td>1,40</td><td>М200</td></tr><tr><td>ФБ 6-26</td><td>4450</td><td>400/200</td><td>450</td><td>0,53</td><td>1,30</td><td>М200</td></tr><tr><td>ФБ 6-27</td><td>4300</td><td>400/200</td><td>450</td><td>0,51</td><td>1,30</td><td>М200</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/balki-fundamentnie-fb-bf/balki-fundamentnie/",
+      "slug": "balki-fundamentnie",
+      "title": "Балки фундаментные",
+      "image": "/core/storage/d56c720f6b2420e4d277f5527f662d5e/512.webp",
+      "purpose": "Фундаментные балки предназначены для наружных и внутренних стен производственных зданий с шагом колонн 6 метров.",
+      "code": [
+       "ФБ 6-5"
+      ],
+      "notation": [
+       "ФБ – фундаментная балка",
+       "6 –для зданий шагом колонн 6 м",
+       "5 – порядковый номер балки по номенклатуре",
+       "1БФ – балка фундаментная типа 1",
+       "6 – для зданий шагом колонн 6 м",
+       "14 – четырнадцатой марки по несущей способности",
+       "1БФ – балка фундаментная типа 1",
+       "51 – длиной 5050 мм (в дм с округлением до целого числа)",
+       "1 – первой марки по несущей способности"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс/марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ФБ 6-1</td><td rowspan=\"10\">Серия 1.415-1 выпуск 1</td><td>5950</td><td>260/200</td><td>450</td><td>0,62</td><td>1,60</td><td rowspan=\"10\">М200</td></tr><tr><td>ФБ 6-2</td><td>5050</td><td>260/200</td><td>450</td><td>0,52</td><td>1,30</td></tr><tr><td>ФБ 6-3</td><td>4750</td><td>260/200</td><td>450</td><td>0,49</td><td>1,20</td></tr><tr><td>ФБ 6-4</td><td>4450</td><td>260/200</td><td>450</td><td>0,46</td><td>1,20</td></tr><tr><td>ФБ 6-5</td><td>4300</td><td>260/200</td><td>450</td><td>0,45</td><td>1,10</td></tr><tr><td>ФБ 6-6</td><td>5950</td><td>260/200</td><td>450</td><td>0,62</td><td>1,60</td></tr><tr><td>ФБ 6-7</td><td>5050</td><td>260/200</td><td>450</td><td>0,52</td><td>1,30</td></tr><tr><td>ФБ 6-8</td><td>4750</td><td>260/200</td><td>450</td><td>0,49</td><td>1,20</td></tr><tr><td>ФБ 6-9</td><td>4450</td><td>260/200</td><td>450</td><td>0,46</td><td>1,20</td></tr><tr><td>ФБ 6-10</td><td>4300</td><td>260/200</td><td>450</td><td>0,45</td><td>1,10</td></tr><tr><td>ФБ 6-45</td><td rowspan=\"4\">Серия 1.415-1 выпуск 1</td><td>5950</td><td>300/160</td><td>300</td><td>0,41</td><td>1,00</td><td>М200</td></tr><tr><td>ФБ 6-46</td><td>5050</td><td>300/160</td><td>300</td><td>0,35</td><td>0,90</td><td>М200</td></tr><tr><td>ФБ 6-47</td><td>4750</td><td>300/160</td><td>300</td><td>0,33</td><td>0,80</td><td>М200</td></tr><tr><td>ФБ 6-48</td><td>4450</td><td>300/160</td><td>300</td><td>0,31</td><td>0,80</td><td>М200</td></tr><tr><td>1БФ 6-1</td><td rowspan=\"14\">Серия 1.415.1-2 выпуск 1</td><td>5950</td><td>200/160</td><td>300</td><td>0,32</td><td>0,80</td><td>В25</td></tr><tr><td>1БФ 6-2</td><td>5950</td><td>200/160</td><td>300</td><td>0,32</td><td>0,80</td><td>В15</td></tr><tr><td>1БФ 6-3</td><td>5500</td><td>200/160</td><td>300</td><td>0,30</td><td>0,75</td><td>В25</td></tr><tr><td>1БФ 6-4</td><td>5500</td><td>200/160</td><td>300</td><td>0,30</td><td>0,75</td><td>В15</td></tr><tr><td>1БФ 6-5</td><td>5050</td><td>200/160</td><td>300</td><td>0,27</td><td>0,68</td><td>В25</td></tr><tr><td>1БФ 6-6</td><td>5050</td><td>200/160</td><td>300</td><td>0,27</td><td>0,68</td><td>В15</td></tr><tr><td>1БФ 6-7</td><td>4750</td><td>200/160</td><td>300</td><td>0,25</td><td>0,63</td><td>В25</td></tr><tr><td>1БФ 6-8</td><td>4750</td><td>200/160</td><td>300</td><td>0,25</td><td>0,63</td><td>В15</td></tr><tr><td>1БФ 6-9</td><td>4450</td><td>200/160</td><td>300</td><td>0,24</td><td>0,60</td><td>В25</td></tr><tr><td>1БФ 6-10</td><td>4450</td><td>200/160</td><td>300</td><td>0,24</td><td>0,60</td><td>В15</td></tr><tr><td>1БФ 6-11</td><td>4300</td><td>200/160</td><td>300</td><td>0,23</td><td>0,58</td><td>В25</td></tr><tr><td>1БФ 6-12</td><td>4300</td><td>200/160</td><td>300</td><td>0,23</td><td>0,58</td><td>В15</td></tr><tr><td>1БФ 6-13</td><td>4000</td><td>200/160</td><td>300</td><td>0,21</td><td>0,53</td><td>В25</td></tr><tr><td>1БФ 6-14</td><td>4000</td><td>200/160</td><td>300</td><td>0,21</td><td>0,53</td><td>В15</td></tr><tr><td>1БФ 24</td><td rowspan=\"12\">Серия 1.015.1-1.95 выпуск 2</td><td>2350</td><td>200/160</td><td>300</td><td>0,13</td><td>0,32</td><td>В15</td></tr><tr><td>1БФ 30</td><td>2950</td><td>200/160</td><td>300</td><td>0,16</td><td>0,40</td><td>В15</td></tr><tr><td>1БФ 40-1</td><td>4000</td><td>200/160</td><td>300</td><td>0,21</td><td>0,53</td><td>В25</td></tr><tr><td>1БФ 40-2</td><td>4000</td><td>200/160</td><td>300</td><td>0,21</td><td>0,53</td><td>В15</td></tr><tr><td>1БФ 45-1</td><td>4450</td><td>200/160</td><td>300</td><td>0,24</td><td>0,60</td><td>В25</td></tr><tr><td>1БФ 45-2</td><td>4450</td><td>200/160</td><td>300</td><td>0,24</td><td>0,60</td><td>В15</td></tr><tr><td>1БФ 51-1</td><td>5050</td><td>200/160</td><td>300</td><td>0,27</td><td>0,68</td><td>В25</td></tr><tr><td>1БФ 51-2</td><td>5050</td><td>200/160</td><td>300</td><td>0,27</td><td>0,68</td><td>В15</td></tr><tr><td>1БФ 55-1</td><td>5500</td><td>200/160</td><td>300</td><td>0,30</td><td>0,75</td><td>В25</td></tr><tr><td>1БФ 55-2</td><td>5500</td><td>200/160</td><td>300</td><td>0,30</td><td>0,75</td><td>В15</td></tr><tr><td>1БФ 60-1</td><td>5950</td><td>200/160</td><td>300</td><td>0,32</td><td>0,80</td><td>В25</td></tr><tr><td>1БФ 60-2</td><td>5950</td><td>200/160</td><td>300</td><td>0,32</td><td>0,80</td><td>В15</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/pliti-pokritiy-rebristie-pg-pv/",
+    "slug": "pliti-pokritiy-rebristie-pg-pv",
+    "title": "Плиты покрытий ребристые (ПГ, ПВ)",
+    "image": "/core/storage/7f607d9f400ed468b3a3cbed15dfa74c/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/pliti-pokritiy-rebristie-pg-pv/pliti-pokritiy-rebristie-seriya-14651/",
+      "slug": "pliti-pokritiy-rebristie-seriya-14651",
+      "title": "Плиты покрытий ребристые серия 1.465.1",
+      "image": "/core/storage/7f607d9f400ed468b3a3cbed15dfa74c/512.webp",
+      "purpose": "Железобетонные предварительно напряженные плиты покрытий размером 1,5*6,0 м, предназначенные для одноэтажных зданий, без проемов и с проемами в полке для пропуска вентшахт.",
+      "code": [
+       "4ПГ6-3АтV-7"
+      ],
+      "notation": [
+       "2П1 – типоразмер плиты 6,0*1,5 м",
+       "3 – порядковый номер плиты по несущей способности",
+       "АтV – класс напрягаемой арматуры",
+       "7 – индекс, отражающий конструктивную особенность плит типа ПВ (наличие отверстия диаметром 700 мм)"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\"> Нормативный документ </th><th colspan=\"4\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка/класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th><th>Диаметр отверстия</th></tr></thead><tbody><tr><td>2ПГ6-1АтV</td><td rowspan=\"8\">Сер.1.465.1-7/89<br>выпуск 1</td><td>5970</td><td>1490</td><td>300</td><td></td><td>0,615</td><td>1,50</td><td>М200</td></tr><tr><td>2ПГ6-2АтV</td><td>5970</td><td>1490</td><td>300</td><td></td><td>0,615</td><td>1,50</td><td>М250</td></tr><tr><td>2ПГ6-3АтV</td><td>5970</td><td>1490</td><td>300</td><td></td><td>0,615</td><td>1,50</td><td>М300</td></tr><tr><td>2ПГ6-4АтV</td><td>5970</td><td>1490</td><td>300</td><td></td><td>0,615</td><td>1,50</td><td>М300</td></tr><tr><td>2ПГ6-5АтV</td><td>5970</td><td>1490</td><td>300</td><td></td><td>0,615</td><td>1,50</td><td>М300</td></tr><tr><td>2ПВ6-…-4</td><td>5970</td><td>1490</td><td>300(370)</td><td>400</td><td>0,78</td><td>2,00</td><td></td></tr><tr><td>2ПВ6-…-7</td><td>5970</td><td>1490</td><td>300(370)</td><td>700</td><td>0,76</td><td>1,90</td><td></td></tr><tr><td>2ПВ6-…-10</td><td>5970</td><td>1490</td><td>300(370)</td><td>1000</td><td>0,72</td><td>1,80</td><td></td></tr><tr><td>4ПГ6-1АтV</td><td rowspan=\"8\">Сер.1.465.1-20<br>выпуск 1</td><td>5970</td><td>1490</td><td>300</td><td></td><td>0,615</td><td>1,50</td><td>В15</td></tr><tr><td>4ПГ6-2АтV</td><td>5970</td><td>1490</td><td>300</td><td></td><td>0,615</td><td>1,50</td><td>В15</td></tr><tr><td>4ПГ6-3АтV</td><td>5970</td><td>1490</td><td>300</td><td></td><td>0,615</td><td>1,50</td><td>В20</td></tr><tr><td>4ПГ6-4АтV</td><td>5970</td><td>1490</td><td>300</td><td></td><td>0,615</td><td>1,50</td><td>В20</td></tr><tr><td>4ПГ6-5АтV</td><td>5970</td><td>1490</td><td>300</td><td></td><td>0,615</td><td>1,50</td><td>В20</td></tr><tr><td>4ПВ6-…-4</td><td>5970</td><td>1490</td><td>300(370)</td><td>400</td><td>0,78</td><td>2,00</td><td></td></tr><tr><td>4ПВ6-…-7</td><td>5970</td><td>1490</td><td>300(370)</td><td>700</td><td>0,76</td><td>1,90</td><td></td></tr><tr><td>4ПВ6-…-10</td><td>5970</td><td>1490</td><td>300(370)</td><td>1000</td><td>0,72</td><td>1,80</td><td></td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/pliti-perekritiy-pustotnie-pk-ryadovie/",
+    "slug": "pliti-perekritiy-pustotnie-pk-ryadovie",
+    "title": "Плиты перекрытий пустотные (ПК рядовые, пристенные, связевые)",
+    "image": "/core/storage/f2016ea54e7c82b1af77f11ea48149eb/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/pliti-perekritiy-pustotnie-pk-ryadovie/pliti-pristennie-1/",
+      "slug": "pliti-pristennie-1",
+      "title": "Плиты пристенные",
+      "image": "/core/storage/c05a392ba897dbdd8e425e5d80cdd0e1/512.webp",
+      "purpose": "Плиты предназначены для использования в перекрытиях общественных и производственных зданий.",
+      "code": [
+       "ПК 56.15-8АтV-2"
+      ],
+      "notation": [
+       "ПК – плита круглопустотная",
+       "56 – длиной 5650 мм (в дм с округлением до целого числа)",
+       "15 – шириной 1490 мм (в дм с округлением до целого числа)",
+       "8 – условная несущая способность 8 кПа",
+       "АтV – класс напрягаемой арматуры",
+       "2 – связевая"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ПК68.12-5АтV-1</td><td>1.041.1-3 вып.2</td><td>6850</td><td>1190</td><td>220</td><td>1,79</td><td>2,50</td><td>В20</td></tr><tr><td>ПК68.12-12АтV-1</td><td></td><td>6850</td><td>1190</td><td>220</td><td>1,79</td><td>2,50</td><td>В30</td></tr><tr><td>ПК56.15-6АтV-1</td><td rowspan=\"7\">1.041.1-3 вып.1</td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В20</td></tr><tr><td>ПК56.15-13АтV-1</td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В22,5</td></tr><tr><td>ПК56.12-6АтV-1</td><td>5650</td><td>1190</td><td>220</td><td>1,48</td><td>2,00</td><td>В20</td></tr><tr><td>ПК56.12-10АтV -1</td><td>5650</td><td>1190</td><td>220</td><td>1,48</td><td>2,00</td><td>В20</td></tr><tr><td>ПК56.9-6АтV</td><td>5650</td><td>940</td><td>220</td><td>1,17</td><td>1,70</td><td>В20</td></tr><tr><td>ПК56.9-9АтV</td><td>5650</td><td>940</td><td>220</td><td>1,17</td><td>1,70</td><td>В22,5</td></tr><tr><td>ПК56.9-14АтV</td><td>5650</td><td>890</td><td>220</td><td>1,17</td><td>1,70</td><td>В30</td></tr><tr><td>ПК 27.9-6АIII</td><td rowspan=\"4\">1.041.1-3 вып.5</td><td>2650</td><td>1490</td><td>220</td><td>0,31</td><td>0,80</td><td>В15</td></tr><tr><td>ПК 27.9-12АIII</td><td>2650</td><td>1490</td><td>220</td><td>0,31</td><td>0,80</td><td>В15</td></tr><tr><td>ПК 27.12-6АIII-1</td><td>2650</td><td>1190</td><td>220</td><td>0,36</td><td>0,90</td><td>В15</td></tr><tr><td>ПК 27.12-12АIII-1</td><td>2650</td><td>1190</td><td>220</td><td>0,36</td><td>0,90</td><td>В15</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/pliti-perekritiy-pustotnie-pk-ryadovie/pliti-ryadovie-2/",
+      "slug": "pliti-ryadovie-2",
+      "title": "Плиты рядовые",
+      "image": "/core/storage/f2016ea54e7c82b1af77f11ea48149eb/512.webp",
+      "purpose": "Плиты предназначены для использования в перекрытиях общественных и производственных зданий.",
+      "code": [
+       "ПК 56.15-8АтV-2"
+      ],
+      "notation": [
+       "ПК – плита круглопустотная",
+       "56 – длиной 5650 мм (в дм с округлением до целого числа)",
+       "15 – шириной 1490 мм (в дм с округлением до целого числа)",
+       "8 – условная несущая способность 8 кПа",
+       "АтV – класс напрягаемой арматуры",
+       "2 – связевая"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ПК68.15-9АтV</td><td rowspan=\"5\">1.041.1-3 вып.2 </td><td>6850</td><td>1490</td><td>220</td><td>2,25</td><td>3,20</td><td>В30</td></tr><tr><td>ПК68.15-11АтV</td><td>6850</td><td>1490</td><td>220</td><td>2,25</td><td>3,20</td><td>В30</td></tr><tr><td>ПК68.15-13АтV</td><td>6850</td><td>1490</td><td>220</td><td>2,25</td><td>3,20</td><td>В30</td></tr><tr><td>ПК68.12-8АтV</td><td>6850</td><td>1190</td><td>220</td><td>1,79</td><td>2,50</td><td>В25</td></tr><tr><td>ПК68.12-12АтV</td><td>6850</td><td>1190</td><td>220</td><td>1,79</td><td>2,50</td><td>В30</td></tr><tr><td>ПК56.15-6АтV-Б</td><td rowspan=\"12\"> 1.041.1-3 вып.1</td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В20</td></tr><tr><td>ПК56.15-6АтV</td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В20</td></tr><tr><td>ПК56.15-8АтV-Б</td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В20</td></tr><tr><td>ПК56.15-8АтV</td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В20</td></tr><tr><td>ПК56.15-10АтV</td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В20</td></tr><tr><td>ПК56.15-13АтV</td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В22,5</td></tr><tr><td>ПК56.15-15АтV</td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В22,5</td></tr><tr><td>ПК56.12-6АтV-Б</td><td>5650</td><td>1190</td><td>220</td><td>1,48</td><td>2,00</td><td>В20</td></tr><tr><td>ПК56.12-6АтV</td><td>5650</td><td>1190</td><td>220</td><td>1,48</td><td>2,00</td><td>В20</td></tr><tr><td>ПК56.12-9АтV</td><td>5650</td><td>1190</td><td>220</td><td>1,48</td><td>2,00</td><td>В20</td></tr><tr><td>ПК56.12-10АтV</td><td>5650</td><td>1190</td><td>220</td><td>1,48</td><td>2,00</td><td>В20</td></tr><tr><td>ПК56.12-14АтV</td><td>5650</td><td>1190</td><td>220</td><td>1,48</td><td>2,00</td><td>В27,5</td></tr><tr><td>ПК 27.15-6АIII</td><td rowspan=\"5\">1.041.1-3 вып.5</td><td>2650</td><td>1490</td><td>220</td><td>0,49</td><td>1,20</td><td>В15</td></tr><tr><td>ПК 27.15-10АIII</td><td>2650</td><td>1490</td><td>220</td><td>0,49</td><td>1,20</td><td>В15</td></tr><tr><td>ПК 27.15-16АIII</td><td>2650</td><td>1490</td><td>220</td><td>0,49</td><td>1,20</td><td>В15</td></tr><tr><td>ПК 27.12-8АIII</td><td>2650</td><td>1190</td><td>220</td><td>0,37</td><td>0,90</td><td>В15</td></tr><tr><td>ПК 27.12-12АIII</td><td>2650</td><td>1190</td><td>220</td><td>0,37</td><td>0,90</td><td>В15</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/pliti-perekritiy-pustotnie-pk-ryadovie/pliti-svyazevie-1/",
+      "slug": "pliti-svyazevie-1",
+      "title": "Плиты связевые",
+      "image": "/core/storage/4feb852b6452174ab98329c6fc36f228/512.webp",
+      "purpose": "Плиты предназначены для использования в перекрытиях общественных и производственных зданий.",
+      "code": [
+       "ПК 56.15-8АтV-2"
+      ],
+      "notation": [
+       "ПК – плита круглопустотная",
+       "56 – длиной 5650 мм (в дм с округлением до целого числа)",
+       "15 – шириной 1490 мм (в дм с округлением до целого числа)",
+       "8 – условная несущая способность 8 кПа",
+       "АтV – класс напрягаемой арматуры",
+       "2 – связевая"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ПК68.15-5АтV-2</td><td>1.041.1-3 вып.2</td><td>6850</td><td>1490</td><td>220</td><td>2,25</td><td>3,20</td><td>В22,5</td></tr><tr><td>ПК68.15-9АтV-2</td><td></td><td>6850</td><td>1490</td><td>220</td><td>2,25</td><td>3,20</td><td>В30</td></tr><tr><td>ПК68.15-11АтV-2</td><td></td><td>6850</td><td>1490</td><td>220</td><td>2,25</td><td>3,20</td><td>В30</td></tr><tr><td>ПК56.15-6АтV-2Б</td><td></td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В20</td></tr><tr><td>ПК56.15-6АтV-2</td><td></td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В20</td></tr><tr><td>ПК56.15-8АтV-2Б</td><td>1.041.1-3 вып.1</td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В20</td></tr><tr><td>ПК56.15-8АтV-2</td><td></td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В20</td></tr><tr><td>ПК56.15-10АтV-2</td><td></td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В20</td></tr><tr><td>ПК56.15-13АтV-2</td><td></td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В22,5</td></tr><tr><td>ПК56.15-15АтV-2</td><td></td><td>5650</td><td>1490</td><td>220</td><td>1,85</td><td>2,60</td><td>В22,5</td></tr><tr><td>ПК 27.15-6АIII-2</td><td>1.041.1-3 вып.5</td><td>2650</td><td>1490</td><td>220</td><td>0,48</td><td>1,20</td><td>В15</td></tr><tr><td>ПК 27.15-10АIII-2</td><td></td><td>2650</td><td>1490</td><td>220</td><td>0,48</td><td>1,20</td><td>В15</td></tr><tr><td>ПК 27.15-16АIII-2</td><td></td><td>2650</td><td>1490</td><td>220</td><td>0,48</td><td>1,20</td><td>В15</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/pliti-perekritiy-rebristie-ip-2p1/",
+    "slug": "pliti-perekritiy-rebristie-ip-2p1",
+    "title": "Плиты перекрытий ребристые (ИП, 2П1)",
+    "image": "/core/storage/7a4b5d2aac7be6583ac8053e2b830653/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/pliti-perekritiy-rebristie-ip-2p1/pliti-perekritiy-rebristie-seriya-ii24170/",
+      "slug": "pliti-perekritiy-rebristie-seriya-ii24170",
+      "title": "Плиты перекрытий ребристые серия ИИ24-1/70",
+      "image": "/core/storage/a4bb1a3b827a710892c4163b55c90790/512.webp",
+      "purpose": "Плиты применяются для перекрытий многоэтажных производственных зданий.",
+      "code": [
+       "ИП 4-5"
+      ],
+      "notation": [
+       "ИП – плита межколонная для перекрытия",
+       "4 – типоразмер 5,05*0,75 м",
+       "5 – несущая способность",
+       "Марки плит с закладными деталями содержат дополнительный индекс 1"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ИП 1-1</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М200</td></tr><tr><td>ИП 1-2</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М200</td></tr><tr><td>ИП 1-3</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М200</td></tr><tr><td>ИП 1-4</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М300</td></tr><tr><td>ИП 1-5</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М300</td></tr><tr><td>ИП 1-6</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М300</td></tr><tr><td>ИП 1-7</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М200</td></tr><tr><td>ИП 1-8</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М200</td></tr><tr><td>ИП 1-9</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М300</td></tr><tr><td>ИП1-1-1</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М200</td></tr><tr><td>ИП1-2-1</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М200</td></tr><tr><td>ИП1-3-1</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М200</td></tr><tr><td>ИП1-4-1</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М300</td></tr><tr><td>ИП1-5-1</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М300</td></tr><tr><td>ИП1-6-1</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М300</td></tr><tr><td>ИП1-7-1</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М200</td></tr><tr><td>ИП1-8-1</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М200</td></tr><tr><td>ИП1-9-1</td><td>5550</td><td>1485</td><td>400(50)</td><td>0,89</td><td>2,20</td><td>М300</td></tr><tr><td>ИП 2-1</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М200</td></tr><tr><td>ИП 2-2</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М200</td></tr><tr><td>ИП 2-3</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М200</td></tr><tr><td>ИП 2-4</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М300</td></tr><tr><td>ИП 2-5</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М300</td></tr><tr><td>ИП 2-6</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М200</td></tr><tr><td>ИП 2-7</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М300</td></tr><tr><td>ИП2-1-1</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М200</td></tr><tr><td>ИП2-2-1</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М200</td></tr><tr><td>ИП2-3-1</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М200</td></tr><tr><td>ИП2-4-1</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М300</td></tr><tr><td>ИП2-5-1</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М300</td></tr><tr><td>ИП2-6-1</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М200</td></tr><tr><td>ИП2-7-1</td><td>5050</td><td>1485</td><td>400(50)</td><td>0,81</td><td>2,00</td><td>М300</td></tr><tr><td>ИП 3-1</td><td>5550</td><td>740</td><td>400(50)</td><td>0,60</td><td>1,50</td><td>М200</td></tr><tr><td>ИП 3-2</td><td>5550</td><td>740</td><td>400(50)</td><td>0,60</td><td>1,50</td><td>М200</td></tr><tr><td>ИП 3-3</td><td>5550</td><td>740</td><td>400(50)</td><td>0,60</td><td>1,50</td><td>М200</td></tr><tr><td>ИП 3-4</td><td>5550</td><td>740</td><td>400(50)</td><td>0,60</td><td>1,50</td><td>М300</td></tr><tr><td>ИП 3-5</td><td>5550</td><td>740</td><td>400(50)</td><td>0,60</td><td>1,50</td><td>М300</td></tr><tr><td>ИП 3-6</td><td>5550</td><td>740</td><td>400(50)</td><td>0,60</td><td>1,50</td><td>М200</td></tr><tr><td>ИП 4-1</td><td>5050</td><td>740</td><td>400(50)</td><td>0,55</td><td>1,37</td><td>М200</td></tr><tr><td>ИП 4-2</td><td>5050</td><td>740</td><td>400(50)</td><td>0,55</td><td>1,37</td><td>М200</td></tr><tr><td>ИП 4-3</td><td>5050</td><td>740</td><td>400(50)</td><td>0,55</td><td>1,37</td><td>М200</td></tr><tr><td>ИП 4-4</td><td>5050</td><td>740</td><td>400(50)</td><td>0,55</td><td>1,37</td><td>М300</td></tr><tr><td>ИП 4-5</td><td>5050</td><td>740</td><td>400(50)</td><td>0,55</td><td>1,37</td><td>М300</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/pliti-perekritiy-rebristie-ip-2p1/pliti-perekritiy-rebristie-seriya-14421594/",
+      "slug": "pliti-perekritiy-rebristie-seriya-14421594",
+      "title": "Плиты перекрытий ребристые серия 1.442.1-5.94 выпуск 1",
+      "image": "/core/storage/7a4b5d2aac7be6583ac8053e2b830653/512.webp",
+      "purpose": "Плиты предназначены для использования в перекрытиях и покрытиях многоэтажных общественных и производственных зданиях, а также сооружениях.",
+      "code": [
+       "2П1-3АтV-1"
+      ],
+      "notation": [
+       "2П1 – типоразмер плиты 6,0*1,5 м",
+       "3 – порядковый номер плиты по несущей способности",
+       "АтV – класс напрягаемой арматуры",
+       "1 – назначение плиты – рядовая у температурного шва (отличается наличием дополнительных закладных деталей)"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс/марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н/h</th></tr></thead><tbody><tr><td>2П1-1АтV</td><td>5950</td><td>1485</td><td>400(50)</td><td>0,95</td><td>2,40</td><td>В20/М250</td></tr><tr><td>2П1-2АтV</td><td>5950</td><td>1485</td><td>400(50)</td><td>0,95</td><td>2,40</td><td>В22,5/М300</td></tr><tr><td>2П1-3АтV</td><td>5950</td><td>1485</td><td>400(50)</td><td>0,95</td><td>2,40</td><td>В27,5/М350</td></tr><tr><td>2П1-4АтV</td><td>5950</td><td>1485</td><td>400(50)</td><td>0,95</td><td>2,40</td><td>В30/М400</td></tr><tr><td>2П1-5АтV</td><td>5950</td><td>1485</td><td>400(50)</td><td>0,95</td><td>2,40</td><td>В35/М450</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/diafragmi-zhestkosti-d-dp/",
+    "slug": "diafragmi-zhestkosti-d-dp",
+    "title": "Диафрагмы жесткости (Д, ДП)",
+    "image": "/core/storage/3bcc823fc86912f7738a513ac83859fb/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/diafragmi-zhestkosti-d-dp/diafragmi-zhestkosti-seriya-1020187/",
+      "slug": "diafragmi-zhestkosti-seriya-1020187",
+      "title": "Диафрагмы жесткости серия 1.020-1/87 выпуск 4-1",
+      "image": "/core/storage/3bcc823fc86912f7738a513ac83859fb/512.webp",
+      "purpose": "Диафрагмы предназначены для применения в зданиях с высртами этажей 3,0 м, 3,3 м, 3,6 м, 4,2 м, 4,8 м.",
+      "code": [
+       "2Д 30.42"
+      ],
+      "notation": [
+       "2Д – диафрагма с двумя полками, беспроемная",
+       "30 – длиной 2980 мм (в дм с округлением до целого числа)",
+       "42 – высотой 4170 мм (в дм с округлением до целого числа)"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"2\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Высота, Н</th></tr></thead><tbody><tr><td>2Д 12.20</td><td>1180</td><td>1970</td><td>0,48</td><td>1,20</td><td>В25</td></tr><tr><td>2Д 26.20</td><td>2560</td><td>1970</td><td>1,05</td><td>2,63</td><td>В25</td></tr><tr><td>2Д 12.33</td><td>1180</td><td>3270</td><td>0,70</td><td>1,75</td><td>В25</td></tr><tr><td>2Д 26.33</td><td>2560</td><td>3270</td><td>1,51</td><td>3,78</td><td>В25</td></tr><tr><td>2Д 30.33</td><td>2980</td><td>3270</td><td>1,76</td><td>4,40</td><td>В25</td></tr><tr><td>2Д 12.36</td><td>1180</td><td>3570</td><td>0,76</td><td>1,89</td><td>В20</td></tr><tr><td>2Д 24.36</td><td>2380</td><td>3570</td><td>1,51</td><td>3,78</td><td>В20</td></tr><tr><td>2Д 26.36</td><td>2560</td><td>3570</td><td>1,62</td><td>4,05</td><td>В20</td></tr><tr><td>2Д 30.36</td><td>2980</td><td>3570</td><td>1,89</td><td>4,73</td><td>В20</td></tr><tr><td>2Д 12.42</td><td>1180</td><td>4170</td><td>0,86</td><td>2,14</td><td>В20</td></tr><tr><td>2Д 24.42</td><td>2380</td><td>4170</td><td>1,71</td><td>4,28</td><td>В20</td></tr><tr><td>2Д 26.42</td><td>2560</td><td>4170</td><td>1,84</td><td>4,59</td><td>В20</td></tr><tr><td>2Д 30.42</td><td>2980</td><td>4170</td><td>2,14</td><td>5,34</td><td>В20</td></tr><tr><td>1Д 12.20</td><td>1180</td><td>1970</td><td>0,40</td><td>1,00</td><td>В25</td></tr><tr><td>1Д 26.20</td><td>2560</td><td>1970</td><td>0,88</td><td>2,20</td><td>В25</td></tr><tr><td>1Д 30.20</td><td>2980</td><td>1970</td><td>1,02</td><td>2,55</td><td>В25</td></tr><tr><td>1Д 12.33</td><td>1180</td><td>3270</td><td>0,62</td><td>1,55</td><td>В25</td></tr><tr><td>1Д 26.33</td><td>2560</td><td>3270</td><td>1,34</td><td>3,35</td><td>В25</td></tr><tr><td>1Д 30.33</td><td>2980</td><td>3270</td><td>1,56</td><td>3,90</td><td>В25</td></tr><tr><td>1Д 12.36</td><td>1180</td><td>3570</td><td>0,68</td><td>1,69</td><td>В20</td></tr><tr><td>1Д 24.36</td><td>2380</td><td>3570</td><td>1,35</td><td>3,38</td><td>В20</td></tr><tr><td>1Д 26.36</td><td>2560</td><td>3570</td><td>1,45</td><td>3,63</td><td>В20</td></tr><tr><td>1Д 30.36</td><td>2980</td><td>3570</td><td>1,69</td><td>4,23</td><td>В20</td></tr><tr><td>1Д 12.42</td><td>1180</td><td>4170</td><td>0,78</td><td>1,94</td><td>В20</td></tr><tr><td>1Д 24.42</td><td>2380</td><td>4170</td><td>1,55</td><td>3,87</td><td>В20</td></tr><tr><td>1Д 26.42</td><td>2560</td><td>4170</td><td>1,67</td><td>4,18</td><td>В20</td></tr><tr><td>1Д 30.42</td><td>2980</td><td>4170</td><td>1,94</td><td>4,85</td><td>В20</td></tr><tr><td>2ДП 26.33</td><td>2560</td><td>3270</td><td>1,10</td><td>2,75</td><td>В25</td></tr><tr><td>2ДП 30.33</td><td>2980</td><td>3270</td><td>1,35</td><td>3,38</td><td>В25</td></tr><tr><td>2ДП 26.36</td><td>2560</td><td>3570</td><td>1,26</td><td>3,15</td><td>В20</td></tr><tr><td>2ДП 30.36</td><td>2980</td><td>3570</td><td>1,48</td><td>3,72</td><td>В20</td></tr><tr><td>2ДП 26.42</td><td>2560</td><td>4170</td><td>1,43</td><td>3,60</td><td>В20</td></tr><tr><td>2ДП 30.42</td><td>2980</td><td>4170</td><td>1,73</td><td>4,33</td><td>В20</td></tr><tr><td>1ДП 26.33</td><td>2560</td><td>3270</td><td>0,95</td><td>2,38</td><td>В25</td></tr><tr><td>1ДП 30.33</td><td>2980</td><td>3270</td><td>1,15</td><td>2,88</td><td>В25</td></tr><tr><td>1ДП 26.36</td><td>2560</td><td>3570</td><td>1,05</td><td>2,63</td><td>В20</td></tr><tr><td>1ДП 30.36</td><td>2980</td><td>3570</td><td>1,28</td><td>3,23</td><td>В20</td></tr><tr><td>1ДП 26.42</td><td>2560</td><td>4170</td><td>1,26</td><td>3,17</td><td>В20</td></tr><tr><td>1ДП 30.42</td><td>2980</td><td>4170</td><td>1,53</td><td>3,83</td><td>В20</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/balki-stropilnie-bdr-bsp/",
+    "slug": "balki-stropilnie-bdr-bsp",
+    "title": "Балки стропильные (БДР, БСП)",
+    "image": "/core/storage/6796575f84cb3fc32643eb646ce79f78/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/balki-stropilnie-bdr-bsp/balki-stropilnie-seriya14621/",
+      "slug": "balki-stropilnie-seriya14621",
+      "title": "Балки стропильные серия 1.462.1",
+      "image": "/core/storage/6796575f84cb3fc32643eb646ce79f78/512.webp",
+      "purpose": "Балки стропильные железобетонные предназначены для покрытий одноэтажных производственных зданий с пролетами 6 и 9 метров.",
+      "code": [
+       "БСП6.1-7АIII -1"
+      ],
+      "notation": [
+       "БСП – балка стропильная с параллельными поясами",
+       "6 – координационная длина балки (6м)",
+       "1 – цифра, условно обозначающая форму поперечного сечения балки (1 - тавровое, 2 – двутавровое)",
+       "7 – порядковый номер балки по несущей способности",
+       "АIII – класс рабочей продольной арматуры",
+       "1 – порядковый номер, характеризующий наличие и расположение дополнительных и измененных закладных деталей (с закладными изделиями для крепления плит шириной 3,0м)"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>БСП6.1-1АIII</td><td rowspan=\"2\">Серия1.462.1-10/93</td><td>5960</td><td>200(100)</td><td>590</td><td>0,45</td><td>1,2</td><td>В20</td></tr><tr><td>БСП6.1-2АIII</td><td>5960</td><td>200(100)</td><td>590</td><td>0,45</td><td>1,2</td><td>В20</td></tr><tr><td>БСП6.1-3АIII</td><td>Серия1.462.1-10/89</td><td>5960</td><td>200(100)</td><td>590</td><td>0,45</td><td>1,2</td><td>В20</td></tr><tr><td>БСП6.1-4АIII</td><td rowspan=\"15\">Серия1.462.1-10/93</td><td>5960</td><td>200(100)</td><td>590</td><td>0,45</td><td>1,2</td><td>В20</td></tr><tr><td>БСП6.1-5АIII</td><td>5960</td><td>200(100)</td><td>590</td><td>0,45</td><td>1,2</td><td>В25</td></tr><tr><td>БСП6.1-6АIII</td><td>5960</td><td>200(100)</td><td>590</td><td>0,45</td><td>1,2</td><td>В25</td></tr><tr><td>БСП6.1-7АIII</td><td>5960</td><td>200(100)</td><td>590</td><td>0,45</td><td>1,2</td><td>В25</td></tr><tr><td>БСП6.1-8АIII</td><td>5960</td><td>200(100)</td><td>590</td><td>0,45</td><td>1,2</td><td>В30</td></tr><tr><td>БСП6.1-9АIII</td><td>5960</td><td>200(100)</td><td>590</td><td>0,45</td><td>1,2</td><td>В30</td></tr><tr><td>БСП6.1-10АIII</td><td>5960</td><td>200(100)</td><td>590</td><td>0,45</td><td>1,2</td><td>В40</td></tr><tr><td>БСП9.2-1АIII</td><td>8960</td><td>220(80)</td><td>890</td><td>1,1</td><td>2,8</td><td>В20</td></tr><tr><td>БСП9.2-2АIII</td><td>8960</td><td>220(80)</td><td>890</td><td>1,1</td><td>2,8</td><td>В20</td></tr><tr><td>БСП9.2-3АIII</td><td>8960</td><td>220(80)</td><td>890</td><td>1,1</td><td>2,8</td><td>В20</td></tr><tr><td>БСП9.2-4АIII</td><td>8960</td><td>220(80)</td><td>890</td><td>1,1</td><td>2,8</td><td>В25</td></tr><tr><td>БСП9.2-5АIII</td><td>8960</td><td>220(80)</td><td>890</td><td>1,1</td><td>2,8</td><td>В25</td></tr><tr><td>БСП9.2-7АIII</td><td>8960</td><td>220(80)</td><td>890</td><td>1,1</td><td>2,8</td><td>В30</td></tr><tr><td>БСП9.2-8АIII</td><td>8960</td><td>220(80)</td><td>890</td><td>1,1</td><td>2,8</td><td>В30</td></tr><tr><td>БСП9.2-9АIII</td><td>8960</td><td>220(80)</td><td>890</td><td>1,1</td><td>2,8</td><td>В35</td></tr><tr><td>БСП9.2-10АIII</td><td>Серия1.462.1-10/89</td><td>8960</td><td>220(80)</td><td>890</td><td>1,1</td><td>2,8</td><td>В40</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/balki-stropilnie-bdr-bsp/balki-stropilnie-reshetchatie-seriya/",
+      "slug": "balki-stropilnie-reshetchatie-seriya",
+      "title": "Балки стропильные решетчатые серия 1.462.1-3/89 выпуск 1",
+      "image": "/core/storage/b7be1cd89b2b8ab2b79ae08384c09104/original.jpg",
+      "purpose": "Железобетонные стропильные решетчатые балки предназначены для покрытий одноэтажных зданий с пролетами 12 и 18 метров.",
+      "code": [
+       "2БДР12-6к7"
+      ],
+      "notation": [
+       "2 – типоразмер балки",
+       "БДР – балка двускатная решетчатая",
+       "12 – пролет балки (12м)",
+       "6 – порядковый номер балки по несущей способности",
+       "к7 – класс напрягаемой арматуры (канаты)"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>2БДР12-5к7</td><td>11960</td><td>200</td><td>890(1390)</td><td>2,0</td><td>5,0</td><td>В30</td></tr><tr><td>2БДР12-6к7</td><td>11960</td><td>200</td><td>890(1390)</td><td>2,0</td><td>5,0</td><td>В30</td></tr><tr><td>2БДР12-7к7</td><td>11960</td><td>200</td><td>890(1390)</td><td>2,0</td><td>5,0</td><td>В35</td></tr><tr><td>2БДР12-8к7</td><td>11960</td><td>200</td><td>890(1390)</td><td>2,0</td><td>5,0</td><td>В40</td></tr><tr><td>3БДР18-4к7</td><td>17960</td><td>280</td><td>890(1640)</td><td>4,84</td><td>12,1</td><td>В30</td></tr><tr><td>3БДР18-5к7</td><td>17960</td><td>280</td><td>890(1640)</td><td>4,84</td><td>12,1</td><td>В30</td></tr><tr><td>3БДР18-6к7</td><td>17960</td><td>280</td><td>890(1640)</td><td>4,84</td><td>12,1</td><td>В40</td></tr><tr><td>3БДР18-7к7</td><td>17960</td><td>280</td><td>890(1640)</td><td>4,84</td><td>12,1</td><td>В40</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/pliti-perekritiy-santehnicheskie-prs/",
+    "slug": "pliti-perekritiy-santehnicheskie-prs",
+    "title": "Плиты перекрытий сантехнические (ПРС)",
+    "image": "/core/storage/8eb0b92a1a3f21f3d524ad0d94e264fc/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-promishlennih/pliti-perekritiy-santehnicheskie-prs/pliti-santehnicheskie-seriya-104113/",
+      "slug": "pliti-santehnicheskie-seriya-104113",
+      "title": "Плиты сантехнические серия 1.041.1-3 выпуск 6",
+      "image": "/core/storage/8eb0b92a1a3f21f3d524ad0d94e264fc/512.webp",
+      "purpose": "Сантехнические плиты предназначены для использования в перекрытиях многоэтажных общественных и производственных зданий, а также сооружениях.",
+      "code": [
+       "ПРС 56.15-11АтV"
+      ],
+      "notation": [
+       "ПРС – плита ребристая сантехническая",
+       "56 – длиной 5650 мм (в дм с округлением до целого числа)",
+       "15 – шириной 1490 мм (в дм с округлением до целого числа)",
+       "11 – условная несущая способность 11 кПа",
+       "АтV – класс напрягаемой арматуры"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м3</th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ПРС 56.15-7АтV</td><td>5650</td><td>1490</td><td>220</td><td>1,13</td><td>2,83</td><td>В20</td></tr><tr><td>ПРС 56.15-11АтV</td><td>5650</td><td>1490</td><td>220</td><td>1,13</td><td>2,83</td><td>В20</td></tr><tr><td>ПРС 56.15-15АтV</td><td>5650</td><td>1490</td><td>220</td><td>1,13</td><td>2,83</td><td>В22,5</td></tr><tr><td>ПРС 26.15-4AIII</td><td>2650</td><td>1490</td><td>220</td><td>0,61</td><td>1,52</td><td>В15</td></tr><tr><td>ПРС 26.15-11AIII</td><td>2650</td><td>1490</td><td>220</td><td>0,61</td><td>1,52</td><td>В15</td></tr><tr><td>ПРС 26.15-17AIII</td><td>2650</td><td>1490</td><td>220</td><td>0,61</td><td>1,52</td><td>В15</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/catalog/elementi-dorozhnogo-stroitelstva/",
+  "slug": "elementi-dorozhnogo-stroitelstva",
+  "title": "Элементы дорожного строительства и ограждения",
+  "image": "/core/storage/407e39c0b79ac3167a8cd422f049ca7a/512.webp",
+  "groups": [
+   {
+    "path": "/catalog/elementi-dorozhnogo-stroitelstva/bloki-betonnie-dlya-vodootvodnih-sooruzheniy/",
+    "slug": "bloki-betonnie-dlya-vodootvodnih-sooruzheniy",
+    "title": "Блоки бетонные для водоотводных сооружений (Б)",
+    "image": "/core/storage/84324a6fc7aaac8d6023b82ee4145809/512.webp",
+    "items": [
+     {
+      "path": "/catalog/elementi-dorozhnogo-stroitelstva/bloki-betonnie-dlya-vodootvodnih-sooruzheniy/bloki-betonnie-seriya-3503166/",
+      "slug": "bloki-betonnie-seriya-3503166",
+      "title": "Блоки бетонные серия 3.503.1-66",
+      "image": "/core/storage/84324a6fc7aaac8d6023b82ee4145809/512.webp",
+      "purpose": "",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>Б-1-20-50 </td><td>1000</td><td>500</td><td>200/250</td><td>0,1</td><td>0,24</td><td rowspan=\"4\">М300</td></tr><tr><td>Б-1-22-75</td><td>1000</td><td>750</td><td>220/270</td><td>0,159</td><td>0,38</td></tr><tr><td>Б-5 </td><td>1000</td><td>450</td><td>150/180</td><td>0,079</td><td>0,19</td></tr><tr><td>Б-9</td><td>800</td><td>510</td><td>250</td><td>0,088</td><td>0,21</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/elementi-dorozhnogo-stroitelstva/pliti-dorozhnie-1p-2p-pdn-i-aerodromnie/",
+    "slug": "pliti-dorozhnie-1p-2p-pdn-i-aerodromnie",
+    "title": "Плиты дорожные (1П, 2П, ПДН) и аэродромные (ПАГ)",
+    "image": "/core/storage/c5814803a89ba18528ee3d7b3df08117/512.webp",
+    "items": [
+     {
+      "path": "/catalog/elementi-dorozhnogo-stroitelstva/pliti-dorozhnie-1p-2p-pdn-i-aerodromnie/pliti-dorozhnie-i-aerodromnie/",
+      "slug": "pliti-dorozhnie-i-aerodromnie",
+      "title": "Плиты дорожные и аэродромные",
+      "image": "/core/storage/c5814803a89ba18528ee3d7b3df08117/512.webp",
+      "purpose": "Железобетонные плиты с ненапрягаемой арматурой и предварительно напряженные плиты предназначены для устройства сборочных покрытий постоянных и временных городских дорог;",
+      "code": [
+       "2П30.18-10"
+      ],
+      "notation": [
+       "2 – плита для временных дорог (тип 2)",
+       "П – прямоугольная",
+       "30 – длиной 3000 мм(в дм) ",
+       "18 – шириной 1750 мм (в дм с округлением до целого числа)",
+       "10 – под автомобиль массой 10 т",
+       "ПДН – плита дорожная напряженная",
+       "АтV – класс напрягаемой арматуры",
+       "ПАГ-14V",
+       "14 – толщиной 14 см",
+       "V – класс напрягаемой арматуры",
+       "В обозначении марки плит ПАГ-14 с напрягаемой продольной арматурой диаметром 12 мм дополнительно приводят цифру 1 (через дефис)"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м3</th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\"></th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>1П30.18-10 </td><td rowspan=\"4\">ГОСТ 21924.0-84*</td><td>3000</td><td>1750</td><td>170</td><td>0,88</td><td>2,2</td><td>В30</td></tr><tr><td>1П30.18-30</td><td>3000</td><td>1750</td><td>170</td><td>0,88</td><td>2,2</td><td>В30</td></tr><tr><td>2П30.18-10</td><td>3000</td><td>1750</td><td>170</td><td>0,88</td><td>2,2</td><td>В22,5</td></tr><tr><td>2П30.18-30</td><td>3000</td><td>1750</td><td>170</td><td>0,88</td><td>2,2</td><td>В22,5</td></tr><tr><td>ПДН АтV</td><td>Серия 3.503.1-91</td><td>6000</td><td>2000</td><td>140</td><td>1,68</td><td>4,2</td><td>В27,5</td></tr><tr><td>ПАГ-14V</td><td>ГОСТ 25912.1-91</td><td>6000</td><td>2000</td><td>140</td><td>1,68</td><td>4,2</td><td>В25</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/elementi-dorozhnogo-stroitelstva/bordyurnie-kamni-bu-br/",
+    "slug": "bordyurnie-kamni-bu-br",
+    "title": "Бордюрные камни (БУ, БР)",
+    "image": "/core/storage/68b9fba375e9e1cb49b9eaec9f11b5fe/512.webp",
+    "items": [
+     {
+      "path": "/catalog/elementi-dorozhnogo-stroitelstva/bordyurnie-kamni-bu-br/kamni-betonnie-i-zhelezobetonnie-bortovie/",
+      "slug": "kamni-betonnie-i-zhelezobetonnie-bortovie",
+      "title": "Камни бетонные и железобетонные бортовые",
+      "image": "/core/storage/68b9fba375e9e1cb49b9eaec9f11b5fe/512.webp",
+      "purpose": "Бетонные и железобетонные бортовые камни предназначены для отделения проезжей части улиц и дорог от тротуаров, газонов, площадок и т.п.",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>БУ100.30-32*</td><td>1000</td><td>320</td><td>300</td><td>0,063</td><td>0,057 </td><td></td></tr><tr><td>БУ150.30-32*</td><td>1500</td><td>320</td><td>300</td><td>0,094</td><td>0,235</td><td></td></tr><tr><td>БУ300.30-32</td><td>3000</td><td>320</td><td>300</td><td>0,188</td><td>0,470</td><td>В30</td></tr><tr><td>БР100.20.8</td><td>1000</td><td>80</td><td>200</td><td>0,016</td><td>0,040</td><td>В22,5</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/elementi-dorozhnogo-stroitelstva/zabori-bo-i-fundamenti-fo/",
+    "slug": "zabori-bo-i-fundamenti-fo",
+    "title": "Заборы (БО) и фундаменты (ФО)",
+    "image": "/core/storage/fe4d6d6c3c2f87d65420c1d115cdf452/512.webp",
+    "items": [
+     {
+      "path": "/catalog/elementi-dorozhnogo-stroitelstva/zabori-bo-i-fundamenti-fo/bloki-ograzhdeniya-bo/",
+      "slug": "bloki-ograzhdeniya-bo",
+      "title": "Блоки ограждения (БО)",
+      "image": "/core/storage/fe4d6d6c3c2f87d65420c1d115cdf452/512.webp",
+      "purpose": "",
+      "code": [
+       "БО 298"
+      ],
+      "notation": [
+       "БО – блок ограждения",
+       "298 – шириной 2980мм (в см)"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Высота, Н</th><th>Толщина, В</th></tr></thead><tbody><tr><td>БО 298</td><td>2980</td><td>2980</td><td>180/120/60</td><td>0,60</td><td>1,50 </td><td>В22,5</td></tr><tr><td>БО 298-1</td><td>2980</td><td>2000</td><td>180/120/60</td><td>0,54</td><td>1,35</td><td>В22,5</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/elementi-dorozhnogo-stroitelstva/zabori-bo-i-fundamenti-fo/fundamenti-ograzhdeniya-fo/",
+      "slug": "fundamenti-ograzhdeniya-fo",
+      "title": "Фундаменты ограждения (ФО)",
+      "image": "/core/storage/93cc333412f90a7d4d3ea25fc3023c51/original.jpg",
+      "purpose": "",
+      "code": [
+       "БО 298"
+      ],
+      "notation": [
+       "БО – блок ограждения",
+       "298 – шириной 2980мм (в см)"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>ФО 298</td><td>900</td><td>800</td><td>750</td><td>0,350</td><td>0,875</td><td>В10</td></tr><tr><td>ФО 298-1</td><td>600</td><td>785</td><td>580</td><td>0,222</td><td>0,530</td><td>В15</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/catalog/izdeliya-dlya-stroitelstva-rezervuarov/",
+  "slug": "izdeliya-dlya-stroitelstva-rezervuarov",
+  "title": "Изделия для строительства резервуаров",
+  "image": "/core/storage/e78db2b90e5d4c900cb5d70b3e1038b0/512.webp",
+  "groups": [
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-rezervuarov/elementi-karkasa-fundamenti-fr/",
+    "slug": "elementi-karkasa-fundamenti-fr",
+    "title": "Элементы каркаса: фундаменты (Фр), колонны (К), ригели (Б)",
+    "image": "/core/storage/0b715f056e014e4262986f6b1ebe4d63/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-rezervuarov/elementi-karkasa-fundamenti-fr/fundamenti/",
+      "slug": "fundamenti",
+      "title": "Фундаменты",
+      "image": "/core/storage/0b715f056e014e4262986f6b1ebe4d63/512.webp",
+      "purpose": "",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\">Размеры наружные, мм</th><th colspan=\"3\">Размеры внутренние, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th><th>Длина, l</th><th>Ширина, b</th><th>Высота, h</th></tr></thead><tbody><tr><td>Ф-1р</td><td rowspan=\"4\">АС-24</td><td>3600</td><td>1200</td><td>600</td><td>угловой</td><td>330</td><td>350</td><td>1,45</td><td>3,63</td><td rowspan=\"4\">В15</td></tr><tr><td>Ф-2р</td><td>3725</td><td>1200</td><td>600</td><td>3725</td><td>330</td><td>350</td><td>1,50</td><td>3,75</td></tr><tr><td>Ф-3р</td><td>1700</td><td>1200</td><td>600</td><td>1700</td><td>330</td><td>350</td><td>0,68</td><td>1,70</td></tr><tr><td>Ф-4р</td><td>1100</td><td>1200</td><td>600</td><td>1100</td><td>330</td><td>350</td><td>0,44</td><td>1,10</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-rezervuarov/elementi-karkasa-fundamenti-fr/kolonni-tp90146383-albom-v/",
+      "slug": "kolonni-tp90146383-albom-v",
+      "title": "Колонны ТП901-4-63.83 альбом V",
+      "image": "/core/storage/f94bc51b4ad59510df6f9361d7bcf2c2/512.webp",
+      "purpose": "",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Длина, А</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>3КР36</td><td>400</td><td>400</td><td>3030</td><td>0,48</td><td>1,2</td><td rowspan=\"2\">М300W6F50</td></tr><tr><td>ЗКР48</td><td>400</td><td>400</td><td>4280</td><td>0,68</td><td>1,7</td></tr></tbody></table>"
+      ]
+     },
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-rezervuarov/elementi-karkasa-fundamenti-fr/rigeli--tp90146383-albom-v/",
+      "slug": "rigeli--tp90146383-albom-v",
+      "title": "Ригели ТП901-4-63.83 альбом V",
+      "image": "/core/storage/1d7096b5104e0bd561342fc06cbbd0b6/original.jpg",
+      "purpose": "",
+      "code": [],
+      "notation": [],
+      "tables": [
+       "<table></table>",
+       "<table><thead><tr><th rowspan=\"2\">Марка</th><th colspan=\"3\">Размеры, мм</th><th rowspan=\"2\">Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, A</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>Б1-1</td><td>5950</td><td>300/650</td><td>800</td><td>1,9</td><td>4,8</td><td>B22,5</td></tr><tr><td>Б1-2</td><td>5950</td><td>300/650</td><td>800</td><td>1,9</td><td>4,8</td><td>B30</td></tr><tr><td>Б1-1а</td><td>5950</td><td>300/650</td><td>800</td><td>1,83</td><td>4,8</td><td>B22,5</td></tr><tr><td>Б1-2а</td><td>5950</td><td>300/650</td><td>800</td><td>1,83</td><td>4,8</td><td>B30</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-rezervuarov/stenovie-paneli-ps/",
+    "slug": "stenovie-paneli-ps",
+    "title": "Стеновые панели (ПС)",
+    "image": "/core/storage/14808d7131ecb55ce81018dd0e1e4f1d/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-rezervuarov/stenovie-paneli-ps/stenovie-paneli-seriya-39003/",
+      "slug": "stenovie-paneli-seriya-39003",
+      "title": "Стеновые панели серия 3.900-3",
+      "image": "/core/storage/14808d7131ecb55ce81018dd0e1e4f1d/512.webp",
+      "purpose": "Панели стеновые предназначены для прямоугольных емкостных сооружений водоснабжения и канализации.",
+      "code": [
+       "ПС1-36-Б4"
+      ],
+      "notation": [
+       "ПС – панель стеновая",
+       "1 – порядковый номер типоразмера изделия",
+       "36 – высота панели в дм",
+       "Б – схема работы панели «балочная»",
+       "4 – номер несущей способности",
+       "Разновидности, связанные с наличием закладных деталей, отверстий, изменением размеров и т.п. обозначают в конце марки строчными буквами. Например, ПС1-36-Б3б"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\">Марка </th><th rowspan=\"2\">Нормативный документ </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Марка бетона</th></tr><tr><th>Высота, Н</th><th>Ширина, В</th><th>Толщина, S</th></tr></thead><tbody><tr><td>ПС1-24-Б1; Б2</td><td rowspan=\"9\">Серия 3.900-3 вып.4/82</td><td>2400</td><td>2980</td><td>140(250)</td><td>1,10</td><td>2,75</td><td rowspan=\"9\">М200</td></tr><tr><td>ПС1-30-Б1; Б2</td><td>3000</td><td>2980</td><td>140(250)</td><td>1,35</td><td>3,38</td></tr><tr><td>ПС1-36-Б1; Б2; Б3; Б4</td><td>3600</td><td>2980</td><td>180(350)</td><td>1,93</td><td>4,83</td></tr><tr><td>ПС2-36-Б3; Б4</td><td>3600</td><td>2980</td><td>180(140)</td><td>1,71</td><td>4,28</td></tr><tr><td>ПС1-42-Б1; Б2</td><td>4200</td><td>2980</td><td>230(350)</td><td>2,53</td><td>6,33</td></tr><tr><td>ПС1-48-Б1; Б2; Б3; Б4</td><td>4800</td><td>2980</td><td>240(350)</td><td>2,92</td><td>7,30</td></tr><tr><td>ПС2-48-Б3; Б4</td><td>4800</td><td>2980</td><td>240(140)</td><td>2,70</td><td>6,75</td></tr><tr><td>ПС1-54-Б1; Б2</td><td>5400</td><td>2980</td><td>300(350)</td><td>3,74</td><td>9,35</td></tr><tr><td>ПС1-60-Б1; Б2</td><td>6000</td><td>2980</td><td>320(350)</td><td>4,31</td><td>10,78</td></tr><tr><td>ПС2-24-К1; К2; К11; К12</td><td rowspan=\"7\">Серия 3.900-3 вып.3/82</td><td>2400</td><td>2980</td><td>140</td><td>1,00</td><td>2,50</td><td rowspan=\"7\">М200</td></tr><tr><td>ПС2-30-К1; К2; К3; К4; К11-14</td><td>3000</td><td>2980</td><td>140</td><td>1,25</td><td>3,13</td></tr><tr><td>ПС2-36-К1; К2; К3; К4; К11-14</td><td>3600</td><td>2980</td><td>180(140)</td><td>1,71</td><td>4,28</td></tr><tr><td>ПС2-42-К1; К2; К3; К4; К11-14</td><td>4200</td><td>2980</td><td>230(140)</td><td>2,31</td><td>5,78</td></tr><tr><td>ПС2-48-К1; К2; К3; К4; К11-14</td><td>4800</td><td>2980</td><td>240(140)</td><td>2,70</td><td>6,75</td></tr><tr><td>ПС2-54-К1; К2; К11; К12</td><td>5400</td><td>2980</td><td>300(140)</td><td>3,52</td><td>8,80</td></tr><tr><td>ПС2-60-К1; К2; К11; К12</td><td>6000</td><td>2980</td><td>320(140)</td><td>4,09</td><td>10,23</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/catalog/izdeliya-dlya-stroitelstva-zhivotnovodcheskih/",
+  "slug": "izdeliya-dlya-stroitelstva-zhivotnovodcheskih",
+  "title": "Изделия для строительства животноводческих комплексов",
+  "image": "/core/storage/5a533adcf1642a2f4936e110122cdaa8/512.webp",
+  "groups": [
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-zhivotnovodcheskih/fundamenti-f/",
+    "slug": "fundamenti-f",
+    "title": "Фундаменты (Ф)",
+    "image": "/core/storage/d2f8cb486c4a3e5f079a974881c15b55/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-zhivotnovodcheskih/fundamenti-f/fundamenti-seriya-18121893/",
+      "slug": "fundamenti-seriya-18121893",
+      "title": "Фундаменты серия 1.812.1-8.93",
+      "image": "/core/storage/d2f8cb486c4a3e5f079a974881c15b55/512.webp",
+      "purpose": "Сборные железобетонные фундаменты предназначены под железобетонные трехшарнирные рамы однопролетных сельскохозяйственных зданий.",
+      "code": [],
+      "notation": [
+       "Ф18.15.12",
+       "Ф – фундамент столбчатый",
+       "18 – длина подошвы в дм",
+       "15 – ширина подошвы в дм",
+       "12 – высота фундамента в дм"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>Ф18.15.12</td><td>1800</td><td>1500</td><td>1200</td><td>1,10</td><td>2,8</td><td rowspan=\"2\">В15</td></tr><tr><td>Ф18.15.9</td><td>1800</td><td>1500</td><td>900</td><td>0,91</td><td>2,3</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   },
+   {
+    "path": "/catalog/izdeliya-dlya-stroitelstva-zhivotnovodcheskih/polurami-rps/",
+    "slug": "polurami-rps",
+    "title": "Полурамы (РПС)",
+    "image": "/core/storage/7cd15aa2c5d82966566ab7e25028ed61/512.webp",
+    "items": [
+     {
+      "path": "/catalog/izdeliya-dlya-stroitelstva-zhivotnovodcheskih/polurami-rps/polurami-seriya-18221/",
+      "slug": "polurami-seriya-18221",
+      "title": "Полурамы серия 1.822.1",
+      "image": "/core/storage/7cd15aa2c5d82966566ab7e25028ed61/512.webp",
+      "purpose": "Полурамы прямоугольного сечения пролетом 21 и 24 метра предназначены для сельскохозяйственных производственных зданий.",
+      "code": [],
+      "notation": [
+       "РПС21-37,5-2АIII",
+       "РПС – полурама прямоугольного сечения сельскохозяйственная",
+       "21 – пролет в м",
+       "37,5 – высота стойки в дм",
+       "2 – условное обозначение несущей способности",
+       "АIII – класс продольной арматуры"
+      ],
+      "tables": [
+       "<table><table><thead><tr><th rowspan=\"2\"> Марка </th><th rowspan=\"2\">Нормативный документ</th><th colspan=\"3\"> Размеры, мм </th><th rowspan=\"2\"> Объем, м<sup>3</sup></th><th rowspan=\"2\">Вес, т</th><th rowspan=\"2\">Класс бетона</th></tr><tr><th>Длина, L</th><th>Ширина, В</th><th>Высота, Н</th></tr></thead><tbody><tr><td>РПС 24-3п</td><td rowspan=\"2\">Серия 1.822.1-2/82 выпуск 4</td><td>12380(11985)</td><td>180</td><td>3750(6850)</td><td>1,9</td><td>4,75</td><td rowspan=\"2\">В25</td></tr><tr><td>РПС 24-4п</td><td>12380(11985)</td><td>180</td><td>3750(6850)</td><td>1,9</td><td>4,75</td></tr><tr><td>РПС21-37,5-2АIII</td><td>Серия 1.822.1-6 выпуск 4</td><td>10830(10485)</td><td>180</td><td>3750(6470)</td><td>1,36</td><td>3,4</td><td>В25</td></tr></tbody></table>"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "path": "/catalog/proizvodstvo-i-remont-metallicheskih/",
+  "slug": "proizvodstvo-i-remont-metallicheskih",
+  "title": "Производство и ремонт металлических конструкций",
+  "image": "/core/storage/7e2d26ed417037e3eddfb8de870c8760/512.webp",
+  "groups": []
+ }
+]

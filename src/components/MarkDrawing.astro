@@ -1,0 +1,67 @@
+---
+// Главный элемент страницы: марка изделия, разобранная выносками, как на чертеже.
+// Кнопка «Другая марка» листает примеры — движение только в ответ на действие пользователя.
+import { markExamples } from '../data/site';
+import { u } from '../lib/url';
+---
+<figure class="drawing" data-drawing>
+  {markExamples.map((ex, k) => (
+    <div class="sheet" data-sheet hidden={k !== 0}>
+      <div class="parts" style={`--n:${ex.mark.length}`}>
+        {ex.mark.map((part, i) => (
+          <div class="part">
+            <span class="seg">{part}<span class="sep">{ex.sep[i]}</span></span>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="note">{ex.notes[i]}</span>
+          </div>
+        ))}
+      </div>
+      <a class="go" href={u(ex.href)}>Размеры и вес всех марок этой серии</a>
+    </div>
+  ))}
+  <figcaption>
+    <span>Так читается марка железобетонного изделия.</span>
+    <button type="button" class="next" data-next>Другая марка</button>
+  </figcaption>
+</figure>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-drawing]').forEach((fig) => {
+    const sheets = [...fig.querySelectorAll<HTMLElement>('[data-sheet]')];
+    let i = 0;
+    fig.querySelector('[data-next]')?.addEventListener('click', () => {
+      sheets[i].hidden = true;
+      i = (i + 1) % sheets.length;
+      sheets[i].hidden = false;
+      sheets[i].classList.remove('enter'); void sheets[i].offsetWidth; sheets[i].classList.add('enter');
+    });
+  });
+</script>
+
+<style>
+  .drawing { container-type: inline-size; margin: 0; border: 1px solid var(--ink); background: rgb(255 255 255 / 0.72); padding: clamp(20px, 3vw, 36px); position: relative; }
+  /* угловой штамп, как в рамке чертежа */
+  .drawing::after { content: 'Лист 1'; position: absolute; right: -1px; bottom: -1px; font-size: 0.72rem; padding: 3px 8px; border: 1px solid var(--ink); background: var(--paper); color: var(--ink-soft); }
+  .parts { display: grid; grid-template-columns: repeat(var(--n), auto); justify-content: start; column-gap: clamp(4px, 1.6cqi, 18px); }
+  .part { display: grid; grid-template-rows: auto 1fr auto; justify-items: start; }
+  .seg { font: 700 clamp(2.2rem, 15cqi, 6rem)/1 var(--display); background: var(--tag); padding: 0.06em 0.1em 0; letter-spacing: -0.01em; white-space: nowrap; }
+  .sep { color: rgb(35 41 45 / 0.45); }
+  .leader { width: 1px; min-height: 28px; background: var(--ink); margin-left: 0.6em; position: relative; }
+  .leader::after { content: ''; position: absolute; left: -3px; bottom: -3px; width: 7px; height: 7px; border-radius: 50%; background: var(--ink); }
+  .note { font-size: clamp(0.74rem, 2.6cqi, 0.9rem); line-height: 1.3; max-width: 12ch; margin-top: 10px; color: var(--ink); }
+  .part:nth-child(even) .leader { min-height: 64px; }
+  .go { display: inline-block; margin-top: 22px; font-weight: 600; }
+  figcaption { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 20px; padding-top: 14px; border-top: 1px dashed var(--rule); font-size: 0.9rem; color: var(--ink-soft); }
+  .next { border: 1px solid var(--ink); background: transparent; min-height: 40px; padding: 0 14px; cursor: pointer; font-weight: 600; border-radius: 2px; }
+  .next:hover { background: var(--ink); color: var(--paper); }
+  .sheet:global(.enter) .seg { animation: stamp 0.32s ease-out both; }
+  .sheet:global(.enter) .part:nth-child(2) .seg { animation-delay: 0.04s; }
+  .sheet:global(.enter) .part:nth-child(3) .seg { animation-delay: 0.08s; }
+  .sheet:global(.enter) .part:nth-child(4) .seg { animation-delay: 0.12s; }
+  .sheet:global(.enter) .part:nth-child(5) .seg { animation-delay: 0.16s; }
+  @keyframes stamp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @media (max-width: 560px) {
+    .note { max-width: 9ch; font-size: 0.78rem; }
+    .part:nth-child(even) .leader { min-height: 48px; }
+  }
+</style>

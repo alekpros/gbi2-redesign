@@ -1,0 +1,88 @@
+---
+import Base from '../layouts/Base.astro';
+import { timeline, news, documents, requisites, figures } from '../data/site';
+import { u } from '../lib/url';
+---
+<Base title="О заводе: история с 1956 года, документы, реквизиты" active="about/">
+  <section class="page-head graph">
+    <div class="wrap">
+      <ul class="crumbs"><li><a href={u()}>Главная</a></li><li>О заводе</li></ul>
+      <h1>Семьдесят лет на улице Дорожной</h1>
+      <p class="lead">Завод ЖБИ-2 построен в 1956 году для сельского и промышленного строительства Черноземья. Сегодня это производство сборного железобетона полного цикла и застройщик жилья в Воронеже и Липецке.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2 class="h">Хроника</h2>
+      <ol class="timeline">
+        {timeline.map((t) => <li><span class="t-year">{t.year}</span><p>{t.text}</p></li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section class="band band--concrete">
+    <div class="wrap two">
+      <div>
+        <h2 class="h">Новости</h2>
+        <ul class="news">
+          {news.map((n) => <li><span class="small muted">{n.date}</span><span>{n.title}</span></li>)}
+        </ul>
+      </div>
+      <div>
+        <h2 class="h">В цифрах</h2>
+        <dl class="figs">
+          {figures.map((f) => <div><dt>{f.value} {f.unit}</dt><dd>{f.text}</dd></div>)}
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="documents">
+    <div class="wrap two">
+      <div>
+        <h2 class="h">Документы</h2>
+        <p class="muted">Специальная оценка условий труда и декларации. Файлы PDF.</p>
+        <ul class="docs">
+          {documents.map((d) => <li><a href={d.href} rel="noopener">{d.title}</a> <span class="small muted">PDF</span></li>)}
+        </ul>
+        <p class="small muted">Информация для акционеров и раскрытие сведений — в отдельном разделе.</p>
+      </div>
+      <div id="requisites">
+        <h2 class="h">Реквизиты</h2>
+        <dl class="req">
+          {requisites.map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}
+        </dl>
+        <button type="button" class="btn btn--line" data-copy-req>Скопировать реквизиты</button>
+      </div>
+    </div>
+  </section>
+</Base>
+<script>
+  document.querySelector('[data-copy-req]')?.addEventListener('click', async (e) => {
+    const b = e.currentTarget as HTMLButtonElement;
+    const text = [...document.querySelectorAll('.req div')].map((d) => `${d.querySelector('dt')!.textContent}: ${d.querySelector('dd')!.textContent}`).join('\n');
+    try { await navigator.clipboard.writeText(text); b.textContent = 'Реквизиты скопированы'; } catch { b.textContent = 'Выделите текст вручную'; }
+  });
+</script>
+<style>
+  .h { margin-bottom: 24px; }
+  .timeline { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 2px solid var(--ink); }
+  .timeline li { padding: 18px 20px 24px 0; border-bottom: 1px solid var(--rule); }
+  .t-year { display: block; font: 600 1.7rem/1 var(--display); margin-bottom: 10px; }
+  .timeline p { font-size: 0.95rem; margin: 0; }
+  .two { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; }
+  .news, .docs { list-style: none; padding: 0; margin: 0; }
+  .news li { display: grid; gap: 2px; padding: 12px 0; border-bottom: 1px solid var(--concrete-deep); }
+  .docs li { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  .figs { margin: 0; }
+  .figs div { padding: 12px 0; border-bottom: 1px solid var(--concrete-deep); }
+  .figs dt { font: 600 1.5rem/1.2 var(--display); }
+  .figs dd { margin: 4px 0 0; font-size: 0.95rem; }
+  .req { margin: 0 0 20px; }
+  .req div { display: grid; grid-template-columns: 170px 1fr; gap: 12px; padding: 8px 0; border-bottom: 1px solid #e3e4e0; font-size: 0.95rem; }
+  .req dt { color: var(--ink-soft); }
+  .req dd { margin: 0; word-break: break-word; }
+  @media (max-width: 900px) { .timeline { grid-template-columns: repeat(2, 1fr); } .two { grid-template-columns: 1fr; } }
+  @media (max-width: 520px) { .timeline { grid-template-columns: 1fr; } .req div { grid-template-columns: 1fr; gap: 2px; } }
+</style>

@@ -1,0 +1,59 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { catalog, countMarks, marksLabel } from '../../../lib/catalog';
+import { categoryText, metalworks, company } from '../../../data/site';
+import { u, storageImg, img } from '../../../lib/url';
+export function getStaticPaths() {
+  return catalog.map((c) => ({ params: { cat: c.slug }, props: { c } }));
+}
+const { c } = Astro.props;
+const isMetal = c.slug === 'proizvodstvo-i-remont-metallicheskih';
+---
+<Base title={c.title} description={`${c.title}: ${categoryText[c.slug]} Завод ЖБИ-2, Воронеж.`} active="catalog/">
+  <section class="page-head graph">
+    <div class="wrap">
+      <ul class="crumbs"><li><a href={u()}>Главная</a></li><li><a href={u('catalog/')}>Продукция</a></li><li>{c.title}</li></ul>
+      <h1>{c.title}</h1>
+      <p class="lead">{categoryText[c.slug]}</p>
+    </div>
+  </section>
+  <div class="wrap">
+    {isMetal ? (
+      <div class="metal">
+        {metalworks.map((m) => (
+          <section><h2>{m.title}</h2><p>{m.text}</p></section>
+        ))}
+        <p class="cta">Пришлите чертёж или образец детали — рассчитаем стоимость. <a class="btn" href={u('price-list/')}>Отправить запрос</a></p>
+      </div>
+    ) : (
+      <ul class="groups">
+        {c.groups.map((g) => {
+          const pic = storageImg(g.image);
+          const n = countMarks(g.items);
+          return (
+            <li>
+              <a href={u(g.path)}>
+                {pic ? <img src={pic} alt="" loading="lazy" width="320" height="240" /> : <span class="ph" />}
+                <span class="g-title">{g.title}</span>
+                <span class="g-meta">{n > 0 ? marksLabel(n) : 'Характеристики по запросу'}{g.items.length > 1 ? `, серий: ${g.items.length}` : ''}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    )}
+  </div>
+</Base>
+<style>
+  .groups { list-style: none; padding: 40px 0 72px; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 36px 28px; }
+  .groups a { display: grid; gap: 6px; color: var(--ink); text-decoration: none; }
+  .groups img, .ph { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #fff; border: 1px solid #e3e4e0; margin-bottom: 8px; }
+  .g-title { font-weight: 600; font-size: 1.08rem; line-height: 1.3; }
+  .g-meta { font-size: 0.9rem; color: var(--ink-soft); }
+  .groups a:hover .g-title { color: var(--blue); text-decoration: underline; }
+  .metal { padding: 40px 0 72px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 48px; }
+  .metal section { border-top: 2px solid var(--ink); padding-top: 16px; }
+  .metal h2 { font-size: 1.4rem; margin-bottom: 10px; }
+  .cta { grid-column: 1 / -1; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; max-width: none; }
+  @media (max-width: 700px) { .metal { grid-template-columns: 1fr; } }
+</style>

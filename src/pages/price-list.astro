@@ -1,0 +1,114 @@
+---
+import Base from '../layouts/Base.astro';
+import { company, priceFiles } from '../data/site';
+import { u } from '../lib/url';
+---
+<Base title="Прайс-лист и заявка на железобетонные изделия">
+  <section class="page-head graph">
+    <div class="wrap">
+      <ul class="crumbs"><li><a href={u()}>Главная</a></li><li>Прайс-лист и заявка</li></ul>
+      <h1>Прайс-лист и заявка</h1>
+      <p class="lead">Скачайте прайс или соберите список марок — отдел сбыта ответит с ценой и наличием.</p>
+      <ul class="files">
+        {priceFiles.map((f) => <li><a href={f.href} rel="noopener">{f.title}</a> <span class="small muted">PDF</span></li>)}
+      </ul>
+    </div>
+  </section>
+
+  <div class="wrap body">
+    <section aria-labelledby="req-h">
+      <h2 id="req-h">Ваша заявка</h2>
+      <div data-req-empty class="empty">
+        <p>Список пуст. Откройте <a href={u('catalog/')}>каталог</a> и нажмите «+» в строке нужной марки — или просто опишите, что нужно, в комментарии.</p>
+      </div>
+      <table class="req-table" data-req-table hidden>
+        <thead><tr><th scope="col">Марка</th><th scope="col">Изделие</th><th scope="col">Кол-во, шт.</th><th scope="col"><span class="visually-hidden">Удалить</span></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <form class="form" data-req-form novalidate>
+      <h2>Контакты для ответа</h2>
+      <div class="field"><label for="f-name">Имя или компания</label><input id="f-name" name="name" required autocomplete="organization" /></div>
+      <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="+7" /></div>
+      <div class="field"><label for="f-mail">Почта для счёта</label><input id="f-mail" name="email" type="email" autocomplete="email" /></div>
+      <div class="field"><label for="f-note">Комментарий</label><textarea id="f-note" name="note" rows="4" placeholder="Объект, сроки, нужна ли доставка"></textarea></div>
+      <label class="consent"><input type="checkbox" name="consent" required /> <span>Даю <a href={u('privacy/#consent')}>согласие на обработку персональных данных</a> для ответа на заявку.</span></label>
+      <p class="error" data-req-error hidden></p>
+      <button class="btn" type="submit">Отправить заявку в отдел сбыта</button>
+      <p class="small muted">Или позвоните: <a href={company.sales.href}>{company.sales.label}</a></p>
+      <div class="done" data-req-done hidden tabindex="-1">
+        <h3>Заявка собрана</h3>
+        <p>В демо-версии она никуда не отправляется. В рабочей версии заявка уйдёт в отдел сбыта и в CRM, а покупатель получит письмо с номером.</p>
+      </div>
+    </form>
+  </div>
+</Base>
+
+<script>
+  import { readRequest, writeRequest } from '../lib/request';
+  const tbody = document.querySelector<HTMLTableSectionElement>('[data-req-table] tbody')!;
+  const table = document.querySelector<HTMLTableElement>('[data-req-table]')!;
+  const empty = document.querySelector<HTMLElement>('[data-req-empty]')!;
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' } as Record<string, string>)[c]);
+  const base = document.querySelector('.logo')?.getAttribute('href') || '/';
+
+  function render() {
+    const list = readRequest();
+    table.hidden = list.length === 0;
+    empty.hidden = list.length > 0;
+    tbody.innerHTML = list.map((r, i) => `<tr>
+      <td><a class="mark" href="${esc(r.url)}">${esc(r.mark)}</a></td>
+      <td>${esc(r.item)}</td>
+      <td><input type="number" min="1" step="1" value="${r.qty}" data-i="${i}" aria-label="Количество ${esc(r.mark)}"></td>
+      <td><button type="button" data-del="${i}" class="del">Убрать</button></td></tr>`).join('');
+  }
+  tbody.addEventListener('change', (e) => {
+    const el = e.target as HTMLInputElement;
+    if (!el.dataset.i) return;
+    const list = readRequest();
+    list[+el.dataset.i].qty = Math.max(1, Math.round(+el.value || 1));
+    writeRequest(list);
+  });
+  tbody.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-del]');
+    if (!b) return;
+    const list = readRequest(); list.splice(+b.dataset.del!, 1); writeRequest(list); render();
+  });
+
+  const form = document.querySelector<HTMLFormElement>('[data-req-form]')!;
+  const err = form.querySelector<HTMLElement>('[data-req-error]')!;
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const fd = new FormData(form);
+    const problems = [];
+    if (!String(fd.get('name')).trim()) problems.push('укажите имя или компанию');
+    if (String(fd.get('phone')).replace(/\D/g, '').length < 10) problems.push('укажите телефон с кодом города');
+    if (!fd.get('consent')) problems.push('отметьте согласие на обработку данных');
+    if (!readRequest().length && !String(fd.get('note')).trim()) problems.push('добавьте марки или опишите заказ в комментарии');
+    if (problems.length) { err.textContent = 'Чтобы отправить заявку, ' + problems.join(', ') + '.'; err.hidden = false; return; }
+    err.hidden = true;
+    const done = form.querySelector<HTMLElement>('[data-req-done]')!;
+    done.hidden = false; done.focus();
+  });
+  render();
+</script>
+
+<style>
+  .files { list-style: none; padding: 0; margin: 24px 0 0; display: flex; flex-wrap: wrap; gap: 10px 28px; }
+  .files a { font-weight: 600; }
+  .body { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; padding-top: 48px; padding-bottom: 80px; align-items: start; }
+  .body h2 { margin-bottom: 20px; font-size: 1.5rem; }
+  .empty { background: var(--concrete); padding: 24px; }
+  .req-table { width: 100%; border-collapse: collapse; border-top: 2px solid var(--ink); }
+  .req-table th { text-align: left; font-size: 0.85rem; color: var(--ink-soft); font-weight: 400; padding: 8px 8px 8px 0; }
+  .req-table :global(td) { padding: 10px 8px 10px 0; border-top: 1px solid var(--rule); vertical-align: middle; }
+  .req-table :global(td a.mark) { text-decoration: none; }
+  .req-table :global(input) { width: 84px; min-height: 40px; padding: 0 8px; border: 1px solid var(--ink-soft); border-radius: 2px; }
+  .req-table :global(.del) { border: 0; background: none; color: var(--blue); text-decoration: underline; cursor: pointer; }
+  .form { background: #fff; border: 1px solid var(--rule); padding: 28px; }
+  .error { color: #9b1c1c; font-weight: 600; }
+  .done { margin-top: 20px; border-left: 4px solid var(--ok); padding: 12px 16px; background: #eef5ef; }
+  .done h3 { margin-bottom: 6px; }
+  @media (max-width: 900px) { .body { grid-template-columns: 1fr; } }
+</style>

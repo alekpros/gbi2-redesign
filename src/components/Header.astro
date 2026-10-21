@@ -1,0 +1,76 @@
+---
+import { company, nav } from '../data/site';
+import { u } from '../lib/url';
+const { active } = Astro.props as { active?: string };
+---
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href={u()} aria-label="Завод ЖБИ-2 — на главную">
+      <span class="logo-mark">ЖБИ-2</span>
+      <span class="logo-sub">Воронеж<br />с 1956 года</span>
+    </a>
+
+    <nav class="nav" aria-label="Разделы сайта">
+      <ul>
+        {nav.map((n) => (
+          <li><a href={u(n.href)} aria-current={active === n.href ? 'page' : undefined}>{n.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="actions">
+      <a class="phone" href={company.sales.href}>
+        <span class="phone-num">{company.sales.label}</span>
+        <span class="phone-note">отдел сбыта</span>
+      </a>
+      <a class="req" href={u('price-list/')}>
+        Заявка <span class="req-count" data-request-count hidden>0</span>
+      </a>
+    </div>
+
+    <details class="burger">
+      <summary aria-label="Меню">Меню</summary>
+      <ul>
+        {nav.map((n) => <li><a href={u(n.href)}>{n.label}</a></li>)}
+        <li><a href={u('price-list/')}>Прайс-лист и заявка</a></li>
+        <li><a href={company.sales.href}>{company.sales.label}</a></li>
+      </ul>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header { position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 1px solid var(--rule); }
+  .bar { display: flex; align-items: center; gap: 28px; min-height: 72px; }
+  .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+  .logo-mark { font: 600 1.55rem/1 var(--display); background: var(--ink); color: var(--paper); padding: 7px 9px 5px; letter-spacing: 0.01em; }
+  .logo-sub { font-size: 0.74rem; line-height: 1.2; color: var(--ink-soft); }
+  .nav { flex: 1; }
+  .nav ul { list-style: none; display: flex; gap: 4px 22px; margin: 0; padding: 0; flex-wrap: wrap; }
+  .nav a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.97rem; padding: 6px 0; border-bottom: 2px solid transparent; }
+  .nav a:hover { border-bottom-color: var(--ink); }
+  .nav a[aria-current='page'] { border-bottom-color: var(--tag); }
+  .actions { display: flex; align-items: center; gap: 18px; }
+  .phone { text-decoration: none; color: var(--ink); display: grid; text-align: right; }
+  .phone-num { font-weight: 600; white-space: nowrap; }
+  .phone-note { font-size: 0.75rem; color: var(--ink-soft); }
+  .req { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 2px solid var(--ink); color: var(--ink); font-weight: 600; text-decoration: none; border-radius: 2px; }
+  .req:hover { background: var(--ink); color: var(--paper); }
+  .req-count { background: var(--tag); color: var(--ink); font-size: 0.8rem; min-width: 22px; height: 22px; display: inline-grid; place-items: center; padding: 0 5px; }
+  .burger { display: none; position: relative; }
+  .burger summary { list-style: none; cursor: pointer; font-weight: 600; min-height: 44px; display: grid; place-items: center; padding: 0 14px; border: 2px solid var(--ink); border-radius: 2px; }
+  .burger summary::-webkit-details-marker { display: none; }
+  .burger ul { position: absolute; right: 0; top: calc(100% + 12px); background: var(--paper); border: 1px solid var(--rule); list-style: none; margin: 0; padding: 8px 0; min-width: 240px; box-shadow: 0 12px 30px rgb(35 41 45 / 0.18); }
+  .burger li a { display: block; padding: 12px 18px; color: var(--ink); text-decoration: none; font-weight: 600; }
+
+  @media (max-width: 1100px) {
+    .nav { display: none; }
+    .burger { display: block; }
+    .actions { margin-left: auto; }
+  }
+  @media (max-width: 560px) {
+    .bar { gap: 12px; }
+    .phone, .logo-sub { display: none; }
+    .req { padding: 0 12px; }
+  }
+</style>

@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import { estates, estateContacts } from '../data/site';
+import { u, img } from '../lib/url';
+const groups = [
+  { title: 'В продаже и строятся', list: estates.filter((e) => e.status !== 'Сдан') },
+  { title: 'Сданные объекты', list: estates.filter((e) => e.status === 'Сдан') },
+];
+---
+<Base title="Недвижимость от застройщика в Воронеже и Липецке" active="real-estate/">
+  <section class="page-head graph">
+    <div class="wrap head">
+      <div>
+        <ul class="crumbs"><li><a href={u()}>Главная</a></li><li>Недвижимость</li></ul>
+        <h1>Недвижимость от застройщика</h1>
+        <p class="lead">Квартиры и дома в комплексах, построенных из изделий завода: Воронеж, пригород и Липецк.</p>
+      </div>
+      <dl class="sales">
+        {estateContacts.map((c) => <div><dt>{c.label}</dt><dd><a href={c.href}>{c.phone}</a></dd></div>)}
+      </dl>
+    </div>
+  </section>
+  <div class="wrap">
+    {groups.map((g) => (
+      <section class="grp">
+        <h2>{g.title}</h2>
+        <ul class="estates">
+          {g.list.map((e) => (
+            <li id={e.slug}>
+              <img src={img(e.image)} alt={`ЖК «${e.title}»`} loading="lazy" width="860" height="573" />
+              <div class="e-body">
+                <p class="e-status" data-confirm={e.confirm ? '' : undefined}>{e.status}</p>
+                <h3>{e.title}</h3>
+                <p class="e-place">{e.place}</p>
+                <p class="e-kind">{e.kind}</p>
+                <p>{e.text}</p>
+                {e.link && <a href={e.link} rel="noopener">Планировки и цены на сайте комплекса</a>}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</Base>
+<style>
+  .head { display: flex; justify-content: space-between; gap: 32px; flex-wrap: wrap; align-items: end; }
+  .sales { margin: 0; display: grid; gap: 12px; }
+  .sales dt { font-size: 0.85rem; color: var(--ink-soft); }
+  .sales dd { margin: 0; font: 600 1.35rem/1.2 var(--display); }
+  .sales a { color: var(--ink); text-decoration: none; }
+  .grp { padding: 48px 0 24px; }
+  .grp h2 { margin-bottom: 24px; }
+  .estates { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 40px 32px; }
+  .estates img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .e-body { padding-top: 14px; }
+  .e-status { display: inline-block; font-size: 0.82rem; font-weight: 600; padding: 2px 8px; border: 1px solid var(--ink); margin-bottom: 10px; }
+  .e-status[data-confirm] { border-style: dashed; color: var(--ink-soft); }
+  .e-body h3 { font: 600 1.45rem/1.15 var(--display); }
+  .e-place { color: var(--ink-soft); margin: 4px 0 2px; }
+  .e-kind { font-weight: 600; font-size: 0.95rem; }
+</style>

@@ -1,0 +1,132 @@
+/* Завод ЖБИ-2 — концепт редизайна.
+   Палитра взята из материала: свежий бетон, бумага чертежа, графит, синяя печать ОТК,
+   жёлтая бирка, которой маркируют изделия на складе. Жёлтый — только под марками. */
+:root {
+  --paper: #f5f6f3;
+  --concrete: #dcddd8;
+  --concrete-deep: #c6c8c2;
+  --ink: #23292d;
+  --ink-soft: #565e63;
+  --rule: #b7bab4;
+  --blue: #1f3f8e;
+  --blue-deep: #152d68;
+  --tag: #f2c318;
+  --ok: #2d6a3e;
+
+  --display: 'Fira Sans Condensed', 'Golos Text', system-ui, sans-serif;
+  --text: 'Golos Text', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --gutter: clamp(16px, 4vw, 48px);
+  --wide: 1240px;
+  --measure: 68ch;
+  --grid: 24px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 88px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 17px/1.55 var(--text);
+  font-feature-settings: 'tnum' 1;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--blue); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { color: var(--blue-deep); text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--tag); outline-offset: 2px; }
+button, input, select, textarea { font: inherit; color: inherit; }
+
+h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.01em; text-wrap: balance; }
+h1 { font: 700 clamp(2.3rem, 5vw, 3.9rem)/1.02 var(--display); letter-spacing: -0.01em; }
+h2 { font: 700 clamp(1.7rem, 2.8vw, 2.3rem)/1.1 var(--display); }
+h3 { font-size: 1.18rem; line-height: 1.3; }
+p { margin: 0 0 0.8em; max-width: var(--measure); }
+.lead { font-size: 1.16rem; line-height: 1.5; color: var(--ink-soft); max-width: 56ch; }
+.muted { color: var(--ink-soft); }
+.small { font-size: 0.9rem; }
+
+.wrap { width: 100%; max-width: calc(var(--wide) + 2 * var(--gutter)); margin: 0 auto; padding: 0 var(--gutter); }
+.band { padding: clamp(48px, 7vw, 96px) 0; }
+.band--concrete { background: var(--concrete); }
+.band--ink { background: var(--ink); color: var(--paper); }
+.band--ink a:not(.btn) { color: #fff; }
+.section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap; margin-bottom: 32px; }
+.section-head p { margin: 0; }
+
+/* Миллиметровка: тонкая сетка чертёжной бумаги — используется только в шапке страниц */
+.graph {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(to right, rgb(31 63 142 / 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(31 63 142 / 0.07) 1px, transparent 1px);
+  background-size: var(--grid) var(--grid);
+}
+
+/* Марка изделия на «бирке» */
+.mark {
+  display: inline-block;
+  font: 600 1em/1.15 var(--display);
+  background: var(--tag);
+  color: var(--ink);
+  padding: 0.05em 0.35em;
+  white-space: nowrap;
+}
+
+/* Кнопки: синяя — основное действие, контурная — второстепенное */
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5em;
+  min-height: 48px; padding: 0 22px;
+  border: 2px solid var(--blue); background: var(--blue); color: #fff;
+  font-weight: 600; text-decoration: none; cursor: pointer;
+  border-radius: 2px;
+}
+.btn:hover { background: var(--blue-deep); border-color: var(--blue-deep); color: #fff; text-decoration: none; }
+.btn--line { background: transparent; color: var(--blue); }
+.btn--line:hover { background: var(--blue); color: #fff; }
+.btn--light { background: var(--paper); border-color: var(--paper); color: var(--ink); }
+.btn--light:hover { background: #fff; border-color: #fff; color: var(--ink); }
+
+/* Хлебные крошки */
+.crumbs { font-size: 0.9rem; color: var(--ink-soft); margin: 0 0 18px; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.crumbs li + li::before { content: '/'; margin-right: 10px; color: var(--rule); }
+.crumbs a { color: inherit; }
+
+.page-head { padding: clamp(36px, 6vw, 72px) 0 clamp(28px, 4vw, 48px); border-bottom: 1px solid var(--rule); }
+.page-head h1 { max-width: 22ch; }
+.page-head .lead { margin-top: 16px; }
+
+/* Таблицы характеристик */
+.spec-wrap { overflow-x: auto; border: 1px solid var(--rule); background: #fff; margin: 16px 0 8px; -webkit-overflow-scrolling: touch; }
+.spec-wrap table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+.spec-wrap th, .spec-wrap td { padding: 9px 12px; border-bottom: 1px solid #e3e4e0; text-align: right; white-space: nowrap; }
+.spec-wrap thead th { background: var(--concrete); font-weight: 600; text-align: center; border-bottom-color: var(--rule); vertical-align: bottom; }
+.spec-wrap td:first-child, .spec-wrap th:first-child { text-align: left; position: sticky; left: 0; background: #fff; }
+.spec-wrap thead th:first-child { background: var(--concrete); }
+.spec-wrap tbody tr:hover td { background: #fbf6dd; }
+.spec-wrap tr:target td { background: #fbefb3; }
+.spec-wrap td:first-child { font-weight: 600; }
+.add-mark {
+  margin-left: 10px; border: 1px solid var(--rule); background: var(--paper);
+  width: 28px; height: 28px; line-height: 1; cursor: pointer; color: var(--blue); font-weight: 700;
+  vertical-align: middle; border-radius: 2px;
+}
+.add-mark:hover { border-color: var(--blue); }
+.add-mark[aria-pressed='true'] { background: var(--blue); border-color: var(--blue); color: #fff; }
+
+/* Формы */
+.field { display: grid; gap: 6px; margin-bottom: 16px; }
+.field label { font-weight: 600; font-size: 0.95rem; }
+.field input, .field textarea {
+  width: 100%; min-height: 48px; padding: 10px 14px;
+  border: 1px solid var(--ink-soft); background: #fff; border-radius: 2px;
+}
+.field input:focus, .field textarea:focus { outline: 3px solid var(--tag); outline-offset: 0; border-color: var(--ink); }
+.consent { display: flex; gap: 10px; align-items: flex-start; font-size: 0.9rem; color: var(--ink-soft); margin: 8px 0 20px; }
+.consent input { width: 20px; height: 20px; margin-top: 2px; flex: none; accent-color: var(--blue); }
+
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}

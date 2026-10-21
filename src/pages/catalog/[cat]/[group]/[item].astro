@@ -1,0 +1,36 @@
+---
+// Отдельные страницы изделий сохраняют адреса старого сайта, чтобы не потерять позиции в поиске.
+import Base from '../../../../layouts/Base.astro';
+import ItemBlock from '../../../../components/ItemBlock.astro';
+import { catalog } from '../../../../lib/catalog';
+import { u } from '../../../../lib/url';
+export function getStaticPaths() {
+  return catalog.flatMap((c) => c.groups.flatMap((g) => g.items.map((it) => ({ params: { cat: c.slug, group: g.slug, item: it.slug }, props: { c, g, it } }))));
+}
+const { c, g, it } = Astro.props;
+const others = g.items.filter((x) => x.slug !== it.slug);
+---
+<Base title={`${it.title} — размеры и вес`} description={`${it.title}: таблица марок, размеры, масса, класс бетона. ${it.purpose}`} active="catalog/">
+  <section class="page-head graph">
+    <div class="wrap">
+      <ul class="crumbs"><li><a href={u()}>Главная</a></li><li><a href={u('catalog/')}>Продукция</a></li><li><a href={u(c.path)}>{c.title}</a></li><li><a href={u(g.path)}>{g.title}</a></li></ul>
+      <h1>{it.title}</h1>
+    </div>
+  </section>
+  <div class="wrap page">
+    <ItemBlock item={it} heading="Марки и характеристики" level={2} />
+    {others.length > 0 && (
+      <aside class="others">
+        <h2>Другие серии в группе</h2>
+        <ul>{others.map((o) => <li><a href={u(o.path)}>{o.title}</a></li>)}</ul>
+      </aside>
+    )}
+  </div>
+</Base>
+<style>
+  .page { padding-bottom: 72px; }
+  .page > :global(.item) { border-top: 0; }
+  .others { border-top: 2px solid var(--ink); padding-top: 18px; }
+  .others h2 { font-size: 1.3rem; margin-bottom: 10px; }
+  .others ul { padding-left: 18px; }
+</style>

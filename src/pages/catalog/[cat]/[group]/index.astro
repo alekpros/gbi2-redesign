@@ -1,0 +1,36 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import ItemBlock from '../../../../components/ItemBlock.astro';
+import { catalog } from '../../../../lib/catalog';
+import { u } from '../../../../lib/url';
+export function getStaticPaths() {
+  return catalog.flatMap((c) => c.groups.map((g) => ({ params: { cat: c.slug, group: g.slug }, props: { c, g } })));
+}
+const { c, g } = Astro.props;
+const single = g.items.length === 1;
+---
+<Base title={`${g.title} — купить в Воронеже от производителя`} description={`${g.title}: размеры, вес, класс бетона. ${single ? '' : `Серий: ${g.items.length}. `}Завод ЖБИ-2, Воронеж.`} active="catalog/">
+  <section class="page-head graph">
+    <div class="wrap">
+      <ul class="crumbs"><li><a href={u()}>Главная</a></li><li><a href={u('catalog/')}>Продукция</a></li><li><a href={u(c.path)}>{c.title}</a></li><li>{g.title}</li></ul>
+      <h1>{g.title}</h1>
+      {!single && (
+        <nav class="toc" aria-label="Серии на странице">
+          {g.items.map((it) => <a href={`#${it.slug}`}>{it.title}</a>)}
+        </nav>
+      )}
+    </div>
+  </section>
+  <div class="wrap list">
+    {g.items.map((it) => <ItemBlock item={it} level={2} link={!single} />)}
+    {g.items.length === 0 && <p class="empty">Характеристики этой группы уточняйте в отделе сбыта.</p>}
+  </div>
+</Base>
+<style>
+  .toc { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+  .toc a { border: 1px solid var(--rule); background: #fff; padding: 6px 12px; color: var(--ink); text-decoration: none; font-size: 0.92rem; border-radius: 2px; }
+  .toc a:hover { border-color: var(--blue); color: var(--blue); }
+  .list { padding-bottom: 72px; }
+  .list > :global(.item:first-child) { border-top: 0; }
+  .empty { padding: 40px 0; }
+</style>

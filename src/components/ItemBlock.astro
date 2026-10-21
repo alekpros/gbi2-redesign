@@ -1,0 +1,58 @@
+---
+// Изделие: фото, назначение, расшифровка марки и таблица характеристик.
+// В каждую строку таблицы добавляется якорь (для поиска) и кнопка «в заявку».
+import { storageImg, anchor, u } from '../lib/url';
+
+interface Item { path: string; slug: string; title: string; image?: string | null; purpose: string; code: string[]; notation: string[]; tables: string[] }
+const { item, level = 2, link = false, heading } = Astro.props as { item: Item; level?: 2 | 3; link?: boolean; heading?: string };
+const pic = storageImg(item.image);
+const H = level === 2 ? 'h2' : 'h3';
+
+const esc = (s: string) => s.replace(/"/g, '&quot;');
+const plain = (s: string) => s.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').trim();
+const tables = item.tables.map((t) =>
+  t.replace(/<tr><td>(.*?)<\/td>/g, (whole, cell) => {
+    const mark = plain(cell);
+    if (!/^\d?[А-ЯA-Z]{1,5}[\s\d]/.test(mark)) return whole;
+    const m = mark.replace(/-$/, '');
+    return `<tr id="${esc(anchor(m))}"><td>${cell}<button type="button" class="add-mark" data-mark="${esc(m)}" data-item="${esc(item.title)}" aria-pressed="false" title="Добавить в заявку">+</button></td>`;
+  }),
+);
+---
+<article class="item" id={item.slug}>
+  <div class="item-text">
+    <H class="item-title">{link ? <a href={u(item.path)}>{item.title}</a> : heading ?? item.title}</H>
+    {item.purpose && <p class="purpose">{item.purpose}</p>}
+    {item.code.length > 0 && item.notation.length > 0 && (
+      <details class="notation">
+        <summary>Как читать марку <span class="mark">{item.code[0]}</span></summary>
+        <ul>{item.notation.map((n) => <li>{n}</li>)}</ul>
+      </details>
+    )}
+  </div>
+  {pic && <img class="item-pic" src={pic} alt={item.title} loading="lazy" width="512" height="320" />}
+  <div class="item-tables">
+    {tables.map((t) => <div class="spec-wrap" set:html={t} />)}
+    {tables.length > 0 && <p class="small muted">Нажмите «+» в строке, чтобы добавить марку в заявку. Цена и наличие — в отделе сбыта.</p>}
+  </div>
+</article>
+
+<style>
+  .item { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 12px 40px; padding: 40px 0; border-top: 1px solid var(--rule); }
+  .item-text { grid-column: 1; }
+  .item-pic { grid-column: 2; grid-row: 1; max-height: 210px; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #fff; border: 1px solid #e3e4e0; }
+  .item-tables { grid-column: 1 / -1; min-width: 0; }
+  .item-title { margin-bottom: 10px; }
+  .item-title a { color: var(--ink); text-decoration: none; }
+  .item-title a:hover { text-decoration: underline; }
+  .purpose { color: var(--ink-soft); }
+  .notation { margin: 6px 0 4px; }
+  .notation summary { cursor: pointer; font-weight: 600; color: var(--blue); }
+  .notation summary .mark { font-size: 0.9rem; margin-left: 4px; }
+  .notation ul { margin: 12px 0 0; padding-left: 18px; }
+  .notation li { margin-bottom: 4px; }
+  @media (max-width: 860px) {
+    .item { grid-template-columns: 1fr; }
+    .item-pic { grid-column: 1; grid-row: auto; max-width: 360px; }
+  }
+</style>

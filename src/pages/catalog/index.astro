@@ -1,0 +1,52 @@
+---
+import Base from '../../layouts/Base.astro';
+import MarkSearch from '../../components/MarkSearch.astro';
+import { catalog, catMarks, marksLabel } from '../../lib/catalog';
+import { categoryText } from '../../data/site';
+import { u, storageImg } from '../../lib/url';
+const total = catalog.reduce((n, c) => n + catMarks(c), 0);
+---
+<Base title="Каталог железобетонных изделий" active="catalog/">
+  <section class="page-head graph">
+    <div class="wrap">
+      <ul class="crumbs"><li><a href={u()}>Главная</a></li><li>Продукция</li></ul>
+      <h1>Каталог продукции</h1>
+      <p class="lead">{marksLabel(total)} в 8 разделах. У каждой — размеры, объём, масса и класс бетона по серии.</p>
+      <div class="s"><MarkSearch id="cat-search" /></div>
+    </div>
+  </section>
+  <div class="wrap">
+    {catalog.map((c) => (
+      <section class="cat" id={c.slug}>
+        <div class="cat-side">
+          {storageImg(c.image) && <img src={storageImg(c.image)} alt="" loading="lazy" width="320" height="220" />}
+        </div>
+        <div>
+          <h2><a href={u(c.path)}>{c.title}</a></h2>
+          <p class="muted">{categoryText[c.slug]}</p>
+          {c.groups.length > 0 && (
+            <ul class="groups">
+              {c.groups.map((g) => (
+                <li>
+                  <a href={u(g.path)}>{g.title}</a>
+                  {g.items.length > 1 && <span class="muted small">, серий: {g.items.length}</span>}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>
+<style>
+  .s { margin-top: 28px; }
+  .cat { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; padding: 40px 0; border-bottom: 1px solid var(--rule); }
+  .cat-side img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #fff; border: 1px solid #e3e4e0; }
+  .cat h2 { margin-bottom: 8px; }
+  .cat h2 a { color: var(--ink); text-decoration: none; }
+  .cat h2 a:hover { color: var(--blue); text-decoration: underline; }
+  .groups { list-style: none; padding: 0; margin: 18px 0 0; columns: 2; column-gap: 32px; }
+  .groups li { break-inside: avoid; padding: 7px 0; border-top: 1px solid #e3e4e0; }
+  @media (max-width: 760px) { .cat { grid-template-columns: 1fr; } .cat-side img { max-width: 260px; } .groups { columns: 1; } }
+</style>

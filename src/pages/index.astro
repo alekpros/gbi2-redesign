@@ -1,0 +1,193 @@
+---
+import Base from '../layouts/Base.astro';
+import MarkDrawing from '../components/MarkDrawing.astro';
+import MarkSearch from '../components/MarkSearch.astro';
+import { catalog, catMarks, marksLabel } from '../lib/catalog';
+import { company, figures, categoryText, construction, estates } from '../data/site';
+import { u, img, storageImg } from '../lib/url';
+
+const total = catalog.reduce((n, c) => n + catMarks(c), 0);
+const featured = estates.filter((e) => ['zhiloy-kompleks-slavyanograd', 'zhiloy-kompleks-dom-energetika', 'zhiloy-kompleks-aleksandrovka'].includes(e.slug));
+---
+<Base title="Железобетонные изделия от производителя в Воронеже — Завод ЖБИ-2" description="Фундаментные блоки ФБС, плиты ПК, лестницы, кольца колодцев, дорожные плиты и каркас 1.020-1/87. Завод в Воронеже с 1956 года. Поиск по марке, заявка онлайн.">
+
+  <section class="hero graph">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1>Железобетонные изделия от завода в Воронеже</h1>
+        <p class="lead">Фундаменты, плиты перекрытий, лестницы, колодцы, дорожные плиты и каркас для промышленных зданий. Производим с 1956 года на улице Дорожной.</p>
+        <MarkSearch big id="hero-search" />
+        <div class="hero-cta">
+          <a class="btn" href={u('catalog/')}>Каталог: {marksLabel(total)}</a>
+          <a class="btn btn--line" href={company.sales.href}>Позвонить в отдел сбыта</a>
+        </div>
+      </div>
+      <MarkDrawing />
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Продукция</h2>
+        <a href={u('price-list/')}>Скачать прайс-лист</a>
+      </div>
+      <ol class="cat-index">
+        {catalog.map((c) => {
+          const marks = catMarks(c);
+          const pic = storageImg(c.image);
+          return (
+            <li>
+              <a class="cat-row" href={u(c.path)}>
+                {pic ? <img src={pic} alt="" loading="lazy" width="120" height="90" /> : <span class="ph" />}
+                <span class="cat-name">{c.title}</span>
+                <span class="cat-desc">{categoryText[c.slug]}</span>
+                <span class="cat-count">{marks > 0 ? marksLabel(marks) : 'по заказу'}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  </section>
+
+  <section class="band band--concrete">
+    <div class="wrap order">
+      <h2>Как заказать</h2>
+      <ol class="steps">
+        <li><strong>Соберите список марок.</strong> Отметьте нужные строки в таблицах каталога или пришлите спецификацию из проекта.</li>
+        <li><strong>Отдел сбыта сверит наличие</strong> и пришлёт счёт. Если марки нет на складе, назовёт срок изготовления.</li>
+        <li><strong>Отгрузка с завода</strong> — Воронеж, ул. Дорожная, 13. Условия доставки уточняйте у отдела сбыта.</li>
+      </ol>
+      <div class="order-cta">
+        <a class="btn" href={u('price-list/')}>Отправить заявку</a>
+        <p class="small muted">{company.sales.label}, <a href={`mailto:${company.sales.email}`}>{company.sales.email}</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap years">
+      <div class="year-block">
+        <span class="year">1956</span>
+        <p>Год основания. В 2026 году заводу 70 лет: от сельскохозяйственных конструкций до собственных серий жилых домов.</p>
+        <a href={u('about/')}>История завода</a>
+      </div>
+      <dl class="figures">
+        {figures.map((f) => (
+          <div>
+            <dt><span class="fig-value">{f.value}</span> {f.unit}</dt>
+            <dd>{f.text}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <section class="band band--ink">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Строим сами</h2>
+        <p>Из своих изделий завод строит жильё по собственным сериям.</p>
+      </div>
+      <div class="build">
+        <a class="build-main" href={u('construction/')}>
+          <img src={img(construction[0].image!)} alt="Панельно-кирпичный дом серии И-1723" loading="lazy" width="860" height="573" />
+          <span class="build-title">{construction[0].title}</span>
+          <span class="build-text">17-этажный дом за год, корпус шириной 19 метров.</span>
+        </a>
+        <div class="build-list">
+          <h3>Недвижимость от застройщика</h3>
+          <ul>
+            {featured.map((e) => (
+              <li><a href={u(`real-estate/#${e.slug}`)}>ЖК «{e.title}»</a> <span>{e.place}</span></li>
+            ))}
+          </ul>
+          <a class="btn btn--light" href={u('real-estate/')}>Все объекты</a>
+          <h3 class="metal">Металлообработка</h3>
+          <p>Металлоформы и оснастка для ЖБИ, токарные и фрезерные работы. <a href={u('catalog/proizvodstvo-i-remont-metallicheskih/')}>Подробнее</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap contact">
+      <div>
+        <h2>Отдел сбыта</h2>
+        <p class="lead">Подберём марки по проекту, подскажем аналоги, выставим счёт.</p>
+      </div>
+      <div class="contact-lines">
+        <a class="big-phone" href={company.sales.href}>{company.sales.label}</a>
+        <a class="big-phone" href="tel:+74732638169">+7 (473) 263-81-69</a>
+        <p><a href={`mailto:${company.sales.email}`}>{company.sales.email}</a></p>
+        <p class="muted">{company.address}. <a href={company.mapUrl} rel="noopener">Как проехать</a></p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { border-bottom: 1px solid var(--rule); }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(32px, 5vw, 72px); align-items: center; padding-top: clamp(40px, 6vw, 88px); padding-bottom: clamp(40px, 6vw, 88px); }
+  .hero-text h1 { margin-bottom: 18px; max-width: 15ch; }
+  .hero-text .lead { margin-bottom: 30px; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+
+  .cat-index { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .cat-row { display: grid; grid-template-columns: 120px minmax(0, 1.1fr) minmax(0, 1.4fr) 110px; gap: 24px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .cat-row img, .ph { width: 120px; height: 80px; object-fit: contain; background: #fff; border: 1px solid #e3e4e0; }
+  .cat-name { font-weight: 600; font-size: 1.12rem; line-height: 1.3; }
+  .cat-desc { color: var(--ink-soft); font-size: 0.95rem; }
+  .cat-count { text-align: right; font: 600 0.95rem/1 var(--display); white-space: nowrap; }
+  .cat-row:hover { background: #fff; }
+  .cat-row:hover .cat-name { color: var(--blue); text-decoration: underline; }
+
+  .order { display: grid; grid-template-columns: 1fr 2.2fr; gap: 24px 48px; align-items: start; }
+  .steps { margin: 0; padding: 0; list-style: none; counter-reset: s; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .steps li { counter-increment: s; padding-top: 14px; border-top: 2px solid var(--ink); }
+  .steps li::before { content: counter(s); font: 600 2.4rem/1 var(--display); display: block; margin-bottom: 12px; }
+  .steps strong { display: block; margin-bottom: 4px; }
+  .order-cta { grid-column: 2; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+  .order-cta p { margin: 0; }
+
+  .years { display: grid; grid-template-columns: 1fr 1.6fr; gap: 48px; align-items: end; }
+  .year { font: 600 clamp(5rem, 14vw, 10rem)/0.85 var(--display); letter-spacing: -0.04em; display: block; margin-bottom: 18px; }
+  .figures { margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .figures div { border-left: 1px solid var(--rule); padding-left: 18px; }
+  .figures dt { font-size: 1rem; color: var(--ink-soft); }
+  .fig-value { display: block; font: 600 clamp(2rem, 3.6vw, 2.8rem)/1.05 var(--display); color: var(--ink); }
+  .figures dd { margin: 8px 0 0; font-size: 0.95rem; }
+
+  .build { display: grid; grid-template-columns: 1.5fr 1fr; gap: 48px; }
+  .build-main { color: var(--paper); text-decoration: none; display: grid; gap: 6px; }
+  .build-main img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; margin-bottom: 12px; }
+  .build-title { font: 600 1.4rem/1.2 var(--display); }
+  .build-text { color: #b9c0bc; }
+  .build-main:hover .build-title { text-decoration: underline; }
+  .build-list h3 { margin-bottom: 12px; }
+  .build-list ul { list-style: none; padding: 0; margin: 0 0 22px; }
+  .build-list li { padding: 10px 0; border-bottom: 1px solid #3a4246; display: grid; }
+  .build-list li span { color: #9aa19d; font-size: 0.9rem; }
+  .build-list .metal { margin-top: 40px; }
+  .build-list p { color: #cfd3d0; }
+
+  .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+  .big-phone { display: block; font: 600 clamp(1.7rem, 3.4vw, 2.5rem)/1.2 var(--display); color: var(--ink); text-decoration: none; }
+  .big-phone:hover { color: var(--blue); }
+  .contact-lines p { margin-top: 10px; }
+
+  @media (max-width: 980px) {
+    .hero-grid, .years, .build, .contact, .order { grid-template-columns: 1fr; }
+    .order-cta { grid-column: 1; }
+    .cat-row { grid-template-columns: 88px minmax(0, 1fr) auto; }
+    .cat-row img, .ph { width: 88px; height: 64px; }
+    .cat-desc { grid-column: 2 / -1; grid-row: 2; }
+  }
+  @media (max-width: 640px) {
+    .steps, .figures { grid-template-columns: 1fr; }
+    .cat-row { grid-template-columns: 64px minmax(0, 1fr); gap: 4px 14px; }
+    .cat-row img, .ph { width: 64px; height: 48px; grid-row: span 3; }
+    .cat-desc, .cat-count { grid-column: 2; grid-row: auto; text-align: left; }
+  }
+</style>

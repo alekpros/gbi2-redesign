@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import MarkSearch from '../components/MarkSearch.astro';
+import { u } from '../lib/url';
+---
+<Base title="Страница не найдена">
+  <section class="page-head graph">
+    <div class="wrap">
+      <h1>Такой страницы нет</h1>
+      <p class="lead">Возможно, адрес изменился после обновления сайта. Найдите изделие по марке или откройте <a href={u('catalog/')}>каталог</a>.</p>
+      <div style="margin-top:28px"><MarkSearch id="nf-search" /></div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import { company, departments } from '../data/site';
+import { u } from '../lib/url';
+---
+<Base title="Контакты завода ЖБИ-2: отдел сбыта, приёмная, адрес" active="contacts/">
+  <section class="page-head graph">
+    <div class="wrap head">
+      <div>
+        <ul class="crumbs"><li><a href={u()}>Главная</a></li><li>Контакты</li></ul>
+        <h1>Контакты</h1>
+        <p class="lead">{company.address}</p>
+        <a class="btn btn--line" href={company.mapUrl} rel="noopener">Построить маршрут</a>
+      </div>
+    </div>
+  </section>
+  <div class="wrap body">
+    <table class="deps">
+      <caption class="visually-hidden">Телефоны и почта отделов</caption>
+      <thead><tr><th scope="col">Отдел</th><th scope="col">Телефон</th><th scope="col">Почта</th></tr></thead>
+      <tbody>
+        {departments.map((d) => (
+          <tr>
+            <th scope="row">{d.name}{d.note && <span>{d.note}</span>}</th>
+            <td>{d.phones.map(([l, h]) => <a href={h}>{l}</a>)}</td>
+            <td>{d.emails.map((e) => <a href={`mailto:${e}`}>{e}</a>)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</Base>
+<style>
+  .head .btn { margin-top: 20px; }
+  .body { padding-top: 40px; padding-bottom: 80px; }
+  .deps { width: 100%; border-collapse: collapse; border-top: 2px solid var(--ink); }
+  .deps thead th { text-align: left; font-size: 0.85rem; color: var(--ink-soft); font-weight: 400; padding: 10px 16px 10px 0; }
+  .deps tbody th, .deps td { text-align: left; vertical-align: top; padding: 16px 16px 16px 0; border-top: 1px solid var(--rule); }
+  .deps tbody th { font-weight: 600; width: 34%; }
+  .deps tbody th span { display: block; font-weight: 400; font-size: 0.88rem; color: var(--ink-soft); }
+  .deps td a { display: block; }
+  .deps td:nth-child(2) a { font-weight: 600; color: var(--ink); text-decoration: none; white-space: nowrap; }
+  .deps tbody tr:first-child th, .deps tbody tr:first-child td { background: #fbf6dd; }
+  @media (max-width: 720px) {
+    .deps thead { display: none; }
+    .deps tr, .deps tbody th, .deps td { display: block; width: auto; }
+    .deps tbody th { padding-bottom: 4px; }
+    .deps td { border-top: 0; padding: 2px 0 4px; }
+    .deps tr { border-top: 1px solid var(--rule); padding: 10px 0; }
+    .deps tbody tr:first-child { background: #fbf6dd; }
+  }
+</style>

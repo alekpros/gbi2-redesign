@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import { vacancies, hr, company } from '../data/site';
+import { u } from '../lib/url';
+---
+<Base title="Работа на заводе ЖБИ-2 в Воронеже" active="vacancies/">
+  <section class="page-head graph">
+    <div class="wrap">
+      <ul class="crumbs"><li><a href={u()}>Главная</a></li><li>Вакансии</li></ul>
+      <h1>Работа на заводе</h1>
+      <p class="lead">Оформление по ТК РФ. Есть возможность проживания, спорт, подарки детям к праздникам.</p>
+    </div>
+  </section>
+  <div class="wrap body">
+    <table class="vac">
+      <caption class="visually-hidden">Открытые вакансии</caption>
+      <thead><tr><th scope="col">Должность</th><th scope="col">Зарплата</th></tr></thead>
+      <tbody>{vacancies.map((v) => <tr><td>{v.title}</td><td>{v.salary}</td></tr>)}</tbody>
+    </table>
+    <aside class="hr">
+      <h2>Отдел кадров</h2>
+      <a class="ph" href={hr.href}>{hr.phone}</a>
+      <p><a href={`mailto:${hr.email}`}>{hr.email}</a></p>
+      <p class="muted">{company.address}</p>
+      <ul>{hr.perks.map((p) => <li>{p}</li>)}</ul>
+    </aside>
+  </div>
+</Base>
+<style>
+  .body { display: grid; grid-template-columns: 1.6fr 1fr; gap: 56px; padding-top: 48px; padding-bottom: 80px; align-items: start; }
+  .vac { width: 100%; border-collapse: collapse; border-top: 2px solid var(--ink); }
+  .vac th { text-align: left; font-size: 0.85rem; color: var(--ink-soft); font-weight: 400; padding: 10px 0; }
+  .vac td { padding: 18px 0; border-top: 1px solid var(--rule); font-size: 1.15rem; font-weight: 600; }
+  .vac td:last-child, .vac th:last-child { text-align: right; font-family: var(--display); }
+  .hr { background: var(--concrete); padding: 28px; }
+  .hr h2 { font-size: 1.3rem; margin-bottom: 10px; }
+  .ph { font: 600 1.6rem/1.2 var(--display); color: var(--ink); text-decoration: none; display: block; margin-bottom: 6px; }
+  .hr ul { padding-left: 18px; margin: 16px 0 0; }
+  @media (max-width: 820px) { .body { grid-template-columns: 1fr; } }
+</style>

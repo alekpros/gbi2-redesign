@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/url';
+const changes = [
+  { was: 'Каталог — витрина картинок, таблицы спрятаны на третьем уровне, поиска нет.', now: 'Поиск по 725 маркам с первого экрана: «фбс2446» находит ФБС 24.4.6-Т. Латиница и пробелы не мешают.', href: '' },
+  { was: 'Чтобы узнать цену, нужно звонить и диктовать марки.', now: 'Покупатель отмечает строки в таблицах, указывает количество и отправляет заявку. Она уходит в отдел сбыта и CRM.', href: 'price-list/' },
+  { was: 'Длинные SEO-тексты «купить по самым низким ценам» перед таблицами.', now: 'Назначение изделия одной фразой, расшифровка марки по кнопке, сразу таблица размеров и массы.', href: 'catalog/fundamenti/bloki-sten-podvalov-fbs/' },
+  { was: 'Объекты недвижимости со сроками сдачи 2020–2023 года, без статусов.', now: 'Объекты разделены на строящиеся и сданные, у каждого статус; устаревшие данные помечены для проверки.', href: 'real-estate/' },
+  { was: 'Восемь отделов с телефонами в общем списке; отдел сбыта теряется.', now: 'Отдел сбыта — в шапке на каждой странице и первой строкой контактов. Телефоны кликабельны.', href: 'contacts/' },
+  { was: 'История завода — 38 тысяч знаков сплошного текста.', now: 'Хроника из восьми вех, цифры, документы СОУТ и реквизиты с кнопкой «Скопировать».', href: 'about/' },
+  { was: 'Шрифты и скрипты со сторонних серверов, форма без отдельного согласия.', now: 'Шрифты хранятся на сайте, согласие на обработку ПДн — отдельным пунктом (требование с 01.09.2025).', href: 'privacy/' },
+  { was: 'Адреса страниц /catalog/…/…/', now: 'Адреса сохранены один в один: позиции в Яндексе не потеряются при переезде.', href: '' },
+];
+---
+<Base title="Что изменилось в концепте">
+  <section class="page-head graph">
+    <div class="wrap">
+      <ul class="crumbs"><li><a href={u()}>Главная</a></li><li>Концепт</li></ul>
+      <h1>Что изменилось</h1>
+      <p class="lead">Сайт завода в первую очередь нужен снабженцу и прорабу: найти марку, увидеть размеры и вес, запросить цену. Концепт перестроен вокруг этой задачи.</p>
+    </div>
+  </section>
+  <div class="wrap">
+    <table class="cmp">
+      <thead><tr><th scope="col">Было</th><th scope="col">Стало</th></tr></thead>
+      <tbody>
+        {changes.map((c) => <tr><td>{c.was}</td><td>{c.now} {c.href && <a href={u(c.href)}>Посмотреть</a>}</td></tr>)}
+      </tbody>
+    </table>
+    <p class="note muted small">Данные, факты и таблицы характеристик взяты с действующего gbi2.ru, тексты переписаны. Позиции, помеченные пунктирной рамкой, требуют проверки заводом.</p>
+  </div>
+</Base>
+<style>
+  .cmp { width: 100%; border-collapse: collapse; margin: 40px 0 16px; border-top: 2px solid var(--ink); }
+  .cmp th { text-align: left; padding: 10px 24px 10px 0; font: 600 1.1rem/1.2 var(--display); }
+  .cmp td { vertical-align: top; padding: 16px 24px 16px 0; border-top: 1px solid var(--rule); width: 50%; }
+  .cmp td:first-child { color: var(--ink-soft); }
+  .note { padding-bottom: 80px; }
+  @media (max-width: 640px) { .cmp, .cmp tbody, .cmp tr, .cmp td { display: block; width: auto; } .cmp thead { display: none; } .cmp td:first-child { padding-bottom: 4px; } .cmp td:first-child::before { content: 'Было: '; font-weight: 600; } .cmp td:last-child { border-top: 0; padding-top: 0; } .cmp td:last-child::before { content: 'Стало: '; font-weight: 600; } }
+</style>

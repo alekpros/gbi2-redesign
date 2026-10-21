@@ -1,0 +1,71 @@
+---
+// Поиск по маркам из таблиц характеристик. Индекс небольшой (~725 строк), грузится один раз.
+import { u } from '../lib/url';
+const { big = false, id = 'mark-search' } = Astro.props as { big?: boolean; id?: string };
+---
+<div class:list={['search', { big }]} data-search data-index={u('marks.json')} data-base={u()}>
+  <label for={id}>Найти изделие по марке</label>
+  <div class="row">
+    <input id={id} type="search" autocomplete="off" spellcheck="false"
+      placeholder="ФБС 24.4.6, ПК 63, КЦ 15" aria-controls={`${id}-list`} aria-describedby={`${id}-hint`} />
+  </div>
+  <p class="hint" id={`${id}-hint`}>Пробелы и точки можно не ставить</p>
+  <ul class="results" id={`${id}-list`} role="listbox" hidden></ul>
+</div>
+
+<script>
+  type M = { m: string; i: string; g: string; u: string };
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' } as Record<string, string>)[c]);
+  const norm = (s: string) => s.toUpperCase().replace(/Ё/g, 'Е').replace(/[\s.\-–,]/g, '')
+    // латинские буквы, похожие на русские, — частая ошибка при наборе марок
+    .replace(/[ABCEHKMOPTX]/g, (c) => ({ A: 'А', B: 'В', C: 'С', E: 'Е', H: 'Н', K: 'К', M: 'М', O: 'О', P: 'Р', T: 'Т', X: 'Х' } as Record<string, string>)[c]);
+
+  document.querySelectorAll<HTMLElement>('[data-search]').forEach((box) => {
+    const input = box.querySelector('input')!;
+    const list = box.querySelector('ul')!;
+    let index: (M & { n: string })[] | null = null;
+    const load = async () => {
+      if (index) return index;
+      const data: M[] = await fetch(box.dataset.index!).then((r) => r.json());
+      index = data.map((d) => ({ ...d, n: norm(d.m) }));
+      return index;
+    };
+    input.addEventListener('focus', load, { once: true });
+    input.addEventListener('input', async () => {
+      const q = norm(input.value.trim());
+      if (q.length < 2) { list.hidden = true; list.innerHTML = ''; return; }
+      const idx = await load();
+      const hits = idx.filter((d) => d.n.startsWith(q)).concat(idx.filter((d) => !d.n.startsWith(q) && d.n.includes(q))).slice(0, 8);
+      list.innerHTML = hits.length
+        ? hits.map((h) => `<li role="option"><a href="${box.dataset.base}${h.u.replace(/^\//, '')}"><span class="mark">${h.m}</span><span>${h.i}</span></a></li>`).join('')
+        : `<li class="empty">Марки «${esc(input.value)}» нет в каталоге. Позвоните в отдел сбыта — подскажем аналог или уточним возможность изготовления.</li>`;
+      list.hidden = false;
+    });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { const a = list.querySelector('a'); if (a) { e.preventDefault(); a.click(); } }
+      if (e.key === 'Escape') { list.hidden = true; }
+    });
+  });
+</script>
+
+<style>
+  .search { position: relative; max-width: 560px; }
+  label { display: block; font-weight: 600; margin-bottom: 8px; }
+  input {
+    width: 100%; min-height: 54px; padding: 0 16px; font-size: 1.05rem;
+    border: 2px solid var(--ink); background: #fff; border-radius: 2px;
+  }
+  input:focus { outline: 3px solid var(--tag); outline-offset: 0; }
+  .big input { min-height: 62px; font: 600 1.25rem/1 var(--display); }
+  .hint { font-size: 0.85rem; color: var(--ink-soft); margin: 6px 0 0; }
+  .results {
+    position: absolute; z-index: 15; left: 0; right: 0; top: calc(100% - 22px);
+    list-style: none; margin: 0; padding: 6px 0; background: #fff; border: 2px solid var(--ink); border-top: 0;
+    box-shadow: 0 16px 32px rgb(35 41 45 / 0.16); max-height: 420px; overflow: auto;
+  }
+  .results :global(a) { display: flex; gap: 12px; align-items: baseline; padding: 10px 14px; color: var(--ink); text-decoration: none; }
+  .results :global(a:hover), .results :global(a:focus) { background: #fbf6dd; }
+  .results :global(.mark) { font-size: 0.95rem; }
+  .results :global(a span:last-child) { color: var(--ink-soft); font-size: 0.92rem; }
+  .results :global(.empty) { padding: 12px 14px; font-size: 0.95rem; }
+</style>
