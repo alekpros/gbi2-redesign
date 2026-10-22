@@ -124,16 +124,53 @@ print(f'{len(cats)} категорий, {sum(len(c["groups"]) for c in cats)} г
 for c in cats:
     print(' ', c['title'], '|', [(g['title'], len(g['items'])) for g in c['groups']])
 
-# Индекс марок для поиска: марка → изделие, где она встречается в таблице характеристик.
+# Индекс марок для поиска и заявки: марка → изделие, масса и объём из таблицы (если колонки распознаны).
+def grid_rows(section):
+    """Раскладывает строки таблицы по сетке с учётом rowspan/colspan. Возвращает список строк-списков текстов."""
+    rows = re.findall(r'<tr[^>]*>(.*?)</tr>', section, re.S)
+    grid, nrows = {}, len(rows)
+    for ri, row in enumerate(rows):
+        col = 0
+        for attrs, txt in re.findall(r'<t[hd]([^>]*)>(.*?)</t[hd]>', row, re.S):
+            while (ri, col) in grid:
+                col += 1
+            rs = int((re.search(r'rowspan="(\d+)"', attrs) or [0, 1])[1])
+            cs = int((re.search(r'colspan="(\d+)"', attrs) or [0, 1])[1])
+            text = html.unescape(re.sub(r'<[^>]+>', '', txt)).strip()
+            for r in range(rs):
+                for c_ in range(cs):
+                    grid[(ri + r, col + c_)] = text
+            col += cs
+    ncols = max((k[1] for k in grid), default=-1) + 1
+    return [[grid.get((r, c_), '') for c_ in range(ncols)] for r in range(nrows)]
+
+
+def num(s):
+    m = re.search(r'\d+(?:[.,]\d+)?', s or '')
+    return float(m.group(0).replace(',', '.')) if m else None
+
+
 marks = []
 for c in cats:
     for g in c['groups']:
         for it in g['items']:
             for t in it['tables']:
-                for row in re.findall(r'<tr>(.*?)</tr>', t):
-                    cells = [html.unescape(re.sub(r'<[^>]+>', '', x)).strip() for x in re.findall(r'<td[^>]*>(.*?)</td>', row)]
-                    if cells and re.match(r'^\d?[А-ЯA-Z]{1,5}[\s\d]', cells[0]):
-                        marks.append({'m': cells[0].rstrip('-'), 'i': it['title'], 'g': g['title'],
-                                      'u': f"{it['path']}#{re.sub(r'[^0-9A-Za-zА-Яа-я]+', '-', cells[0]).strip('-')}"})
+                thead = re.search(r'<thead>(.*?)</thead>', t, re.S)
+                tbody = re.search(r'<tbody>(.*?)</tbody>', t, re.S)
+                heads = grid_rows(thead.group(1))[-1] if thead else []
+                wi = next((i for i, h in enumerate(heads) if re.search(r'вес|масса', h, re.I)), None)
+                vi = next((i for i, h in enumerate(heads) if re.search(r'объ[её]м', h, re.I)), None)
+                for cells in grid_rows(tbody.group(1) if tbody else t):
+                    if not cells or not re.match(r'^\d?[А-ЯA-Z]{1,5}[\s\d]', cells[0]):
+                        continue
+                    mark = cells[0].rstrip('-')
+                    rec = {'m': mark, 'i': it['title'], 'g': g['title'],
+                           'u': f"{it['path']}#{re.sub(r'[^0-9A-Za-zА-Яа-я]+', '-', cells[0]).strip('-')}"}
+                    if len(cells) == len(heads):
+                        w = num(cells[wi]) if wi is not None else None
+                        v = num(cells[vi]) if vi is not None else None
+                        if w and 0.01 <= w <= 60: rec['w'] = w      # тонны
+                        if v and 0.001 <= v <= 30: rec['v'] = v     # м³
+                    marks.append(rec)
 (OUT.parents[2] / 'public' / 'marks.json').write_text(json.dumps(marks, ensure_ascii=False))
-print(len(marks), 'марок в индексе')
+print(len(marks), 'марок в индексе,', sum('w' in m for m in marks), 'с массой,', sum('v' in m for m in marks), 'с объёмом')

@@ -12,9 +12,18 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { u } from '../lib/url';
 
-interface Props { title: string; description?: string; active?: string }
-const { title, description = 'Железобетонные изделия от производителя в Воронеже с 1956 года: фундаменты, плиты, лестницы, колодцы, каркас 1.020-1/87.', active } = Astro.props;
+import { company } from '../data/site';
+
+interface Props { title: string; description?: string; active?: string; jsonld?: Record<string, unknown> }
+const { title, description = 'Железобетонные изделия от производителя в Воронеже с 1956 года: фундаменты, плиты, лестницы, колодцы, каркас 1.020-1/87.', active, jsonld } = Astro.props;
 const full = title.includes('ЖБИ-2') ? title : `${title} — Завод ЖБИ-2, Воронеж`;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+// Организация — на каждой странице; страницы могут добавить свою разметку через jsonld
+const org = {
+  '@context': 'https://schema.org', '@type': 'Organization', name: company.name, url: Astro.site?.href,
+  foundingDate: String(company.founded), telephone: company.sales.label, email: company.sales.email,
+  address: { '@type': 'PostalAddress', streetAddress: 'ул. Дорожная, 13', addressLocality: 'Воронеж', postalCode: '394038', addressCountry: 'RU' },
+};
 ---
 <!doctype html>
 <html lang="ru">
@@ -26,6 +35,15 @@ const full = title.includes('ЖБИ-2') ? title : `${title} — Завод ЖБ�
   <!-- Демо-версия: не индексировать, чтобы не конкурировать с действующим сайтом -->
   <meta name="robots" content="noindex, nofollow" />
   <meta name="theme-color" content="#23292d" />
+  <link rel="canonical" href={canonical} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={full} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="Завод ЖБИ-2" />
+  <script type="application/ld+json" set:html={JSON.stringify(org)} />
+  {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
   <link rel="icon" href={u('favicon.svg')} type="image/svg+xml" />
 </head>
 <body>
@@ -49,5 +67,5 @@ const full = title.includes('ЖБИ-2') ? title : `${title} — Завод ЖБ�
 <style>
   .concept-bar { background: var(--tag); color: var(--ink); font-size: 0.85rem; }
   .concept-bar .wrap { display: flex; gap: 16px; justify-content: space-between; align-items: center; min-height: 36px; padding-top: 6px; padding-bottom: 6px; }
-  .concept-bar a { color: var(--ink); font-weight: 600; white-space: nowrap; }
+  .concept-bar a { color: var(--ink); font-weight: 600; white-space: nowrap; padding: 6px 0; }
 </style>

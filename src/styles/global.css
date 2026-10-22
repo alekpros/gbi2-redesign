@@ -130,3 +130,14 @@ p { margin: 0 0 0.8em; max-width: var(--measure); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
+
+@media print {
+  .concept-bar, .site-header, .site-footer, .burger, .form, .tools, .page-head .crumbs, .files, .empty { display: none !important; }
+  body { background: #fff; color: #000; font-size: 12pt; }
+  .page-head { border: 0; padding: 0 0 12pt; }
+  .page-head.graph { background: none; }
+  a { color: #000; text-decoration: none; }
+  .req-table :global(input), .req-table input { border: 0; width: auto; }
+  .req-table :global(.del) { display: none; }
+  .mark { background: none; border: 1px solid #000; }
+}

@@ -9,8 +9,11 @@ export function getStaticPaths() {
 }
 const { c, g, it } = Astro.props;
 const others = g.items.filter((x) => x.slug !== it.slug);
+const crumbs = [['Продукция', 'catalog/'], [c.title, c.path], [g.title, g.path], [it.title, it.path]];
+const jsonld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: crumbs.map(([name, path], i) => ({ '@type': 'ListItem', position: i + 1, name, item: new URL(u(path), Astro.site).href })) };
 ---
-<Base title={`${it.title} — размеры и вес`} description={`${it.title}: таблица марок, размеры, масса, класс бетона. ${it.purpose}`} active="catalog/">
+<Base title={`${it.title} — размеры и вес`} description={`${it.title}: таблица марок, размеры, масса, класс бетона. ${it.purpose}`} active="catalog/" jsonld={jsonld}>
   <section class="page-head graph">
     <div class="wrap">
       <ul class="crumbs"><li><a href={u()}>Главная</a></li><li><a href={u('catalog/')}>Продукция</a></li><li><a href={u(c.path)}>{c.title}</a></li><li><a href={u(g.path)}>{g.title}</a></li></ul>

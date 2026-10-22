@@ -18,6 +18,7 @@ export const nav = [
   { href: 'construction/', label: 'Домостроение' },
   { href: 'real-estate/', label: 'Недвижимость' },
   { href: 'about/', label: 'О заводе' },
+  { href: 'life/', label: 'Жизнь завода' },
   { href: 'vacancies/', label: 'Вакансии' },
   { href: 'contacts/', label: 'Контакты' },
 ];
@@ -143,12 +144,6 @@ export const timeline = [
   { year: '2026', text: 'Заводу 70 лет.' },
 ];
 
-export const news = [
-  { date: '5 августа 2026', title: 'Банк ДОМ.РФ и СЗ «ЖБИ Жилстрой» подписали соглашение о проектном финансировании' },
-  { date: 'Без даты', title: 'Завод начнёт выпуск новых изделий для местного рынка', confirm: true },
-  { date: 'Без даты', title: 'Изделия для крупных животноводческих комплексов', confirm: true },
-  { date: '27 июня 2019', title: 'Вышли ещё два номера заводской газеты «Наш завод»' },
-];
 
 export const vacancies = [
   { title: 'Машинист крана (крановщик)', salary: 'от 71 000 ₽' },

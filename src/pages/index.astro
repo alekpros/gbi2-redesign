@@ -4,6 +4,8 @@ import MarkDrawing from '../components/MarkDrawing.astro';
 import MarkSearch from '../components/MarkSearch.astro';
 import { catalog, catMarks, marksLabel } from '../lib/catalog';
 import { company, figures, categoryText, construction, estates } from '../data/site';
+import { sorted as news } from '../data/news';
+import ArticleCard from '../components/ArticleCard.astro';
 import { u, img, storageImg } from '../lib/url';
 
 const total = catalog.reduce((n, c) => n + catMarks(c), 0);
@@ -112,6 +114,18 @@ const featured = estates.filter((e) => ['zhiloy-kompleks-slavyanograd', 'zhiloy-
   </section>
 
   <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Жизнь завода</h2>
+        <a href={u('life/')}>Все новости и газета «Наш завод»</a>
+      </div>
+      <div class="news">
+        {news.slice(0, 3).map((a) => <ArticleCard a={a} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--concrete">
     <div class="wrap contact">
       <div>
         <h2>Отдел сбыта</h2>
@@ -172,13 +186,15 @@ const featured = estates.filter((e) => ['zhiloy-kompleks-slavyanograd', 'zhiloy-
   .build-list .metal { margin-top: 40px; }
   .build-list p { color: #cfd3d0; }
 
+  .news { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 40px; }
+  .news > :global(.card) { border-top: 2px solid var(--ink); align-content: start; }
   .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
   .big-phone { display: block; font: 600 clamp(1.7rem, 3.4vw, 2.5rem)/1.2 var(--display); color: var(--ink); text-decoration: none; }
   .big-phone:hover { color: var(--blue); }
   .contact-lines p { margin-top: 10px; }
 
   @media (max-width: 980px) {
-    .hero-grid, .years, .build, .contact, .order { grid-template-columns: 1fr; }
+    .hero-grid, .years, .build, .contact, .order, .news { grid-template-columns: 1fr; }
     .order-cta { grid-column: 1; }
     .cat-row { grid-template-columns: 88px minmax(0, 1fr) auto; }
     .cat-row img, .ph { width: 88px; height: 64px; }

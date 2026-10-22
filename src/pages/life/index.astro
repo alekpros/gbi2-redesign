@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { sorted, newspaper } from '../../data/news';
+import { u } from '../../lib/url';
+const [first, ...rest] = sorted;
+---
+<Base title="Жизнь завода: новости, люди, газета «Наш завод»" active="life/" description="Новости завода ЖБИ-2: производство, награды, спорт, династии. Архив заводской газеты «Наш завод» с 2022 года.">
+  <section class="page-head graph">
+    <div class="wrap">
+      <ul class="crumbs"><li><a href={u()}>Главная</a></li><li>Жизнь завода</li></ul>
+      <h1>Жизнь завода</h1>
+      <p class="lead">Что происходит в цехах и на стадионе, кого наградили и что освоили. Пишет редакция заводской газеты «Наш завод».</p>
+    </div>
+  </section>
+
+  <div class="wrap grid">
+    <div class="feed">
+      <ArticleCard a={first} big />
+      {rest.map((a) => <ArticleCard a={a} />)}
+    </div>
+    <aside class="side" id="newspaper">
+      <h2>Газета «Наш завод»</h2>
+      <p class="muted small">Выходит с 2020 года. Номера в PDF.</p>
+      <ul class="issues">
+        {newspaper.map((n) => (
+          <li><a href={n.href} rel="noopener">№ {n.n}</a> <span>{n.period}</span></li>
+        ))}
+      </ul>
+      <p class="small muted">Пишите в редакцию: истории, фото, стихи сотрудников — <a href="mailto:gbi2pr@yandex.ru">gbi2pr@yandex.ru</a>, +7 (900) 958-33-97.</p>
+    </aside>
+  </div>
+</Base>
+<style>
+  .grid { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(260px, 1fr); gap: 64px; padding-top: 40px; padding-bottom: 80px; align-items: start; }
+  .side { position: sticky; top: 88px; background: var(--concrete); padding: 24px; }
+  .side h2 { font-size: 1.35rem; margin-bottom: 4px; }
+  .issues { list-style: none; margin: 16px 0; padding: 0; columns: 2; column-gap: 20px; }
+  .issues li { break-inside: avoid; padding: 6px 0; border-top: 1px solid var(--concrete-deep); display: grid; font-size: 0.92rem; }
+  .issues a { font-weight: 600; }
+  .issues span { color: var(--ink-soft); font-size: 0.82rem; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; gap: 40px; } .side { position: static; } }
+</style>

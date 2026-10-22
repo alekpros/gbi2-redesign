@@ -22,9 +22,15 @@ import { u } from '../lib/url';
         <p>Список пуст. Откройте <a href={u('catalog/')}>каталог</a> и нажмите «+» в строке нужной марки — или просто опишите, что нужно, в комментарии.</p>
       </div>
       <table class="req-table" data-req-table hidden>
-        <thead><tr><th scope="col">Марка</th><th scope="col">Изделие</th><th scope="col">Кол-во, шт.</th><th scope="col"><span class="visually-hidden">Удалить</span></th></tr></thead>
+        <thead><tr><th scope="col">Марка</th><th scope="col">Изделие</th><th scope="col">Кол-во, шт.</th><th scope="col">Масса, т</th><th scope="col"><span class="visually-hidden">Удалить</span></th></tr></thead>
         <tbody></tbody>
+        <tfoot><tr><th scope="row" class="t-label">Итого</th><th class="item-col"></th><td data-t-qty></td><td data-t-mass></td><td></td></tr></tfoot>
       </table>
+      <p class="trucks" data-req-trucks hidden></p>
+      <div class="tools" data-req-tools hidden>
+        <button type="button" class="btn btn--line" data-copy>Скопировать список</button>
+        <button type="button" class="btn btn--line" data-print>Распечатать</button>
+      </div>
     </section>
 
     <form class="form" data-req-form novalidate>
@@ -46,7 +52,7 @@ import { u } from '../lib/url';
 </Base>
 
 <script>
-  import { readRequest, writeRequest } from '../lib/request';
+  import { readRequest, writeRequest, totals, fmt, asText } from '../lib/request';
   const tbody = document.querySelector<HTMLTableSectionElement>('[data-req-table] tbody')!;
   const table = document.querySelector<HTMLTableElement>('[data-req-table]')!;
   const empty = document.querySelector<HTMLElement>('[data-req-empty]')!;
@@ -58,17 +64,35 @@ import { u } from '../lib/url';
     table.hidden = list.length === 0;
     empty.hidden = list.length > 0;
     tbody.innerHTML = list.map((r, i) => `<tr>
-      <td><a class="mark" href="${esc(r.url)}">${esc(r.mark)}</a></td>
-      <td>${esc(r.item)}</td>
+      <td><a class="mark" href="${esc(r.url)}">${esc(r.mark)}</a><span class="sub">${esc(r.item)}</span></td>
+      <td class="item-col">${esc(r.item)}</td>
       <td><input type="number" min="1" step="1" value="${r.qty}" data-i="${i}" aria-label="Количество ${esc(r.mark)}"></td>
+      <td class="num">${r.w ? fmt(r.w * r.qty, 2) : '—'}</td>
       <td><button type="button" data-del="${i}" class="del">Убрать</button></td></tr>`).join('');
+    const t = totals(list);
+    document.querySelector('[data-t-qty]')!.textContent = `${t.qty} шт.`;
+    document.querySelector('[data-t-mass]')!.textContent = t.mass ? `${fmt(t.mass, 2)} т` : '—';
+    const trucks = document.querySelector<HTMLElement>('[data-req-trucks]')!;
+    trucks.hidden = !t.mass;
+    if (t.mass) {
+      const n = Math.ceil(t.mass / 20);
+      trucks.textContent = `Объём ${fmt(t.vol, 2)} м³. Для перевозки нужно примерно ${n} ${n === 1 ? 'машина' : n < 5 ? 'машины' : 'машин'} по 20 т — точный расчёт сделает отдел сбыта.${t.unknown ? ` Для ${t.unknown} позиций масса не указана.` : ''}`;
+    }
+    document.querySelector<HTMLElement>('[data-req-tools]')!.hidden = list.length === 0;
   }
+  document.querySelector('[data-copy]')?.addEventListener('click', async (e) => {
+    const b = e.currentTarget as HTMLButtonElement;
+    try { await navigator.clipboard.writeText(asText(readRequest())); b.textContent = 'Список скопирован'; }
+    catch { b.textContent = 'Выделите таблицу вручную'; }
+    setTimeout(() => (b.textContent = 'Скопировать список'), 2500);
+  });
+  document.querySelector('[data-print]')?.addEventListener('click', () => print());
   tbody.addEventListener('change', (e) => {
     const el = e.target as HTMLInputElement;
     if (!el.dataset.i) return;
     const list = readRequest();
     list[+el.dataset.i].qty = Math.max(1, Math.round(+el.value || 1));
-    writeRequest(list);
+    writeRequest(list); render();
   });
   tbody.addEventListener('click', (e) => {
     const b = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-del]');
@@ -105,10 +129,23 @@ import { u } from '../lib/url';
   .req-table :global(td) { padding: 10px 8px 10px 0; border-top: 1px solid var(--rule); vertical-align: middle; }
   .req-table :global(td a.mark) { text-decoration: none; }
   .req-table :global(input) { width: 84px; min-height: 40px; padding: 0 8px; border: 1px solid var(--ink-soft); border-radius: 2px; }
+  .req-table :global(.num), .req-table tfoot td { text-align: right; font-variant-numeric: tabular-nums; }
+  .req-table tfoot .t-label, .req-table tfoot td { white-space: nowrap; }
+  .req-table tfoot th, .req-table tfoot td { padding: 12px 8px 12px 0; border-top: 2px solid var(--ink); text-align: left; font-weight: 700; }
+  .trucks { margin-top: 14px; color: var(--ink-soft); font-size: 0.95rem; }
+  .tools { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
   .req-table :global(.del) { border: 0; background: none; color: var(--blue); text-decoration: underline; cursor: pointer; }
   .form { background: #fff; border: 1px solid var(--rule); padding: 28px; }
   .error { color: #9b1c1c; font-weight: 600; }
   .done { margin-top: 20px; border-left: 4px solid var(--ok); padding: 12px 16px; background: #eef5ef; }
   .done h3 { margin-bottom: 6px; }
+  .req-table :global(.sub) { display: none; }
   @media (max-width: 900px) { .body { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) {
+    .req-table :global(.item-col), .req-table th:nth-child(2) { display: none; }
+    .req-table :global(.sub) { display: block; font-size: 0.85rem; color: var(--ink-soft); margin-top: 4px; }
+    .req-table :global(input) { width: 64px; }
+    .req-table tfoot th[colspan] { display: table-cell; }
+    .tools .btn { flex: 1; justify-content: center; padding: 0 12px; }
+  }
 </style>

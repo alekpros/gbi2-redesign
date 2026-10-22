@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import { timeline, news, documents, requisites, figures } from '../data/site';
+import { timeline, documents, requisites, figures } from '../data/site';
+import { sorted as news } from '../data/news';
 import { u } from '../lib/url';
 ---
 <Base title="О заводе: история с 1956 года, документы, реквизиты" active="about/">
@@ -26,8 +27,9 @@ import { u } from '../lib/url';
       <div>
         <h2 class="h">Новости</h2>
         <ul class="news">
-          {news.map((n) => <li><span class="small muted">{n.date}</span><span>{n.title}</span></li>)}
+          {news.slice(0, 4).map((n) => <li><span class="small muted">{n.date}</span><a href={u(`life/${n.slug}/`)}>{n.title}</a></li>)}
         </ul>
+        <p><a href={u('life/')}>Все новости и газета «Наш завод»</a></p>
       </div>
       <div>
         <h2 class="h">В цифрах</h2>

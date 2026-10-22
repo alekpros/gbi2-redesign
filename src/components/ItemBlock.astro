@@ -2,6 +2,8 @@
 // Изделие: фото, назначение, расшифровка марки и таблица характеристик.
 // В каждую строку таблицы добавляется якорь (для поиска) и кнопка «в заявку».
 import { storageImg, anchor, u } from '../lib/url';
+import marksIndex from '../../public/marks.json';
+const byMark = new Map((marksIndex as { m: string; w?: number; v?: number }[]).map((r) => [r.m, r]));
 
 interface Item { path: string; slug: string; title: string; image?: string | null; purpose: string; code: string[]; notation: string[]; tables: string[] }
 const { item, level = 2, link = false, heading } = Astro.props as { item: Item; level?: 2 | 3; link?: boolean; heading?: string };
@@ -15,7 +17,9 @@ const tables = item.tables.map((t) =>
     const mark = plain(cell);
     if (!/^\d?[А-ЯA-Z]{1,5}[\s\d]/.test(mark)) return whole;
     const m = mark.replace(/-$/, '');
-    return `<tr id="${esc(anchor(m))}"><td>${cell}<button type="button" class="add-mark" data-mark="${esc(m)}" data-item="${esc(item.title)}" aria-pressed="false" title="Добавить в заявку">+</button></td>`;
+    const rec = byMark.get(m);
+    const extra = (rec?.w ? ` data-w="${rec.w}"` : '') + (rec?.v ? ` data-v="${rec.v}"` : '');
+    return `<tr id="${esc(anchor(m))}"><td>${cell}<button type="button" class="add-mark" data-mark="${esc(m)}" data-item="${esc(item.title)}"${extra} aria-pressed="false" title="Добавить в заявку">+</button></td>`;
   }),
 );
 ---

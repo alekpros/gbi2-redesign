@@ -1,0 +1,39 @@
+---
+// Карточка статьи. Вместо фото — «шапка газеты» с номером выпуска: это настоящие метаданные, а не декор.
+import type { Article } from '../data/news';
+import { u } from '../lib/url';
+const { a, big = false } = Astro.props as { a: Article; big?: boolean };
+---
+<article class:list={['card', { big }]}>
+  <a class="masthead" href={u(`life/${a.slug}/`)} aria-hidden="true" tabindex="-1">
+    <span class="paper">Наш завод</span>
+    <span class="num">№ {a.issue}</span>
+  </a>
+  <div class="body">
+    <p class="meta"><span class="tag">{a.tag}</span> <time datetime={a.iso}>{a.date}</time></p>
+    <h3><a href={u(`life/${a.slug}/`)}>{a.title}</a></h3>
+    <p class="lead-text">{a.lead}</p>
+  </div>
+</article>
+
+<style>
+  .card { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 20px; padding: 22px 0; border-top: 1px solid var(--rule); }
+  .masthead { display: grid; align-content: space-between; aspect-ratio: 3 / 4; background: var(--ink); color: var(--paper); padding: 10px; text-decoration: none; }
+  .paper { font: 700 0.8rem/1 var(--display); text-transform: none; letter-spacing: 0.02em; border-bottom: 2px solid var(--tag); padding-bottom: 6px; }
+  .num { font: 700 1.6rem/1 var(--display); }
+  .meta { margin: 0 0 6px; font-size: 0.85rem; color: var(--ink-soft); display: flex; gap: 10px; align-items: center; }
+  .tag { border: 1px solid var(--rule); padding: 1px 7px; }
+  h3 { font: 700 1.3rem/1.2 var(--display); margin-bottom: 8px; }
+  h3 a { color: var(--ink); text-decoration: none; }
+  h3 a:hover { text-decoration: underline; }
+  .lead-text { margin: 0; color: var(--ink-soft); font-size: 0.97rem; }
+  .big { grid-template-columns: 180px minmax(0, 1fr); padding: 0 0 28px; border-top: 0; }
+  .big .num { font-size: 2.6rem; }
+  .big h3 { font-size: clamp(1.6rem, 2.6vw, 2.2rem); }
+  .big .lead-text { font-size: 1.1rem; color: var(--ink); }
+  @media (max-width: 560px) {
+    .card, .big { grid-template-columns: 76px minmax(0, 1fr); gap: 14px; }
+    .num, .big .num { font-size: 1.3rem; }
+    .paper { font-size: 0.65rem; }
+  }
+</style>

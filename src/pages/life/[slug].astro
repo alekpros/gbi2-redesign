@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { articles, sorted, newspaper } from '../../data/news';
+import { u } from '../../lib/url';
+export function getStaticPaths() { return articles.map((a) => ({ params: { slug: a.slug }, props: { a } })); }
+const { a } = Astro.props;
+const issue = newspaper.find((n) => n.n === a.issue);
+const more = sorted.filter((x) => x.slug !== a.slug).slice(0, 3);
+---
+<Base title={a.title} description={a.lead} active="life/">
+  <section class="page-head graph">
+    <div class="wrap">
+      <ul class="crumbs"><li><a href={u()}>Главная</a></li><li><a href={u('life/')}>Жизнь завода</a></li><li>{a.tag}</li></ul>
+      <h1>{a.title}</h1>
+      <p class="meta"><time datetime={a.iso}>{a.date}</time> · по материалам газеты «Наш завод» № {a.issue}</p>
+    </div>
+  </section>
+  <div class="wrap article">
+    <div class="text">
+      <p class="lead">{a.lead}</p>
+      {a.body.map((p) => <p>{p}</p>)}
+      {a.quote && <blockquote><p>«{a.quote.text}»</p><footer>{a.quote.who}</footer></blockquote>}
+      {a.confirm && <p class="check">Сведения из заводской газеты; перед публикацией сверить с пресс-службой.</p>}
+      {issue && <p class="src"><a href={issue.href} rel="noopener">Читать выпуск № {issue.n} целиком (PDF)</a></p>}
+    </div>
+    <aside>
+      <h2>Ещё из жизни завода</h2>
+      {more.map((m) => <ArticleCard a={m} />)}
+    </aside>
+  </div>
+</Base>
+<style>
+  .meta { margin-top: 14px; color: var(--ink-soft); }
+  .article { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr); gap: 64px; padding: 40px var(--gutter) 80px; align-items: start; }
+  .text p { font-size: 1.08rem; line-height: 1.6; }
+  .text .lead { font-size: 1.25rem; color: var(--ink); margin-bottom: 1.2em; }
+  blockquote { margin: 28px 0; padding: 4px 0 4px 22px; border-left: 4px solid var(--tag); }
+  blockquote p { font: 600 1.3rem/1.35 var(--display); margin: 0 0 8px; }
+  blockquote footer { color: var(--ink-soft); font-size: 0.95rem; }
+  .check { border: 1px dashed var(--ink-soft); padding: 8px 12px; font-size: 0.9rem !important; color: var(--ink-soft); }
+  .src { margin-top: 24px; }
+  aside h2 { font-size: 1.3rem; margin-bottom: 4px; }
+  @media (max-width: 900px) { .article { grid-template-columns: 1fr; gap: 40px; } }
+</style>
