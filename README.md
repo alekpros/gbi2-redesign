@@ -8,7 +8,11 @@
 - [Коммерческое предложение](docs/PROPOSAL.md)
 - [Смета по часам](docs/estimate.md)
 
-## Запуск демо
+## Демо
+
+https://alekpros.github.io/gbi2-redesign/ — обновляется автоматически при пуше в `main`.
+
+## Локальный запуск
 
 ```bash
 npm install
