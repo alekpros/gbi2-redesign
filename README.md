@@ -4,10 +4,6 @@
 Данные (каталог, таблицы характеристик, адреса, телефоны, фото) взяты с действующего сайта
 и принадлежат АО «Завод ЖБИ-2». Тексты переписаны. Страницы закрыты от индексации (`noindex`).
 
-- [Аудит текущего сайта](docs/AUDIT.md)
-- [Коммерческое предложение](docs/PROPOSAL.md)
-- [Смета по часам](docs/estimate.md)
-
 ## Демо
 
 https://alekpros.github.io/gbi2-redesign/ — обновляется автоматически при пуше в `main`.
@@ -36,6 +32,5 @@ npm run dev
 - `src/data/catalog.json` — каталог, собранный скриптом `scripts/build_catalog.py` из выгрузки старого сайта.
 - `public/marks.json` — индекс 725 марок для поиска.
 - `src/data/site.ts` — тексты разделов. Пометка `confirm: true` — данные, которые нужно сверить с заводом.
-- `scripts/estimate.py` — расчёт сметы, `python3 scripts/estimate.py > docs/estimate.md`.
 
 Адреса страниц каталога совпадают со старым сайтом. Для GitHub Pages сборка идёт с `BASE_PATH=/gbi2-redesign/`.
